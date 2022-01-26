@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class MemberDAO {
 	Connection conn = null;
@@ -45,15 +46,15 @@ public class MemberDAO {
 	public int join(MemberDTO dto) {
 		try {
 			conn();
-			String sql = "insert into web_member values(?,?,?,?,?,?,?)";
+			String sql = "insert into t_member values(?,?,?,?,?,?,?)";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getM_id());
 			psmt.setString(2, dto.getM_pw());
 			psmt.setString(3, dto.getM_name());
-			psmt.setString(5, dto.getM_birthDate());
-			psmt.setString(6, dto.getM_gender());
-			psmt.setString(7, dto.getM_joinDate());
-			psmt.setString(8, dto.getM_admin_yesno());
+			psmt.setString(4, dto.getM_birthDate());
+			psmt.setString(5, dto.getM_gender());
+			psmt.setString(6, dto.getM_joinDate());
+			psmt.setString(7, dto.getAdmin_yesno());
 
 			cnt = psmt.executeUpdate();
 			
@@ -64,12 +65,13 @@ public class MemberDAO {
 		}
 		return cnt;
 }
+	
 	// 로그인 메서드
 	public MemberDTO login(MemberDTO dto) {
 		MemberDTO info = null;
 		try {
 			conn();
-			String sql = "select * from web_member where m_id=? and m_pw=?";
+			String sql = "select * from t_member where m_id=? and m_pw=?";
 			
 			psmt = conn.prepareStatement(sql);
 			
@@ -95,4 +97,26 @@ public class MemberDAO {
 			close();
 		}return info;
 	}
+
+	// 정보수정
+	public int update(MemberDTO info) {
+		try {
+			conn();
+			
+			String sql = "update t_member set m_pw=?, m_name=? where m_id=?";
+			psmt = conn.prepareStatement(sql);
+			
+			psmt.setString(1, info.getM_pw());
+			psmt.setString(2, info.getM_name());
+			psmt.setString(3, info.getM_id());
+			
+			cnt = psmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return cnt;
+	}
+	
 }

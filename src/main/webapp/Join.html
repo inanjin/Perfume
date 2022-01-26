@@ -7,12 +7,13 @@
 <body>
 
 	<!-- form태그 이용해서 id, pw, name을 입력받아서 넘길 수 있는 코드 -->
-	<form action="/Controller/joinService.java" method="post">
+	<form action="joinService" method="post">
 		ID : <input type="text" name="id"><br>
 		PW : <input type="password" name="pw"><br>
 		Name : <input type="text" name="name"><br>
-		BirthDate : <input type="text" name="birthdate"><br>
-		Gender : <input type="radio" name="gender"><br>
+		BirthDate : <input type="date" name="birthdate"><br>
+		Gender : <input type="radio" name="gender" value="w">여
+		<input type="radio" name="gender" value="m">남<br>
 		<input type="submit" value="Join">
 	</form>
 </body>

@@ -7,10 +7,10 @@ public class MemberDTO {
 	String m_birthDate;
 	String m_gender;
 	String m_joinDate;
-	String m_admin_yesno;
+	String admin_yesno;
 	
 	public MemberDTO(String m_id, String m_pw, String m_name, String m_birthDate, String m_gender, String m_joinDate,
-			String m_admin_yesno) {
+			String admin_yesno) {
 		super();
 		this.m_id = m_id;
 		this.m_pw = m_pw;
@@ -18,7 +18,7 @@ public class MemberDTO {
 		this.m_birthDate = m_birthDate;
 		this.m_gender = m_gender;
 		this.m_joinDate = m_joinDate;
-		this.m_admin_yesno = m_admin_yesno;
+		this.admin_yesno = admin_yesno;
 	}
 	
 	public String getM_id() {
@@ -57,17 +57,24 @@ public class MemberDTO {
 	public void setM_joinDate(String m_joinDate) {
 		this.m_joinDate = m_joinDate;
 	}
-	public String getM_admin_yesno() {
-		return m_admin_yesno;
+	public String getAdmin_yesno() {
+		return admin_yesno;
 	}
-	public void setM_admin_yesno(String m_admin_yesno) {
-		this.m_admin_yesno = m_admin_yesno;
+	public void setAdmin_yesno(String admin_yesno) {
+		this.admin_yesno = admin_yesno;
 	}
 
 	public MemberDTO(String m_id, String m_pw) {
 		super();
 		this.m_id = m_id;
 		this.m_pw = m_pw;
+	}
+
+	public MemberDTO(String m_id, String m_pw, String m_name) {
+		super();
+		this.m_id = m_id;
+		this.m_pw = m_pw;
+		this.m_name = m_name;
 	}
 	
 	
