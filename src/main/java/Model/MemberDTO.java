@@ -20,6 +20,7 @@ public class MemberDTO {
 		this.m_joinDate = m_joinDate;
 		this.m_admin_yesno = m_admin_yesno;
 	}
+	
 	public String getM_id() {
 		return m_id;
 	}
@@ -61,6 +62,12 @@ public class MemberDTO {
 	}
 	public void setM_admin_yesno(String m_admin_yesno) {
 		this.m_admin_yesno = m_admin_yesno;
+	}
+
+	public MemberDTO(String m_id, String m_pw) {
+		super();
+		this.m_id = m_id;
+		this.m_pw = m_pw;
 	}
 	
 	
