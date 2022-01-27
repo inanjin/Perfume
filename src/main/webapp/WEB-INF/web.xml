@@ -34,6 +34,12 @@
   	<description></description>
   	<servlet-class>Controller.UpdateService</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>RecommendService</servlet-name>
+  	<display-name>RecommendService</display-name>
+  	<description></description>
+  	<servlet-class>Controller.RecommendService</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>test</servlet-name>
   	<url-pattern>/test</url-pattern>
@@ -53,5 +59,9 @@
   <servlet-mapping>
   	<servlet-name>UpdateService</servlet-name>
   	<url-pattern>/UpdateService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RecommendService</servlet-name>
+  	<url-pattern>/RecommendService</url-pattern>
   </servlet-mapping>
 </web-app>

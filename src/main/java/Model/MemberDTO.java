@@ -1,13 +1,13 @@
 package Model;
 
 public class MemberDTO {
-	String m_id;
-	String m_pw;
-	String m_name;
-	String m_birthDate;
-	String m_gender;
-	String m_joinDate;
-	String admin_yesno;
+	private String m_id;
+	private String m_pw;
+	private String m_name;
+	private String m_birthDate;
+	private String m_gender;
+	private String m_joinDate;
+	private String admin_yesno;
 	
 	public MemberDTO(String m_id, String m_pw, String m_name, String m_birthDate, String m_gender, String m_joinDate,
 			String admin_yesno) {

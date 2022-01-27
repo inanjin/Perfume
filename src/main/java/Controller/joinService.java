@@ -58,8 +58,8 @@ public class joinService extends HttpServlet {
 			System.out.println("회원가입 성공");
 			 response.sendRedirect("main.html");
 			// 세션 값으로 넘겨주기 (email값 유지시키기)
-			HttpSession session = request.getSession();
-			session.setAttribute("aaa", dto.getM_id());
+			// HttpSession session = request.getSession();
+			// session.setAttribute("aaa", dto.getM_id());
 		}else {
 			System.out.println("회원가입 실패");
 			response.sendRedirect("main.html");
