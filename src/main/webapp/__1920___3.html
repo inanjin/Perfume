@@ -251,8 +251,8 @@
 		top: 0px;
 	}
 	#Value {
-		left: 16px;
-		top: 13px;
+		left: 10px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 67px;
@@ -394,11 +394,11 @@
 		top: 0px;
 	}
 	#Value_bi {
-		left: 16px;
-		top: 13px;
+		left: 10px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 100px;
+		width: 150px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Noto Sans;
@@ -407,6 +407,7 @@
 		font-size: 16px;
 		color: rgba(61,61,61,1);
 	}
+
 	#Icon__bj {
 		position: absolute;
 		width: 20px;
@@ -537,8 +538,8 @@
 		top: 0px;
 	}
 	#Value_bt {
-		left: 16px;
-		top: 13px;
+		left: 10px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 74px;
@@ -670,6 +671,7 @@
 	}
 	#Area_DISPLAY_ELEMENTSDefaultST_b {
 		fill: rgba(255,240,240,1);
+		width: 250px;
 	}
 	.Area_DISPLAY_ELEMENTSDefaultST_b {
 		position: absolute;
@@ -680,7 +682,7 @@
 		top: 0px;
 	}
 	#Value_b {
-		left: 16px;
+		left: 10px;
 		top: 13px;
 		position: absolute;
 		overflow: visible;
@@ -1435,6 +1437,7 @@
 		top: 190px;
 	}
 </style>
+
 <script id="applicationScript">
 ///////////////////////////////////////
 // INITIALIZATION
@@ -4347,6 +4350,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
+<form action = "joinService" method = "post">
 <div id="n_1920__3" onclick="application.goBack()">
 	<svg class="Background_STYLESTYLE2">
 		<rect id="Background_STYLESTYLE2" rx="0" ry="0" x="0" y="0" width="1920" height="1118">
@@ -4373,7 +4377,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Label">
-			<span>Sign Up</span>
+			<input type = "submit" value = "Sign Up" style = "background-color:rgba(252,52,101,1)">
 		</div>
 		<div id="Icon_">
 			<div id="METADATA_">
@@ -4400,7 +4404,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value">
-			<span>Password</span>
+			<input type = "password" id = "pw" name = "pw" placeholder = "Password" 
+			style="width:318px; height:48px; background-color:rgba(255,240,240,1)">
 		</div>
 		<div id="Icon__">
 			<div id="METADATA_bb">
@@ -4434,7 +4439,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_bi">
-			<span>Email Address</span>
+			<input type = "email" id = "email" name = "email" placeholder = "Email address" 
+			style="width:318px; height:48px; background-color:rgba(255,240,240,1)">
 		</div>
 		<div id="Icon__bj">
 			<div id="METADATA_bk">
@@ -4468,7 +4474,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_bt">
-			<span>NickName</span>
+			<input type = "text" id = "nick" name = "nick" placeholder = "Nickname" 
+			style="width:318px; height:48px; background-color:rgba(255,240,240,1)">
 		</div>
 		<div id="Icon__bu">
 			<div id="METADATA_bv">
@@ -4501,8 +4508,8 @@ window.application = new Application();
 			<rect id="Area_DISPLAY_ELEMENTSDefaultST_b" rx="4" ry="4" x="0" y="0" width="156" height="48">
 			</rect>
 		</svg>
-		<div id="Value_b">
-			<span>BirthDate</span>
+		<div id="Value_b"> 
+			BirthDate    <input type = "date">  
 		</div>
 		<div id="Icon__b">
 			<div id="METADATA_ca">
@@ -4536,7 +4543,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_cf">
-			<span>Gender</span>
+			Gender
+			남<input type = "radio" value = "남" name ="gender"> 여<input type = "radio" value = "여" name ="gender">
 		</div>
 		<div id="Icon__cg">
 			<div id="METADATA_ch">
@@ -4562,7 +4570,7 @@ window.application = new Application();
 		</div>
 	</div>
 	<div id="Create_an_account_TAGA">
-		<span>Sign In</span>
+		<a href = "__1920___2.html">Sign In</a>
 	</div>
 	<div id="New_user_TAGH6">
 		<span>Already an user?</span>
@@ -4683,5 +4691,6 @@ window.application = new Application();
 		</rect>
 	</svg>
 </div>
+</form>
 </body>
 </html>

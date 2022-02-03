@@ -302,8 +302,8 @@
 		top: 0px;
 	}
 	#Value {
-		left: 23px;
-		top: 18px;
+		left: 10px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 67px;
@@ -445,8 +445,8 @@
 		top: 0px;
 	}
 	#Value_bm {
-		left: 23px;
-		top: 18px;
+		left: 10px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 134px;
@@ -3652,6 +3652,7 @@ var Application = function() {
 window.application = new Application();
 </script>
 </head>
+<form action = "loginService" method = "post">
 <body>
 <div id="n_1920__2" onclick="application.goBack()">
 	<svg class="Background_STYLESTYLE2">
@@ -3676,7 +3677,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Label">
-			<span>Sign In</span>
+			<input type = "submit" value = "Sign Up" style = "background-color:rgba(252,52,101,1)">
 		</div>
 		<div id="Icon_">
 			<div id="METADATA_z">
@@ -3719,7 +3720,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value">
-			<span>Password</span>
+			<input type = "password" id = "pw2" name = "pw2" placeholder = "Password" 
+			style="width:384px; height:68px; background-color:rgba(255,240,240,1)">
 		</div>
 		<div id="Icon__bc">
 			<div id="METADATA_bd">
@@ -3753,7 +3755,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_bm">
-			<span>Username or email</span>
+			<input type = "text" id = "email_name" name = "email_name" placeholder = "Username or email" 
+			style="width:384px; height:68px; background-color:rgba(255,240,240,1)">
 		</div>
 		<div id="Icon__bn">
 			<div id="METADATA_bo">
@@ -3779,7 +3782,7 @@ window.application = new Application();
 		</div>
 	</div>
 	<div id="Create_an_account_TAGA">
-		<span>Create an account</span>
+		<a href = "__1920___3.html">Create an account</a>
 	</div>
 	<div id="New_user_TAGH6">
 		<span>New user?</span>
@@ -3822,5 +3825,6 @@ window.application = new Application();
 		</rect>
 	</svg>
 </div>
+</form>
 </body>
 </html>
