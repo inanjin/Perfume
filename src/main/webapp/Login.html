@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>웹 1920 – 2</title>
+<title>Login</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: 웹 1920 – 2;
-		--web-view-id: n_1920__2;
+		--web-view-name: Login;
+		--web-view-id: Login;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: n_1920__2;
+		--web-view-ids: Login;
 	}
 	* {
 		margin: 0;
@@ -21,25 +21,19 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#n_1920__2 {
+	#Login {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		overflow: hidden;
 		cursor: pointer;
-		--web-view-name: 웹 1920 – 2;
-		--web-view-id: n_1920__2;
+		--web-view-name: Login;
+		--web-view-id: Login;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	@keyframes fadein {
+	@keyframes  {
 	
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
 	
 	}
 	#Background_STYLESTYLE2 {
@@ -94,9 +88,9 @@
 		left: 461px;
 		top: 711px;
 		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-animation: fadein 1s ease-in-out;
 		--web-action-type: page;
-		--web-action-target: __1920___4.html;
+		--web-action-target: Main2.html;
 		cursor: pointer;
 	}
 	#METADATA_v {
@@ -114,7 +108,7 @@
 		font-size: 3px;
 	}
 	#Area_DISPLAY_ELEMENTSLabelSIZE {
-		fill: rgba(252,52,101,1);
+		fill: rgba(169,169,171,1);
 	}
 	.Area_DISPLAY_ELEMENTSLabelSIZE {
 		position: absolute;
@@ -125,11 +119,11 @@
 		top: 0px;
 	}
 	#Label {
-		left: 160px;
-		top: 19px;
+		left: 162px;
+		top: 20px;
 		position: absolute;
 		overflow: visible;
-		width: 55px;
+		width: 51px;
 		white-space: nowrap;
 		line-height: 24px;
 		margin-top: -4px;
@@ -204,7 +198,7 @@
 	}
 	#Checkbox_ {
 		position: absolute;
-		width: 197px;
+		width: 210px;
 		height: 45px;
 		left: 461px;
 		top: 632px;
@@ -259,7 +253,7 @@
 		top: 7px;
 		position: absolute;
 		overflow: visible;
-		width: 131px;
+		width: 144px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Noto Sans;
@@ -302,11 +296,11 @@
 		top: 0px;
 	}
 	#Value {
-		left: 10px;
-		top: 0px;
+		left: 23px;
+		top: 18px;
 		position: absolute;
 		overflow: visible;
-		width: 67px;
+		width: 76px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Noto Sans;
@@ -399,7 +393,7 @@
 		top: -37px;
 		position: absolute;
 		overflow: visible;
-		width: 36px;
+		width: 38px;
 		white-space: nowrap;
 		line-height: 19px;
 		margin-top: -3px;
@@ -445,11 +439,11 @@
 		top: 0px;
 	}
 	#Value_bm {
-		left: 10px;
-		top: 0px;
+		left: 23px;
+		top: 18px;
 		position: absolute;
 		overflow: visible;
-		width: 134px;
+		width: 150px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Noto Sans;
@@ -542,7 +536,7 @@
 		top: -37px;
 		position: absolute;
 		overflow: visible;
-		width: 36px;
+		width: 38px;
 		white-space: nowrap;
 		line-height: 19px;
 		margin-top: -3px;
@@ -556,10 +550,10 @@
 	}
 	#Create_an_account_TAGA {
 		left: 590px;
-		top: 365px;
+		top: 366px;
 		position: absolute;
 		overflow: visible;
-		width: 138px;
+		width: 132px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Lato;
@@ -571,10 +565,10 @@
 	}
 	#New_user_TAGH6 {
 		left: 461px;
-		top: 363px;
+		top: 364px;
 		position: absolute;
 		overflow: visible;
-		width: 87px;
+		width: 85px;
 		white-space: nowrap;
 		line-height: 26px;
 		margin-top: -4px;
@@ -588,10 +582,10 @@
 	}
 	#Title_TAGH4 {
 		left: 461px;
-		top: 278px;
+		top: 281px;
 		position: absolute;
 		overflow: visible;
-		width: 104px;
+		width: 106px;
 		white-space: nowrap;
 		line-height: 40px;
 		margin-top: -2.5px;
@@ -3652,9 +3646,8 @@ var Application = function() {
 window.application = new Application();
 </script>
 </head>
-<form action = "loginService" method = "post">
 <body>
-<div id="n_1920__2" onclick="application.goBack()">
+<div id="Login" onclick="application.goBack()">
 	<svg class="Background_STYLESTYLE2">
 		<rect id="Background_STYLESTYLE2" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
@@ -3677,7 +3670,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Label">
-			<input type = "submit" value = "Sign Up" style = "background-color:rgba(252,52,101,1)">
+			<span>Sign In</span>
 		</div>
 		<div id="Icon_">
 			<div id="METADATA_z">
@@ -3720,8 +3713,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value">
-			<input type = "password" id = "pw2" name = "pw2" placeholder = "Password" 
-			style="width:384px; height:68px; background-color:rgba(255,240,240,1)">
+			<span>Password</span>
 		</div>
 		<div id="Icon__bc">
 			<div id="METADATA_bd">
@@ -3755,8 +3747,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_bm">
-			<input type = "text" id = "email_name" name = "email_name" placeholder = "Username or email" 
-			style="width:384px; height:68px; background-color:rgba(255,240,240,1)">
+			<span>Username or email</span>
 		</div>
 		<div id="Icon__bn">
 			<div id="METADATA_bo">
@@ -3782,7 +3773,7 @@ window.application = new Application();
 		</div>
 	</div>
 	<div id="Create_an_account_TAGA">
-		<a href = "__1920___3.html">Create an account</a>
+		<span>Create an account</span>
 	</div>
 	<div id="New_user_TAGH6">
 		<span>New user?</span>
@@ -3825,6 +3816,5 @@ window.application = new Application();
 		</rect>
 	</svg>
 </div>
-</form>
 </body>
 </html>

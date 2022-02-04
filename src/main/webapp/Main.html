@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>웹 1920 – 4</title>
+<title>Main</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: 웹 1920 – 4;
-		--web-view-id: n_1920__4;
+		--web-view-name: Main;
+		--web-view-id: Main;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: n_1920__4;
+		--web-view-ids: Main;
 	}
 	* {
 		margin: 0;
@@ -21,16 +21,30 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#n_1920__4 {
+	#Main {
 		position: absolute;
 		width: 1920px;
-		height: 1080px;
+		height: 2160px;
 		overflow: hidden;
 		cursor: pointer;
-		--web-view-name: 웹 1920 – 4;
-		--web-view-id: n_1920__4;
+		--web-view-name: Main;
+		--web-view-id: Main;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	@keyframes  {
+	
+	
 	}
 	#img4 {
 		position: absolute;
@@ -40,21 +54,21 @@
 		top: 44px;
 		overflow: visible;
 	}
-	#n_2 {
+	#n_1 {
 		opacity: 0;
 		fill: rgba(148,109,109,1);
 	}
-	.n_2 {
+	.n_1 {
 		position: absolute;
 		overflow: visible;
 		width: 1001px;
 		height: 177px;
-		left: 482px;
-		top: 637px;
+		left: 460px;
+		top: 1354.94px;
 	}
 	#Typography {
-		left: 22px;
-		top: 689px;
+		left: 0px;
+		top: 669.957px;
 		position: absolute;
 		overflow: visible;
 		width: 1921px;
@@ -67,65 +81,57 @@
 		color: rgba(33,17,17,1);
 		letter-spacing: 0.1px;
 	}
-	#n_4 {
+	#METADATA {
+		display: none;
+		left: 413px;
+		top: 1947px;
 		position: absolute;
-		width: 263px;
-		height: 90px;
-		left: 1091px;
-		top: 871px;
-		overflow: visible;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
 	}
 	#Area {
-		fill: rgba(252,52,101,1);
+		fill: rgba(185,184,180,1);
 	}
 	.Area {
 		position: absolute;
 		overflow: visible;
 		width: 263px;
 		height: 90px;
-		left: 0px;
-		top: 0px;
+		left: 1069px;
+		top: 870px;
+		transition: all 0.699999988079071s ease-out;
+		--web-animation: fadein 0.699999988079071s ease-out;
+		--web-action-type: page;
+		--web-action-target: Join.html;
+		cursor: pointer;
+	}
+	#Area_v {
+		fill: rgba(169,169,171,1);
+	}
+	.Area_v {
+		position: absolute;
+		overflow: visible;
+		width: 263px;
+		height: 90px;
+		left: 583px;
+		top: 870px;
+		--web-animation: fadein 1s ease-in-out;
+		--web-action-type: page;
+		--web-action-target: Login.html;
+		cursor: pointer;
 	}
 	#Label {
-		left: 45px;
-		top: 18px;
+		left: 656px;
+		top: 888px;
 		position: absolute;
 		overflow: visible;
-		width: 175px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: IM_Hyemin;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 45px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 0.24px;
-	}
-	#n_5 {
-		position: absolute;
-		width: 263px;
-		height: 90px;
-		left: 605px;
-		top: 871px;
-		overflow: visible;
-	}
-	#Area_x {
-		fill: rgba(252,52,101,1);
-	}
-	.Area_x {
-		position: absolute;
-		overflow: visible;
-		width: 263px;
-		height: 90px;
-		left: 0px;
-		top: 0px;
-	}
-	#Label_y {
-		left: 28px;
-		top: 18px;
-		position: absolute;
-		overflow: visible;
-		width: 206px;
+		width: 119px;
 		height: 55px;
 		text-align: center;
 		font-family: IM_Hyemin;
@@ -135,15 +141,76 @@
 		color: rgba(255,255,255,1);
 		letter-spacing: 0.24px;
 	}
+	#Icon {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 521px;
+		top: 1961px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_y {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_z {
+		opacity: 0;
+		fill: rgba(255,255,255,1);
+	}
+	.Area_z {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_ {
+		position: absolute;
+		width: 17.42px;
+		height: 15.193px;
+		left: 1.291px;
+		top: 2.499px;
+		overflow: visible;
+	}
+	#Path {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.6666666269302368px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path {
+		overflow: visible;
+		position: absolute;
+		width: 19.086px;
+		height: 16.86px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
 	#Header {
 		position: absolute;
 		width: 1920px;
 		height: 120px;
 		left: 0px;
-		top: -3px;
+		top: 0px;
 		overflow: visible;
 	}
-	#METADATA {
+	#METADATA_ {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -168,7 +235,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Icon_ {
+	#Icon__ {
 		position: absolute;
 		width: 34px;
 		height: 24px;
@@ -176,7 +243,7 @@
 		top: 48px;
 		overflow: visible;
 	}
-	#METADATA_ {
+	#METADATA_ba {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -202,30 +269,13 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Icon {
+	#Icon_ba {
 		position: absolute;
 		width: 30.922px;
 		height: 21px;
 		left: 1.344px;
 		top: 1px;
 		overflow: visible;
-	}
-	#Path {
-		fill: rgba(0,0,0,0);
-		stroke: rgba(62,62,62,1);
-		stroke-width: 2px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Path {
-		position: absolute;
-		overflow: visible;
-		width: 5px;
-		height: 4px;
-		left: 9.656px;
-		top: 19px;
 	}
 	#Path_ {
 		fill: rgba(0,0,0,0);
@@ -239,9 +289,9 @@
 	.Path_ {
 		position: absolute;
 		overflow: visible;
-		width: 4px;
+		width: 5px;
 		height: 4px;
-		left: 25.656px;
+		left: 9.656px;
 		top: 19px;
 	}
 	#Path_ba {
@@ -254,6 +304,23 @@
 		shape-rendering: auto;
 	}
 	.Path_ba {
+		position: absolute;
+		overflow: visible;
+		width: 4px;
+		height: 4px;
+		left: 25.656px;
+		top: 19px;
+	}
+	#Path_bb {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(62,62,62,1);
+		stroke-width: 2px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_bb {
 		overflow: visible;
 		position: absolute;
 		width: 32.922px;
@@ -270,7 +337,7 @@
 		top: 42.432px;
 		overflow: visible;
 	}
-	#METADATA_ba {
+	#METADATA_bd {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -284,10 +351,10 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_bb {
+	#Area_be {
 		fill: rgba(252,52,101,1);
 	}
-	.Area_bb {
+	.Area_be {
 		position: absolute;
 		overflow: visible;
 		width: 22.489px;
@@ -312,11 +379,11 @@
 		color: rgba(255,255,255,1);
 	}
 	#Typography_TAGH6 {
-		left: 854px;
+		left: 855px;
 		top: 33px;
 		position: absolute;
 		overflow: visible;
-		width: 145px;
+		width: 143px;
 		white-space: nowrap;
 		line-height: 26px;
 		margin-top: -5.5px;
@@ -327,6 +394,77 @@
 		font-size: 15px;
 		color: rgba(61,61,61,1);
 		letter-spacing: -0.04px;
+	}
+	#KakaoTalk_20220203_111757927 {
+		position: absolute;
+		width: 1920px;
+		height: 1278px;
+		left: 0px;
+		top: 1093px;
+		overflow: visible;
+	}
+	#n_35 {
+		opacity: 0;
+		fill: rgba(205,218,234,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_35 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 337px;
+		left: 0px;
+		top: 1106px;
+	}
+	#Label_bj {
+		left: 1121px;
+		top: 888px;
+		position: absolute;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.24px;
+	}
+	#n_____ {
+		left: 338px;
+		top: 1187px;
+		position: absolute;
+		overflow: visible;
+		width: 1245px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(230,228,209,1);
+		letter-spacing: 0.24px;
+	}
+	#n_____________________________ {
+		left: 231px;
+		top: 1259px;
+		position: absolute;
+		overflow: visible;
+		width: 1395px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(224,221,238,1);
+		letter-spacing: 0.24px;
 	}
 </style>
 <script id="applicationScript">
@@ -3241,71 +3379,82 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="n_1920__4" onclick="application.goBack()">
+<div id="Main" onclick="application.goBack()">
 	<img id="img4" src="img4.png" srcset="img4.png 1x, img4@2x.png 2x">
 		
-	<svg class="n_2">
-		<rect id="n_2" rx="0" ry="0" x="0" y="0" width="1001" height="177">
+	<svg class="n_1">
+		<rect id="n_1" rx="0" ry="0" x="0" y="0" width="1001" height="177">
 		</rect>
 	</svg>
 	<div id="Typography">
 		<span>취 향 저 격</span>
 	</div>
-	<div id="n_4">
-		<svg class="Area">
-			<rect id="Area" rx="24" ry="24" x="0" y="0" width="263" height="90">
-			</rect>
-		</svg>
-		<div id="Label">
-			<span>My Page</span>
-		</div>
+	<div id="METADATA">
+		<span>{"config":{},"type":"Button","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T03:11:48.811Z"}</span>
 	</div>
-	<div id="n_5">
-		<svg class="Area_x">
-			<rect id="Area_x" rx="24" ry="24" x="0" y="0" width="263" height="90">
+	<svg class="Area">
+		<rect onclick="application.goToTargetView(event)" id="Area" rx="24" ry="24" x="0" y="0" width="263" height="90">
+		</rect>
+	</svg>
+	<svg class="Area_v">
+		<rect onclick="application.goToTargetView(event)" id="Area_v" rx="24" ry="24" x="0" y="0" width="263" height="90">
+		</rect>
+	</svg>
+	<div id="Label">
+		<span>Login</span>
+	</div>
+	<div id="Icon">
+		<div id="METADATA_y">
+			<span>{"config":{},"type":"Icon","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T03:11:48.804Z"}</span>
+		</div>
+		<svg class="Area_z">
+			<rect id="Area_z" rx="0" ry="0" x="0" y="0" width="20" height="20">
 			</rect>
 		</svg>
-		<div id="Label_y">
-			<span>Search</span>
+		<div id="Icon_">
+			<svg class="Path" viewBox="1.29 2.499 17.42 15.193">
+				<path id="Path" d="M 17.36700057983398 3.842000007629395 C 15.57699966430664 2.051000118255615 12.67300033569336 2.051000118255615 10.88300037384033 3.842000007629395 L 10 4.724999904632568 L 9.116999626159668 3.842000007629395 C 7.326000213623047 2.051000118255615 4.423999786376953 2.051000118255615 2.632999897003174 3.842000007629395 C 0.8429999947547913 5.631999969482422 0.8429999947547913 8.534999847412109 2.632999897003174 10.32499980926514 L 3.516999959945679 11.20800018310547 L 10 17.6919994354248 L 16.48299980163574 11.20800018310547 L 17.36700057983398 10.32499980926514 C 19.15800094604492 8.534999847412109 19.15800094604492 5.631999969482422 17.36700057983398 3.842000007629395 Z">
+				</path>
+			</svg>
 		</div>
 	</div>
 	<div id="Header">
-		<div id="METADATA">
+		<div id="METADATA_">
 			<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
 		</div>
 		<svg class="Background">
 			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920" height="120">
 			</rect>
 		</svg>
-		<div id="Icon_">
-			<div id="METADATA_">
+		<div id="Icon__">
+			<div id="METADATA_ba">
 				<span>{"config":{"SIZE":"LARGE","ICON":"feather/shopping-cart"},"type":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.757Z","nodeName":"Icon"}</span>
 			</div>
 			<svg class="Area_ICONfeathershopping-cartS">
 				<rect id="Area_ICONfeathershopping-cartS" rx="0" ry="0" x="0" y="0" width="34" height="24">
 				</rect>
 			</svg>
-			<div id="Icon">
-				<svg class="Path">
-					<ellipse id="Path" rx="1.5" ry="1" cx="1.5" cy="1">
-					</ellipse>
-				</svg>
+			<div id="Icon_ba">
 				<svg class="Path_">
-					<ellipse id="Path_" rx="1" ry="1" cx="1" cy="1">
+					<ellipse id="Path_" rx="1.5" ry="1" cx="1.5" cy="1">
 					</ellipse>
 				</svg>
-				<svg class="Path_ba" viewBox="1 1 30.922 15">
-					<path id="Path_ba" d="M 1 1 L 6.622254848480225 1 L 10.3891658782959 14.39000034332275 C 10.65481758117676 15.34000015258789 11.83830261230469 16.01899909973145 13.20029354095459 16 L 26.86237144470215 16 C 28.22436332702637 16.01899909973145 29.4078483581543 15.34000015258789 29.67350006103516 14.39000034332275 L 31.92240142822266 6 L 8.02781867980957 6">
+				<svg class="Path_ba">
+					<ellipse id="Path_ba" rx="1" ry="1" cx="1" cy="1">
+					</ellipse>
+				</svg>
+				<svg class="Path_bb" viewBox="1 1 30.922 15">
+					<path id="Path_bb" d="M 1 1 L 6.622254848480225 1 L 10.3891658782959 14.39000034332275 C 10.65481758117676 15.34000015258789 11.83830261230469 16.01899909973145 13.20029354095459 16 L 26.86237144470215 16 C 28.22436332702637 16.01899909973145 29.4078483581543 15.34000015258789 29.67350006103516 14.39000034332275 L 31.92240142822266 6 L 8.02781867980957 6">
 					</path>
 				</svg>
 			</div>
 		</div>
 		<div id="Badge">
-			<div id="METADATA_ba">
+			<div id="METADATA_bd">
 				<span>{"config":{},"type":"Badge","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.760Z","nodeName":"Badge"}</span>
 			</div>
-			<svg class="Area_bb">
-				<rect id="Area_bb" rx="8" ry="8" x="0" y="0" width="22.489" height="16">
+			<svg class="Area_be">
+				<rect id="Area_be" rx="8" ry="8" x="0" y="0" width="22.489" height="16">
 				</rect>
 			</svg>
 			<div id="label">
@@ -3315,6 +3464,21 @@ window.application = new Application();
 		<div id="Typography_TAGH6">
 			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
+	</div>
+	<img id="KakaoTalk_20220203_111757927" src="KakaoTalk_20220203_111757927.png" srcset="KakaoTalk_20220203_111757927.png 1x, KakaoTalk_20220203_111757927@2x.png 2x">
+		
+	<svg class="n_35">
+		<rect id="n_35" rx="0" ry="0" x="0" y="0" width="1920" height="337">
+		</rect>
+	</svg>
+	<div id="Label_bj">
+		<span>Join Us</span>
+	</div>
+	<div id="n_____">
+		<span>당신은 스스로에게 만족스러운 향수를 사용하고 계신가요?</span>
+	</div>
+	<div id="n_____________________________">
+		<span>전 서계 수많은 향수 중 당신과 맞는 향수를 찾는 것은 운명과도 같습니다.<br/>                  </span>
 	</div>
 </div>
 </body>
