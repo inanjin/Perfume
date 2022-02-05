@@ -32,6 +32,18 @@
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
+	#join{
+		width: 249;
+    	height: 69;
+		background-color:rgba(60,60,60,1);
+		text-align: center;
+   		font-family: Noto Sans;
+    	font-style: normal;
+    	font-weight: bold;
+    	font-size: 30px;
+    	color: rgba(252,252,252,1);
+		
+	}
 	@keyframes fadein {
 	
 		0% {
@@ -194,6 +206,11 @@
 		top: 346px;
 		overflow: visible;
 	}
+	.info {
+		border : 3px solid black;
+		font-size : 24px;
+		font-family: Noto Sans
+	}
 	#METADATA_ {
 		display: none;
 		left: 0px;
@@ -226,8 +243,9 @@
 		top: 0px;
 	}
 	#Value {
-		left: 16px;
-		top: 21px;
+		background-color:transparent;
+		left: 20;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 127px;
@@ -238,6 +256,19 @@
 		font-weight: bold;
 		font-size: 25px;
 		color: rgba(62,62,62,1);
+	}
+	input::placeholder {
+  		color: black;
+  		font-size : 25px;
+  		font-style: Noto_Sans;
+	}
+	#date {
+		position: absolute;
+		overflow: visible;
+		width: 144px;
+		height: 48px;
+		left: -16px;
+		top: -13px;
 	}
 	#Icon_bb {
 		position: absolute;
@@ -375,8 +406,8 @@
 		top: 0px;
 	}
 	#Value_bl {
-		left: 16px;
-		top: 21px;
+		left: 0px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 118px;
@@ -524,8 +555,8 @@
 		top: 0px;
 	}
 	#Value_bw {
-		left: 16px;
-		top: 21px;
+		left: 0px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 125px;
@@ -3615,7 +3646,7 @@
 		font-size: 16px;
 		color: rgba(61,61,61,1);
 	}
-	#M_ {
+	#Gender_rd {
 		left: 971px;
 		top: 705px;
 		position: absolute;
@@ -3629,7 +3660,7 @@
 		font-size: 25px;
 		color: rgba(62,62,62,1);
 	}
-	#W_ {
+	#Gender_rd2 {
 		left: 1073px;
 		top: 705px;
 		position: absolute;
@@ -6203,7 +6234,7 @@ var Application = function() {
 			}
 			// if target view is on bottom
 			// then show target view instantly 
-			// and fadeÂ out current view
+			// and fade out current view
 			else if (fromIndex>toIndex) {
 				self.setElementAnimation(to, null);
 				self.setElementAnimation(from, null);
@@ -6649,6 +6680,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
+<form action="joinService" method="post">
 <div id="Join">
 	<img id="n_3" src="n_3.png" srcset="n_3.png 1x, n_3@2x.png 2x">
 		
@@ -6694,7 +6726,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value">
-			<span>Username</span>
+			<input type = "text"  class = "info" name = "id" placeholder = "ID" style = "width: 403px; height: 84px; border-radius: 18px">
 		</div>
 		<div id="Icon_bb">
 			<div id="METADATA_bc">
@@ -6728,7 +6760,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_bl">
-			<span>Password</span>
+			<input type = "password" placeholder = "Password" name="pw"  class = "info" style = "width: 403px; height: 84px; border-radius: 18px">
 		</div>
 		<div id="Icon_bm">
 			<div id="METADATA_bn">
@@ -6762,7 +6794,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_bw">
-			<span>Nickname</span>
+			<input type = "text" placeholder = "Name" name = "name" class = "info" style = "width: 403px; height: 84px; border-radius: 18px">
 		</div>
 		<div id="Icon_bx">
 			<div id="METADATA_by">
@@ -6787,7 +6819,7 @@ window.application = new Application();
 			<span>Label</span>
 		</div>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Button">
+	<div id="Button">
 		<div id="METADATA_b">
 			<span>{"config":{},"type":"Button","theme":"Base","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:38:08.131Z"}</span>
 		</div>
@@ -6796,7 +6828,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Label_ca">
-			<span>Join</span>
+			<input type = "submit" value = "Join" id = "join" name = "join">
 		</div>
 		<div id="Icon_ca">
 			<div id="METADATA_ca">
@@ -7414,34 +7446,7 @@ window.application = new Application();
 				</rect>
 			</svg>
 			<div id="Label_hy">
-				<span>2020-01-01</span>
-			</div>
-			<div id="Icon_hz">
-				<div id="METADATA_h">
-					<span>{"config":{"ICON":"feather/calendar"},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.982Z"}</span>
-				</div>
-				<svg class="Area_h">
-					<rect id="Area_h" rx="0" ry="0" x="0" y="0" width="20" height="20">
-					</rect>
-				</svg>
-				<div id="Icon_h">
-					<svg class="Rect_h">
-						<rect id="Rect_h" rx="2" ry="2" x="0" y="0" width="15" height="15">
-						</rect>
-					</svg>
-					<svg class="Line_h" viewBox="0 0 1.6666666269302368 3.333">
-						<path id="Line_h" d="M 0 0 L 0 3.333333253860474">
-						</path>
-					</svg>
-					<svg class="Line_ia" viewBox="0 0 1.6666666269302368 3.333">
-						<path id="Line_ia" d="M 0 0 L 0 3.333333253860474">
-						</path>
-					</svg>
-					<svg class="Line_ib" viewBox="0 0 15 1.6666666269302368">
-						<path id="Line_ib" d="M 0 0 L 15 0">
-						</path>
-					</svg>
-				</div>
+				<input type = "date" id = "date" name = "birthdate" style = "width: 144px; height: 48px;">
 			</div>
 		</div>
 		<div id="Label_h">
@@ -7454,43 +7459,11 @@ window.application = new Application();
 	<div id="Gender">
 		<span>Gender</span>
 	</div>
-	<div id="Radio">
-		<div id="METADATA_ib">
-			<span>{"config":{},"type":"Radio","theme":"Base","nodeName":"Radio","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:53:52.781Z"}</span>
-		</div>
-		<svg class="Area_ic">
-			<rect id="Area_ic" rx="16" ry="16" x="0" y="0" width="32" height="32">
-			</rect>
-		</svg>
-		<svg class="Dot">
-			<rect id="Dot" rx="6" ry="6" x="0" y="0" width="12" height="12">
-			</rect>
-		</svg>
-		<div id="Label_ie">
-			<span>Label</span>
-		</div>
+	<div id="Gender_rd">
+		M : <input type = "radio" name = "gender" value = "M" style = "width:32px; height:32px;">
 	</div>
-	<div id="Radio_if">
-		<div id="METADATA_ig">
-			<span>{"config":{},"type":"Radio","theme":"Base","nodeName":"Radio","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:53:52.781Z"}</span>
-		</div>
-		<svg class="Area_ih">
-			<rect id="Area_ih" rx="16" ry="16" x="0" y="0" width="32" height="32">
-			</rect>
-		</svg>
-		<svg class="Dot_ii">
-			<rect id="Dot_ii" rx="6" ry="6" x="0" y="0" width="12" height="12">
-			</rect>
-		</svg>
-		<div id="Label_ij">
-			<span>Label</span>
-		</div>
-	</div>
-	<div id="M_">
-		<span>M :</span>
-	</div>
-	<div id="W_">
-		<span>W :</span>
+	<div id="Gender_rd2">
+		W : <input type = "radio" name = "gender" value = "W" style = "width:32px; height:32px;">
 	</div>
 	<div id="Circle_Button_im">
 		<div id="METADATA_in">
@@ -7517,5 +7490,6 @@ window.application = new Application();
 		</div>
 	</div>
 </div>
+</form>
 </body>
 </html>

@@ -22,7 +22,7 @@ System.out.println("[UpdateService]");
 		request.setCharacterEncoding("UTF-8");
 		// 수정할 데이터 받아오기
 		String m_pw = request.getParameter("pw");
-		String m_name = request.getParameter("tel");
+		String m_name = request.getParameter("name");
 		
 		System.out.println("pw : " + m_pw);
 		System.out.println("name : " + m_name);
@@ -33,7 +33,7 @@ System.out.println("[UpdateService]");
 		String m_id = info.getM_id();
 		
 		// info 변수에 수정 된 값들로 덮어쓰기
-		info = new MemberDTO(m_id, m_pw, m_name);
+		info = new MemberDTO(m_id, m_pw);
 	
 		MemberDAO dao = new MemberDAO();
 		int cnt = dao.update(info);

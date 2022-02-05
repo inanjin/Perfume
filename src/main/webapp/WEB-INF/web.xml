@@ -40,6 +40,12 @@
   	<description></description>
   	<servlet-class>Controller.RecommendService</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>IdCheckService</servlet-name>
+  	<display-name>IdCheckService</display-name>
+  	<description></description>
+  	<servlet-class>Controller.IdCheckService</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>test</servlet-name>
   	<url-pattern>/test</url-pattern>
@@ -63,5 +69,9 @@
   <servlet-mapping>
   	<servlet-name>RecommendService</servlet-name>
   	<url-pattern>/RecommendService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IdCheckService</servlet-name>
+  	<url-pattern>/IdCheckService</url-pattern>
   </servlet-mapping>
 </web-app>

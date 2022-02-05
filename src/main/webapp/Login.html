@@ -232,8 +232,8 @@
 		top: 0px;
 	}
 	#Value {
-		left: 16px;
-		top: 31px;
+		left: 0px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 82px;
@@ -244,6 +244,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(62,62,62,1);
+		background-color: transparent;
 	}
 	#Icon_bb {
 		position: absolute;
@@ -381,8 +382,8 @@
 		top: 0px;
 	}
 	#Value_bl {
-		left: 16px;
-		top: 31px;
+		left: 0px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 76px;
@@ -393,6 +394,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(62,62,62,1);
+		background-color: transparent;
 	}
 	#Icon_bm {
 		position: absolute;
@@ -822,6 +824,22 @@
 		height: 8.333px;
 		left: 3.334px;
 		top: 0px;
+	}
+   	input {
+   		color: black;
+        font-size : 25px;
+        font-style: Noto_Sans;
+   	}
+   	#Login_btn {
+      	width: 249;
+      	height: 69;
+      	background-color:rgba(60,60,60,1);
+      	text-align: center;
+        font-family: Noto Sans;
+	    font-style: normal;
+	    font-weight: bold;
+	    font-size: 30px;
+	    color: rgba(252,252,252,1);
 	}
 </style>
 <script id="applicationScript">
@@ -3736,6 +3754,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
+<form action="LoginService" method="post">
 <div id="Login">
 	<img id="n_2" src="n_2.png" srcset="n_2.png 1x, n_2@2x.png 2x">
 		
@@ -3781,7 +3800,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value">
-			<span>Username</span>
+			<input type = "text" name = "id" placeholder="ID" style = "width : 403px; height : 84px;">
 		</div>
 		<div id="Icon_bb">
 			<div id="METADATA_bc">
@@ -3815,7 +3834,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Value_bl">
-			<span>Password</span>
+			<input type = "text" name = "pw" placeholder="Password" style = "width : 403px; height : 84px; ">
 		</div>
 		<div id="Icon_bm">
 			<div id="METADATA_bn">
@@ -3840,7 +3859,7 @@ window.application = new Application();
 			<span>Label</span>
 		</div>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Button">
+	<div id="Button">
 		<div id="METADATA_bu">
 			<span>{"config":{},"type":"Button","theme":"Base","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:38:08.131Z"}</span>
 		</div>
@@ -3848,9 +3867,11 @@ window.application = new Application();
 			<rect id="Area_bv" rx="18" ry="18" x="0" y="0" width="249" height="69">
 			</rect>
 		</svg>
+		<form action = "LoginService">
 		<div id="Label_bw">
-			<span>Login</span>
+			<input type = "submit" id="Login_btn" value="Login">
 		</div>
+		</form>
 		<div id="Icon_bx">
 			<div id="METADATA_by">
 				<span>{"config":{},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:38:08.125Z"}</span>
@@ -3924,5 +3945,6 @@ window.application = new Application();
 		</div>
 	</div>
 </div>
+</form>
 </body>
 </html>

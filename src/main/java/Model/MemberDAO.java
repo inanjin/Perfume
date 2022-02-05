@@ -26,6 +26,7 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 	}
+
 	// DB문닫기
 	public void close() {
 		try {
@@ -42,45 +43,44 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 	}
+
 	// 회원가입
 	public int join(MemberDTO dto) {
 		try {
 			conn();
-			String sql = "insert into t_member values(?,?,?,?,?,?,?)";
+			String sql = "insert into t_member values(?, ?, ?, ?, ?, sysdate, 'N')";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getM_id());
 			psmt.setString(2, dto.getM_pw());
 			psmt.setString(3, dto.getM_name());
 			psmt.setString(4, dto.getM_birthDate());
 			psmt.setString(5, dto.getM_gender());
-			psmt.setString(6, dto.getM_joinDate());
-			psmt.setString(7, dto.getAdmin_yesno());
 
 			cnt = psmt.executeUpdate();
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close();
 		}
 		return cnt;
-}
-	
+	}
+
 	// 로그인 메서드
 	public MemberDTO login(MemberDTO dto) {
 		MemberDTO info = null;
 		try {
 			conn();
 			String sql = "select * from t_member where m_id=? and m_pw=?";
-			
+
 			psmt = conn.prepareStatement(sql);
-			
+
 			psmt.setString(1, dto.getM_id());
 			psmt.setString(2, dto.getM_pw());
-			
+
 			rs = psmt.executeQuery();
-			
-			if(rs.next()) {
+
+			if (rs.next()) {
 				String m_id = rs.getString(1);
 				String m_pw = rs.getString(2);
 				String m_name = rs.getString(3);
@@ -88,35 +88,62 @@ public class MemberDAO {
 				String m_gender = rs.getString(5);
 				String m_joinDate = rs.getString(6);
 				String m_admin_yesno = rs.getString(7);
-				
+
 				info = new MemberDTO(m_id, m_pw, m_name, m_birthDate, m_gender, m_joinDate, m_admin_yesno);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			close();
-		}return info;
+		}
+		return info;
 	}
 
+	// 중복확인
+	public int checkId(String id) {  // 유저가 입력한 값을 매개변수로 한다
+		conn();
+		String sql = "select * from t_member where m_id = ?"; // 입력값이 테이블에 있는지 확인
+		int idCheck = 0;
+	    try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, id);
+			
+			rs = psmt.executeQuery();
+					
+			if(rs.next() || id.equals("")) {
+				idCheck = 0;  // 이미 존재하는 경우, 생성 불가능
+			} else {
+				idCheck = 1;  // 존재하지 않는 경우, 생성 가능
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		
+		return idCheck;
+	}
+	
 	// 정보수정
 	public int update(MemberDTO info) {
 		try {
 			conn();
-			
-			String sql = "update t_member set m_pw=?, m_name=? where m_id=?";
+
+			String sql = "update t_member set m_pw=?, m_name where m_id=?";
 			psmt = conn.prepareStatement(sql);
-			
+
 			psmt.setString(1, info.getM_pw());
 			psmt.setString(2, info.getM_name());
 			psmt.setString(3, info.getM_id());
-			
+
 			cnt = psmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			close();
 		}
 		return cnt;
 	}
-	
+
 }
