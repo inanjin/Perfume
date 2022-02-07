@@ -1,19 +1,23 @@
+<%@page import="Model.PerfumeDAO"%>
+<%@page import="Model.PerfumeDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product_floral – 1</title>
+<title>Product_floral</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Product_floral – 1;
-		--web-view-id: Product_floral__1;
+		--web-view-name: Product_floral;
+		--web-view-id: Product_floral;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Product_floral__1;
+		--web-view-ids: Product_floral;
 	}
 	* {
 		margin: 0;
@@ -21,14 +25,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Product_floral__1 {
+	#Product_floral {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
-		background-color: rgba(251,251,251,1);
+		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Product_floral – 1;
-		--web-view-id: Product_floral__1;
+		--web-view-name: Product_floral;
+		--web-view-id: Product_floral;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -150,7 +154,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p25 {
+	#p7 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -158,7 +162,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p27 {
+	#p8 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -166,7 +170,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p28 {
+	#p10 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -174,7 +178,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p11 {
+	#p2 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -182,7 +186,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p13 {
+	#p4 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -190,7 +194,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p15 {
+	#p6 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -289,10 +293,6 @@
 		left: 1461px;
 		top: 962px;
 		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-out;
-		--web-action-type: page;
-		--web-action-target: Product_floral.html;
-		cursor: pointer;
 	}
 	#METADATA_bg {
 		display: none;
@@ -342,6 +342,10 @@
 		left: 1524px;
 		top: 962px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product_floral___1.jsp;
+		cursor: pointer;
 	}
 	#METADATA_bk {
 		display: none;
@@ -393,7 +397,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product_floral___2.html;
+		--web-action-target: Product_floral___2.jsp;
 		cursor: pointer;
 	}
 	#METADATA_bo {
@@ -446,7 +450,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product_floral___3.html;
+		--web-action-target: Product_floral___3.jsp;
 		cursor: pointer;
 	}
 	#METADATA_bs {
@@ -3403,7 +3407,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product_floral__1">
+<div id="Product_floral">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
@@ -3428,17 +3432,17 @@ window.application = new Application();
 	</div>
 	<img id="n_kdahnworld" src="n_kdahnworld.png" srcset="n_kdahnworld.png 1x, n_kdahnworld@2x.png 2x">
 		
-	<img id="p25" src="p25.png" srcset="p25.png 1x, p25@2x.png 2x">
+	<img id="p7" src="p7.png" srcset="p7.png 1x, p7@2x.png 2x">
 		
-	<img id="p27" src="p27.png" srcset="p27.png 1x, p27@2x.png 2x">
+	<img id="p8" src="p8.png" srcset="p8.png 1x, p8@2x.png 2x">
 		
-	<img id="p28" src="p28.png" srcset="p28.png 1x, p28@2x.png 2x">
+	<img id="p10" src="p10.png" srcset="p10.png 1x, p10@2x.png 2x">
 		
-	<img id="p11" src="p11.png" srcset="p11.png 1x, p11@2x.png 2x">
+	<img id="p2" src="p2.png" srcset="p2.png 1x, p2@2x.png 2x">
 		
-	<img id="p13" src="p13.png" srcset="p13.png 1x, p13@2x.png 2x">
+	<img id="p4" src="p4.png" srcset="p4.png 1x, p4@2x.png 2x">
 		
-	<img id="p15" src="p15.png" srcset="p15.png 1x, p15@2x.png 2x">
+	<img id="p6" src="p6.png" srcset="p6.png 1x, p6@2x.png 2x">
 		
 	<div id="Brand___Fragnance___">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
@@ -3458,7 +3462,7 @@ window.application = new Application();
 	<div id="Brand___Fragnance____be">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Badge">
+	<div id="Badge">
 		<div id="METADATA_bg">
 			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
 		</div>
@@ -3470,7 +3474,7 @@ window.application = new Application();
 			<span>1</span>
 		</div>
 	</div>
-	<div id="Badge_bj">
+	<div onclick="application.goToTargetView(event)" id="Badge_bj">
 		<div id="METADATA_bk">
 			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
 		</div>
@@ -3507,5 +3511,9 @@ window.application = new Application();
 		</div>
 	</div>
 </div>
+<%
+	PerfumeDAO dao = new PerfumeDAO();
+	
+%>
 </body>
 </html>

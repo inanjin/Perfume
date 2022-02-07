@@ -1,19 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product _woody – 1</title>
+<title>Product _citrus</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Product _woody – 1;
-		--web-view-id: Product__woody__1;
+		--web-view-name: Product _citrus;
+		--web-view-id: Product__citrus;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Product__woody__1;
+		--web-view-ids: Product__citrus;
 	}
 	* {
 		margin: 0;
@@ -21,26 +23,16 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Product__woody__1 {
+	#Product__citrus {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Product _woody – 1;
-		--web-view-id: Product__woody__1;
+		--web-view-name: Product _citrus;
+		--web-view-id: Product__citrus;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
-	}
-	@keyframes fadein {
-	
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	
 	}
 	#n_68 {
 		fill: rgba(248,248,248,1);
@@ -59,12 +51,12 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Woody {
-		left: 353px;
-		top: 637px;
+	#Citrus {
+		left: 368px;
+		top: 649px;
 		position: absolute;
 		overflow: visible;
-		width: 185px;
+		width: 153px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: IM_Hyemin;
@@ -74,12 +66,12 @@
 		color: rgba(40,32,70,1);
 		letter-spacing: 0.24px;
 	}
-	#n________________ {
-		left: 282px;
-		top: 744px;
+	#n___________________ {
+		left: 214px;
+		top: 742px;
 		position: absolute;
 		overflow: visible;
-		width: 414px;
+		width: 480px;
 		white-space: nowrap;
 		line-height: 45px;
 		margin-top: -10px;
@@ -141,29 +133,61 @@
 		color: rgba(61,61,61,1);
 		letter-spacing: -0.04px;
 	}
-	#n__13 {
-		opacity: 0.84;
+	#note4 {
+		opacity: 0.85;
 		position: absolute;
 		width: 428px;
-		height: 400px;
-		left: 232px;
-		top: 222px;
-		overflow: visible;
-	}
-	#p43 {
-		position: absolute;
-		width: 202px;
-		height: 206px;
-		left: 908px;
+		height: 402px;
+		left: 230px;
 		top: 224px;
 		overflow: visible;
 	}
-	#p47 {
+	#p9 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
-		left: 1194.479px;
+		left: 903px;
 		top: 224px;
+		overflow: visible;
+	}
+	#p12 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1192px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p19 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1481px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p37 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 903px;
+		top: 581px;
+		overflow: visible;
+	}
+	#p48 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1192px;
+		top: 581px;
+		overflow: visible;
+	}
+	#p51 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1481px;
+		top: 581px;
 		overflow: visible;
 	}
 	#Brand___Fragnance___ {
@@ -180,8 +204,36 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____ {
-		left: 1194.518px;
+	#Brand___Fragnance____ba {
+		left: 908px;
+		top: 816px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____bb {
+		left: 1197px;
+		top: 816px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____bc {
+		left: 1486px;
 		top: 459px;
 		position: absolute;
 		overflow: visible;
@@ -194,107 +246,33 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Badge {
-		position: absolute;
-		width: 24px;
-		height: 25px;
-		left: 1545px;
-		top: 900px;
-		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-out;
-		--web-action-type: page;
-		--web-action-target: Product__woody.html;
-		cursor: pointer;
-	}
-	#METADATA_ {
-		display: none;
-		left: 0px;
-		top: -4px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area {
-		fill: rgba(213,201,201,1);
-	}
-	.Area {
+	#Brand___Fragnance____bd {
+		left: 1197px;
+		top: 459px;
 		position: absolute;
 		overflow: visible;
-		width: 24px;
-		height: 25px;
-		left: 0px;
-		top: 0px;
-	}
-	#label {
-		left: 8px;
-		top: 4px;
-		position: absolute;
-		overflow: visible;
-		width: 9px;
-		white-space: nowrap;
-		line-height: 14px;
-		margin-top: -0.5px;
+		width: 194px;
+		height: 81px;
 		text-align: center;
-		font-family: Noto Sans;
+		font-family: Segoe UI;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 13px;
-		color: rgba(81,76,76,1);
+		font-size: 20px;
+		color: rgba(112,112,112,1);
 	}
-	#Badge_bb {
-		position: absolute;
-		width: 24px;
-		height: 25px;
-		left: 1608px;
-		top: 900px;
-		overflow: visible;
-	}
-	#METADATA_bc {
-		display: none;
-		left: 0px;
-		top: -4px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_bd {
-		fill: rgba(213,201,201,1);
-	}
-	.Area_bd {
+	#Brand___Fragnance____be {
+		left: 1486px;
+		top: 816px;
 		position: absolute;
 		overflow: visible;
-		width: 24px;
-		height: 25px;
-		left: 0px;
-		top: 0px;
-	}
-	#label_be {
-		left: 8px;
-		top: 4px;
-		position: absolute;
-		overflow: visible;
-		width: 9px;
-		white-space: nowrap;
-		line-height: 14px;
-		margin-top: -0.5px;
+		width: 194px;
+		height: 81px;
 		text-align: center;
-		font-family: Noto Sans;
+		font-family: Segoe UI;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 13px;
-		color: rgba(81,76,76,1);
+		font-size: 20px;
+		color: rgba(112,112,112,1);
 	}
 </style>
 <script id="applicationScript">
@@ -3209,16 +3187,16 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product__woody__1">
+<div id="Product__citrus">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
-	<div id="Woody">
-		<span>Woody</span>
+	<div id="Citrus">
+		<span>Citrus</span>
 	</div>
-	<div id="n________________">
-		<span>나무껍질, 목재 향기의 향조<br/>자연스럽고 건조한 느낌의 특징<br/>나무의 고상하고 안정된 느낌을 주고<br/>따뜻하고 분위기가 있는 향조</span>
+	<div id="n___________________">
+		<span>감귤 계열의 향  가볍고 휘발성이 높아<br/>지속시간이 짧지만  신선하고 상쾌한 느낌 <br/>누구에게나 폭넓게 어울려 인기가 있는 향</span>
 	</div>
 	<div id="METADATA">
 		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
@@ -3232,42 +3210,37 @@ window.application = new Application();
 			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
 	</div>
-	<img id="n__13" src="n__13.png" srcset="n__13.png 1x, n__13@2x.png 2x">
+	<img id="note4" src="note4.png" srcset="note4.png 1x, note4@2x.png 2x">
 		
-	</svg>
-	<img id="p43" src="p43.png" srcset="p43.png 1x, p43@2x.png 2x">
+	<img id="p9" src="p9.png" srcset="p9.png 1x, p9@2x.png 2x">
 		
-	<img id="p47" src="p47.png" srcset="p47.png 1x, p47@2x.png 2x">
+	<img id="p12" src="p12.png" srcset="p12.png 1x, p12@2x.png 2x">
+		
+	<img id="p19" src="p19.png" srcset="p19.png 1x, p19@2x.png 2x">
+		
+	<img id="p37" src="p37.png" srcset="p37.png 1x, p37@2x.png 2x">
+		
+	<img id="p48" src="p48.png" srcset="p48.png 1x, p48@2x.png 2x">
+		
+	<img id="p51" src="p51.png" srcset="p51.png 1x, p51@2x.png 2x">
 		
 	<div id="Brand___Fragnance___">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
 	</div>
-	<div id="Brand___Fragnance____">
+	<div id="Brand___Fragnance____ba">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Badge">
-		<div id="METADATA_">
-			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
-		</div>
-		<svg class="Area">
-			<rect id="Area" rx="12" ry="12" x="0" y="0" width="24" height="25">
-			</rect>
-		</svg>
-		<div id="label">
-			<span>1</span>
-		</div>
+	<div id="Brand___Fragnance____bb">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
 	</div>
-	<div id="Badge_bb">
-		<div id="METADATA_bc">
-			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
-		</div>
-		<svg class="Area_bd">
-			<rect id="Area_bd" rx="12" ry="12" x="0" y="0" width="24" height="25">
-			</rect>
-		</svg>
-		<div id="label_be">
-			<span>2</span>
-		</div>
+	<div id="Brand___Fragnance____bc">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____bd">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____be">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
 	</div>
 </div>
 </body>

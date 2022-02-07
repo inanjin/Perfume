@@ -1,19 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product_fruity</title>
+<title>Product _woody</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Product_fruity;
-		--web-view-id: Product_fruity;
+		--web-view-name: Product _woody;
+		--web-view-id: Product__woody;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Product_fruity;
+		--web-view-ids: Product__woody;
 	}
 	* {
 		margin: 0;
@@ -21,16 +23,26 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Product_fruity {
+	#Product__woody {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Product_fruity;
-		--web-view-id: Product_fruity;
+		--web-view-name: Product _woody;
+		--web-view-id: Product__woody;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
 	}
 	#n_68 {
 		fill: rgba(248,248,248,1);
@@ -49,12 +61,12 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Fruity {
-		left: 368px;
-		top: 650px;
+	#Woody {
+		left: 353px;
+		top: 637px;
 		position: absolute;
 		overflow: visible;
-		width: 153px;
+		width: 185px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: IM_Hyemin;
@@ -64,12 +76,12 @@
 		color: rgba(40,32,70,1);
 		letter-spacing: 0.24px;
 	}
-	#n_____________________ {
-		left: 150px;
-		top: 746px;
+	#n________________ {
+		left: 282px;
+		top: 744px;
 		position: absolute;
 		overflow: visible;
-		width: 590px;
+		width: 414px;
 		white-space: nowrap;
 		line-height: 45px;
 		margin-top: -10px;
@@ -131,16 +143,16 @@
 		color: rgba(61,61,61,1);
 		letter-spacing: -0.04px;
 	}
-	#n__12 {
-		opacity: 0.85;
+	#n__13 {
+		opacity: 0.84;
 		position: absolute;
 		width: 428px;
-		height: 401px;
-		left: 230px;
-		top: 223px;
+		height: 400px;
+		left: 232px;
+		top: 222px;
 		overflow: visible;
 	}
-	#p41 {
+	#p20 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -148,7 +160,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p45 {
+	#p30 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -156,7 +168,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p56jpg {
+	#p32 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -164,7 +176,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p5 {
+	#p1 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -172,7 +184,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p14 {
+	#p3 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -180,7 +192,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p24 {
+	#p16 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -271,6 +283,108 @@
 		font-weight: bold;
 		font-size: 20px;
 		color: rgba(112,112,112,1);
+	}
+	#Badge {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1587px;
+		top: 962px;
+		overflow: visible;
+	}
+	#METADATA_bg {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area {
+		fill: rgba(213,201,201,1);
+	}
+	.Area {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
+	}
+	#Badge_bj {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1650px;
+		top: 962px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product__woody___1.jsp;
+		cursor: pointer;
+	}
+	#METADATA_bk {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_bl {
+		fill: rgba(213,201,201,1);
+	}
+	.Area_bl {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label_bm {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
 	}
 </style>
 <script id="applicationScript">
@@ -3185,16 +3299,16 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product_fruity">
+<div id="Product__woody">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
-	<div id="Fruity">
-		<span>Fruity</span>
+	<div id="Woody">
+		<span>Woody</span>
 	</div>
-	<div id="n_____________________">
-		<span>귀엽고 친근한 느낌  달콤하고 상큼한 향이 특징 <br/>향수의 향을 부담스러워하는 사람이나 <br/>향수를 처음 써보는 사람들이 주로 찾는 대중적인 향</span>
+	<div id="n________________">
+		<span>나무껍질, 목재 향기의 향조<br/>자연스럽고 건조한 느낌의 특징<br/>나무의 고상하고 안정된 느낌을 주고<br/>따뜻하고 분위기가 있는 향조</span>
 	</div>
 	<div id="METADATA">
 		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
@@ -3208,20 +3322,20 @@ window.application = new Application();
 			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
 	</div>
-	<img id="n__12" src="n__12.png" srcset="n__12.png 1x, n__12@2x.png 2x">
+	<img id="n__13" src="n__13.png" srcset="n__13.png 1x, n__13@2x.png 2x">
 		
 	</svg>
-	<img id="p41" src="p41.png" srcset="p41.png 1x, p41@2x.png 2x">
+	<img id="p20" src="p20.png" srcset="p20.png 1x, p20@2x.png 2x">
 		
-	<img id="p45" src="p45.png" srcset="p45.png 1x, p45@2x.png 2x">
+	<img id="p30" src="p30.png" srcset="p30.png 1x, p30@2x.png 2x">
 		
-	<img id="p56jpg" src="p56jpg.png" srcset="p56jpg.png 1x, p56jpg@2x.png 2x">
+	<img id="p32" src="p32.png" srcset="p32.png 1x, p32@2x.png 2x">
 		
-	<img id="p5" src="p5.png" srcset="p5.png 1x, p5@2x.png 2x">
+	<img id="p1" src="p1.png" srcset="p1.png 1x, p1@2x.png 2x">
 		
-	<img id="p14" src="p14.png" srcset="p14.png 1x, p14@2x.png 2x">
+	<img id="p3" src="p3.png" srcset="p3.png 1x, p3@2x.png 2x">
 		
-	<img id="p24" src="p24.png" srcset="p24.png 1x, p24@2x.png 2x">
+	<img id="p16" src="p16.png" srcset="p16.png 1x, p16@2x.png 2x">
 		
 	<div id="Brand___Fragnance___">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
@@ -3240,6 +3354,30 @@ window.application = new Application();
 	</div>
 	<div id="Brand___Fragnance____be">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Badge">
+		<div id="METADATA_bg">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area">
+			<rect id="Area" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label">
+			<span>1</span>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Badge_bj">
+		<div id="METADATA_bk">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area_bl">
+			<rect id="Area_bl" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label_bm">
+			<span>2</span>
+		</div>
 	</div>
 </div>
 </body>

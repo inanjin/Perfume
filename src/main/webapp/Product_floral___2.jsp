@@ -1,19 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product _spicy</title>
+<title>Product_floral – 2</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Product _spicy;
-		--web-view-id: Product__spicy;
+		--web-view-name: Product_floral – 2;
+		--web-view-id: Product_floral__2;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Product__spicy;
+		--web-view-ids: Product_floral__2;
 	}
 	* {
 		margin: 0;
@@ -21,16 +23,26 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Product__spicy {
+	#Product_floral__2 {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Product _spicy;
-		--web-view-id: Product__spicy;
+		--web-view-name: Product_floral – 2;
+		--web-view-id: Product_floral__2;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
 	}
 	#n_68 {
 		fill: rgba(248,248,248,1);
@@ -49,12 +61,12 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Spicy {
-		left: 376px;
-		top: 637px;
+	#floral {
+		left: 374px;
+		top: 619px;
 		position: absolute;
 		overflow: visible;
-		width: 137px;
+		width: 141px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: IM_Hyemin;
@@ -64,12 +76,12 @@
 		color: rgba(40,32,70,1);
 		letter-spacing: 0.24px;
 	}
-	#n_______________________ {
-		left: 230px;
-		top: 724px;
+	#n___________________________ {
+		left: 255px;
+		top: 694px;
 		position: absolute;
 		overflow: visible;
-		width: 498px;
+		width: 440px;
 		white-space: nowrap;
 		line-height: 45px;
 		margin-top: -10px;
@@ -131,16 +143,16 @@
 		color: rgba(61,61,61,1);
 		letter-spacing: -0.04px;
 	}
-	#note5 {
-		opacity: 0.85;
+	#n_kdahnworld {
+		opacity: 0.86;
 		position: absolute;
 		width: 428px;
-		height: 400px;
+		height: 401px;
 		left: 230px;
-		top: 225px;
+		top: 224px;
 		overflow: visible;
 	}
-	#p23 {
+	#p36 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -148,7 +160,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p34 {
+	#p38 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -156,7 +168,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p39 {
+	#p40 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -164,7 +176,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p17 {
+	#p31 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -172,7 +184,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p18 {
+	#p33 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -180,7 +192,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p22 {
+	#p35 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -271,6 +283,214 @@
 		font-weight: bold;
 		font-size: 20px;
 		color: rgba(112,112,112,1);
+	}
+	#Badge {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1461px;
+		top: 962px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product_floral.jsp;
+		cursor: pointer;
+	}
+	#METADATA_bg {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area {
+		fill: rgba(213,201,201,1);
+	}
+	.Area {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
+	}
+	#Badge_bj {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1524px;
+		top: 962px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product_floral___1.jsp;
+		cursor: pointer;
+	}
+	#METADATA_bk {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_bl {
+		fill: rgba(213,201,201,1);
+	}
+	.Area_bl {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label_bm {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
+	}
+	#Badge_bn {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1587px;
+		top: 962px;
+		overflow: visible;
+	}
+	#METADATA_bo {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_bp {
+		fill: rgba(213,201,201,1);
+	}
+	.Area_bp {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label_bq {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
+	}
+	#Badge_br {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1650px;
+		top: 962px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product_floral___3.jsp;
+		cursor: pointer;
+	}
+	#METADATA_bs {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_bt {
+		fill: rgba(213,201,201,1);
+	}
+	.Area_bt {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label_bu {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
 	}
 </style>
 <script id="applicationScript">
@@ -3185,16 +3405,16 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product__spicy">
+<div id="Product_floral__2">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
-	<div id="Spicy">
-		<span>Spicy</span>
+	<div id="floral">
+		<span>floral</span>
 	</div>
-	<div id="n_______________________">
-		<span>계피, 후추, 생강 등의 향신료의 향기<br/>중후한 매력이 있는 향<br/>관능적이며 유혹적인 느낌이 강한 것이 특징<br/>강한 인상을 남기고 싶을 때 쓰기 좋은 향</span>
+	<div id="n___________________________">
+		<span>하나의 꽃 향기를 표현한 향으로 <br/>각 꽃의 이미지를 살려서 만든 향기.<br/>단순한 느낌이 있지만, 여성스럽고 <br/>부드러운 분위기로 대부분의 여성들이 <br/>부담 없이 사용할 수 있는 향.</span>
 	</div>
 	<div id="METADATA">
 		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
@@ -3208,19 +3428,19 @@ window.application = new Application();
 			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
 	</div>
-	<img id="note5" src="note5.png" srcset="note5.png 1x, note5@2x.png 2x">
+	<img id="n_kdahnworld" src="n_kdahnworld.png" srcset="n_kdahnworld.png 1x, n_kdahnworld@2x.png 2x">
 		
-	<img id="p23" src="p23.png" srcset="p23.png 1x, p23@2x.png 2x">
+	<img id="p36" src="p36.png" srcset="p36.png 1x, p36@2x.png 2x">
 		
-	<img id="p34" src="p34.png" srcset="p34.png 1x, p34@2x.png 2x">
+	<img id="p38" src="p38.png" srcset="p38.png 1x, p38@2x.png 2x">
 		
-	<img id="p39" src="p39.png" srcset="p39.png 1x, p39@2x.png 2x">
+	<img id="p40" src="p40.png" srcset="p40.png 1x, p40@2x.png 2x">
 		
-	<img id="p17" src="p17.png" srcset="p17.png 1x, p17@2x.png 2x">
+	<img id="p31" src="p31.png" srcset="p31.png 1x, p31@2x.png 2x">
 		
-	<img id="p18" src="p18.png" srcset="p18.png 1x, p18@2x.png 2x">
+	<img id="p33" src="p33.png" srcset="p33.png 1x, p33@2x.png 2x">
 		
-	<img id="p22" src="p22.png" srcset="p22.png 1x, p22@2x.png 2x">
+	<img id="p35" src="p35.png" srcset="p35.png 1x, p35@2x.png 2x">
 		
 	<div id="Brand___Fragnance___">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
@@ -3239,6 +3459,54 @@ window.application = new Application();
 	</div>
 	<div id="Brand___Fragnance____be">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Badge">
+		<div id="METADATA_bg">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area">
+			<rect id="Area" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label">
+			<span>1</span>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Badge_bj">
+		<div id="METADATA_bk">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area_bl">
+			<rect id="Area_bl" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label_bm">
+			<span>2</span>
+		</div>
+	</div>
+	<div id="Badge_bn">
+		<div id="METADATA_bo">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area_bp">
+			<rect id="Area_bp" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label_bq">
+			<span>3</span>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Badge_br">
+		<div id="METADATA_bs">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area_bt">
+			<rect id="Area_bt" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label_bu">
+			<span>4</span>
+		</div>
 	</div>
 </div>
 </body>

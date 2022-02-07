@@ -1,19 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product _citrus</title>
+<title>Product_fruity</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Product _citrus;
-		--web-view-id: Product__citrus;
+		--web-view-name: Product_fruity;
+		--web-view-id: Product_fruity;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Product__citrus;
+		--web-view-ids: Product_fruity;
 	}
 	* {
 		margin: 0;
@@ -21,14 +23,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Product__citrus {
+	#Product_fruity {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Product _citrus;
-		--web-view-id: Product__citrus;
+		--web-view-name: Product_fruity;
+		--web-view-id: Product_fruity;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -49,9 +51,9 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Citrus {
+	#Fruity {
 		left: 368px;
-		top: 649px;
+		top: 650px;
 		position: absolute;
 		overflow: visible;
 		width: 153px;
@@ -64,12 +66,12 @@
 		color: rgba(40,32,70,1);
 		letter-spacing: 0.24px;
 	}
-	#n___________________ {
-		left: 214px;
-		top: 742px;
+	#n_____________________ {
+		left: 150px;
+		top: 746px;
 		position: absolute;
 		overflow: visible;
-		width: 480px;
+		width: 590px;
 		white-space: nowrap;
 		line-height: 45px;
 		margin-top: -10px;
@@ -131,40 +133,16 @@
 		color: rgba(61,61,61,1);
 		letter-spacing: -0.04px;
 	}
-	#note4 {
+	#n__12 {
 		opacity: 0.85;
 		position: absolute;
 		width: 428px;
-		height: 402px;
+		height: 401px;
 		left: 230px;
-		top: 224px;
+		top: 223px;
 		overflow: visible;
 	}
-	#p9 {
-		position: absolute;
-		width: 202px;
-		height: 206px;
-		left: 903px;
-		top: 224px;
-		overflow: visible;
-	}
-	#p12 {
-		position: absolute;
-		width: 202px;
-		height: 206px;
-		left: 1192px;
-		top: 224px;
-		overflow: visible;
-	}
-	#p19 {
-		position: absolute;
-		width: 202px;
-		height: 206px;
-		left: 1481px;
-		top: 224px;
-		overflow: visible;
-	}
-	#p37 {
+	#p41 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -172,20 +150,44 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p48 {
+	#p45 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
-		left: 1192px;
+		left: 1189.521px;
 		top: 581px;
 		overflow: visible;
 	}
-	#p51 {
+	#p56jpg {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1476px;
+		top: 581px;
+		overflow: visible;
+	}
+	#p5 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 908px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p14 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1194.479px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p24 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
 		left: 1481px;
-		top: 581px;
+		top: 224px;
 		overflow: visible;
 	}
 	#Brand___Fragnance___ {
@@ -217,7 +219,7 @@
 		color: rgba(112,112,112,1);
 	}
 	#Brand___Fragnance____bb {
-		left: 1197px;
+		left: 1194.518px;
 		top: 816px;
 		position: absolute;
 		overflow: visible;
@@ -231,7 +233,7 @@
 		color: rgba(112,112,112,1);
 	}
 	#Brand___Fragnance____bc {
-		left: 1486px;
+		left: 1481px;
 		top: 459px;
 		position: absolute;
 		overflow: visible;
@@ -245,7 +247,7 @@
 		color: rgba(112,112,112,1);
 	}
 	#Brand___Fragnance____bd {
-		left: 1197px;
+		left: 1194.518px;
 		top: 459px;
 		position: absolute;
 		overflow: visible;
@@ -259,7 +261,7 @@
 		color: rgba(112,112,112,1);
 	}
 	#Brand___Fragnance____be {
-		left: 1486px;
+		left: 1481px;
 		top: 816px;
 		position: absolute;
 		overflow: visible;
@@ -3185,16 +3187,16 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product__citrus">
+<div id="Product_fruity">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
-	<div id="Citrus">
-		<span>Citrus</span>
+	<div id="Fruity">
+		<span>Fruity</span>
 	</div>
-	<div id="n___________________">
-		<span>감귤 계열의 향  가볍고 휘발성이 높아<br/>지속시간이 짧지만  신선하고 상쾌한 느낌 <br/>누구에게나 폭넓게 어울려 인기가 있는 향</span>
+	<div id="n_____________________">
+		<span>귀엽고 친근한 느낌  달콤하고 상큼한 향이 특징 <br/>향수의 향을 부담스러워하는 사람이나 <br/>향수를 처음 써보는 사람들이 주로 찾는 대중적인 향</span>
 	</div>
 	<div id="METADATA">
 		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
@@ -3208,19 +3210,20 @@ window.application = new Application();
 			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
 	</div>
-	<img id="note4" src="note4.png" srcset="note4.png 1x, note4@2x.png 2x">
+	<img id="n__12" src="n__12.png" srcset="n__12.png 1x, n__12@2x.png 2x">
 		
-	<img id="p9" src="p9.png" srcset="p9.png 1x, p9@2x.png 2x">
+	</svg>
+	<img id="p41" src="p41.png" srcset="p41.png 1x, p41@2x.png 2x">
 		
-	<img id="p12" src="p12.png" srcset="p12.png 1x, p12@2x.png 2x">
+	<img id="p45" src="p45.png" srcset="p45.png 1x, p45@2x.png 2x">
 		
-	<img id="p19" src="p19.png" srcset="p19.png 1x, p19@2x.png 2x">
+	<img id="p56jpg" src="p56jpg.png" srcset="p56jpg.png 1x, p56jpg@2x.png 2x">
 		
-	<img id="p37" src="p37.png" srcset="p37.png 1x, p37@2x.png 2x">
+	<img id="p5" src="p5.png" srcset="p5.png 1x, p5@2x.png 2x">
 		
-	<img id="p48" src="p48.png" srcset="p48.png 1x, p48@2x.png 2x">
+	<img id="p14" src="p14.png" srcset="p14.png 1x, p14@2x.png 2x">
 		
-	<img id="p51" src="p51.png" srcset="p51.png 1x, p51@2x.png 2x">
+	<img id="p24" src="p24.png" srcset="p24.png 1x, p24@2x.png 2x">
 		
 	<div id="Brand___Fragnance___">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>

@@ -1,19 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product_floral – 3</title>
+<title>Product_floral – 1</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Product_floral – 3;
-		--web-view-id: Product_floral__3;
+		--web-view-name: Product_floral – 1;
+		--web-view-id: Product_floral__1;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Product_floral__3;
+		--web-view-ids: Product_floral__1;
 	}
 	* {
 		margin: 0;
@@ -21,14 +23,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Product_floral__3 {
+	#Product_floral__1 {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
-		background-color: rgba(255,255,255,1);
+		background-color: rgba(251,251,251,1);
 		overflow: hidden;
-		--web-view-name: Product_floral – 3;
-		--web-view-id: Product_floral__3;
+		--web-view-name: Product_floral – 1;
+		--web-view-id: Product_floral__1;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -150,7 +152,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p50 {
+	#p25 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -158,7 +160,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p52 {
+	#p27 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -166,7 +168,15 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p42 {
+	#p28 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1476px;
+		top: 581px;
+		overflow: visible;
+	}
+	#p11 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -174,7 +184,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p44 {
+	#p13 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -182,7 +192,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p49 {
+	#p15 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -204,7 +214,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____ {
+	#Brand___Fragnance____ba {
 		left: 908px;
 		top: 816px;
 		position: absolute;
@@ -218,7 +228,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____ba {
+	#Brand___Fragnance____bb {
 		left: 1194.518px;
 		top: 816px;
 		position: absolute;
@@ -232,7 +242,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bb {
+	#Brand___Fragnance____bc {
 		left: 1481px;
 		top: 459px;
 		position: absolute;
@@ -246,9 +256,23 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bc {
+	#Brand___Fragnance____bd {
 		left: 1194.518px;
 		top: 459px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____be {
+		left: 1481px;
+		top: 816px;
 		position: absolute;
 		overflow: visible;
 		width: 194px;
@@ -269,10 +293,10 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product_floral.html;
+		--web-action-target: Product_floral.jsp;
 		cursor: pointer;
 	}
-	#METADATA_be {
+	#METADATA_bg {
 		display: none;
 		left: 0px;
 		top: -4px;
@@ -313,19 +337,15 @@
 		font-size: 13px;
 		color: rgba(81,76,76,1);
 	}
-	#Badge_bh {
+	#Badge_bj {
 		position: absolute;
 		width: 24px;
 		height: 25px;
 		left: 1524px;
 		top: 962px;
 		overflow: visible;
-		--web-animation: fadein 0.30000001192092896s ease-out;
-		--web-action-type: page;
-		--web-action-target: Product_floral___1.html;
-		cursor: pointer;
 	}
-	#METADATA_bi {
+	#METADATA_bk {
 		display: none;
 		left: 0px;
 		top: -4px;
@@ -339,10 +359,10 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_bj {
+	#Area_bl {
 		fill: rgba(213,201,201,1);
 	}
-	.Area_bj {
+	.Area_bl {
 		position: absolute;
 		overflow: visible;
 		width: 24px;
@@ -350,7 +370,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#label_bk {
+	#label_bm {
 		left: 8px;
 		top: 4px;
 		position: absolute;
@@ -366,7 +386,7 @@
 		font-size: 13px;
 		color: rgba(81,76,76,1);
 	}
-	#Badge_bl {
+	#Badge_bn {
 		position: absolute;
 		width: 24px;
 		height: 25px;
@@ -375,10 +395,10 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product_floral___2.html;
+		--web-action-target: Product_floral___2.jsp;
 		cursor: pointer;
 	}
-	#METADATA_bm {
+	#METADATA_bo {
 		display: none;
 		left: 0px;
 		top: -4px;
@@ -392,10 +412,10 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_bn {
+	#Area_bp {
 		fill: rgba(213,201,201,1);
 	}
-	.Area_bn {
+	.Area_bp {
 		position: absolute;
 		overflow: visible;
 		width: 24px;
@@ -403,7 +423,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#label_bo {
+	#label_bq {
 		left: 8px;
 		top: 4px;
 		position: absolute;
@@ -419,15 +439,19 @@
 		font-size: 13px;
 		color: rgba(81,76,76,1);
 	}
-	#Badge_bp {
+	#Badge_br {
 		position: absolute;
 		width: 24px;
 		height: 25px;
 		left: 1650px;
 		top: 962px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product_floral___3.jsp;
+		cursor: pointer;
 	}
-	#METADATA_bq {
+	#METADATA_bs {
 		display: none;
 		left: 0px;
 		top: -4px;
@@ -441,10 +465,10 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_br {
+	#Area_bt {
 		fill: rgba(213,201,201,1);
 	}
-	.Area_br {
+	.Area_bt {
 		position: absolute;
 		overflow: visible;
 		width: 24px;
@@ -452,7 +476,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#label_bs {
+	#label_bu {
 		left: 8px;
 		top: 4px;
 		position: absolute;
@@ -3381,7 +3405,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product_floral__3">
+<div id="Product_floral__1">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
@@ -3406,20 +3430,19 @@ window.application = new Application();
 	</div>
 	<img id="n_kdahnworld" src="n_kdahnworld.png" srcset="n_kdahnworld.png 1x, n_kdahnworld@2x.png 2x">
 		
-	<img id="p50" src="p50.png" srcset="p50.png 1x, p50@2x.png 2x">
+	<img id="p25" src="p25.png" srcset="p25.png 1x, p25@2x.png 2x">
 		
-	<img id="p52" src="p52.png" srcset="p52.png 1x, p52@2x.png 2x">
+	<img id="p27" src="p27.png" srcset="p27.png 1x, p27@2x.png 2x">
 		
-	<img id="p42" src="p42.png" srcset="p42.png 1x, p42@2x.png 2x">
+	<img id="p28" src="p28.png" srcset="p28.png 1x, p28@2x.png 2x">
 		
-	<img id="p44" src="p44.png" srcset="p44.png 1x, p44@2x.png 2x">
+	<img id="p11" src="p11.png" srcset="p11.png 1x, p11@2x.png 2x">
 		
-	<img id="p49" src="p49.png" srcset="p49.png 1x, p49@2x.png 2x">
+	<img id="p13" src="p13.png" srcset="p13.png 1x, p13@2x.png 2x">
+		
+	<img id="p15" src="p15.png" srcset="p15.png 1x, p15@2x.png 2x">
 		
 	<div id="Brand___Fragnance___">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
 	</div>
 	<div id="Brand___Fragnance____ba">
@@ -3431,8 +3454,14 @@ window.application = new Application();
 	<div id="Brand___Fragnance____bc">
 		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
 	</div>
+	<div id="Brand___Fragnance____bd">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____be">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
 	<div onclick="application.goToTargetView(event)" id="Badge">
-		<div id="METADATA_be">
+		<div id="METADATA_bg">
 			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
 		</div>
 		<svg class="Area">
@@ -3443,39 +3472,39 @@ window.application = new Application();
 			<span>1</span>
 		</div>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Badge_bh">
-		<div id="METADATA_bi">
+	<div id="Badge_bj">
+		<div id="METADATA_bk">
 			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
 		</div>
-		<svg class="Area_bj">
-			<rect id="Area_bj" rx="12" ry="12" x="0" y="0" width="24" height="25">
+		<svg class="Area_bl">
+			<rect id="Area_bl" rx="12" ry="12" x="0" y="0" width="24" height="25">
 			</rect>
 		</svg>
-		<div id="label_bk">
+		<div id="label_bm">
 			<span>2</span>
 		</div>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="Badge_bl">
-		<div id="METADATA_bm">
+	<div onclick="application.goToTargetView(event)" id="Badge_bn">
+		<div id="METADATA_bo">
 			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
 		</div>
-		<svg class="Area_bn">
-			<rect id="Area_bn" rx="12" ry="12" x="0" y="0" width="24" height="25">
+		<svg class="Area_bp">
+			<rect id="Area_bp" rx="12" ry="12" x="0" y="0" width="24" height="25">
 			</rect>
 		</svg>
-		<div id="label_bo">
+		<div id="label_bq">
 			<span>3</span>
 		</div>
 	</div>
-	<div id="Badge_bp">
-		<div id="METADATA_bq">
+	<div onclick="application.goToTargetView(event)" id="Badge_br">
+		<div id="METADATA_bs">
 			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
 		</div>
-		<svg class="Area_br">
-			<rect id="Area_br" rx="12" ry="12" x="0" y="0" width="24" height="25">
+		<svg class="Area_bt">
+			<rect id="Area_bt" rx="12" ry="12" x="0" y="0" width="24" height="25">
 			</rect>
 		</svg>
-		<div id="label_bs">
+		<div id="label_bu">
 			<span>4</span>
 		</div>
 	</div>

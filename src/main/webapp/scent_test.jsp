@@ -3159,8 +3159,6 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<form action = "product_test.jsp" method ="post">
-
 <div id="Scent">
 	<svg class="n_66">
 		<rect id="n_66" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
@@ -3170,13 +3168,18 @@ window.application = new Application();
 		<rect id="n_60" rx="0" ry="0" x="0" y="0" width="1488" height="804">
 		</rect>
 	</svg>
+	
+	<form action = "Product__citrus.jsp" method ="post">
 	<button type="submit" id="n__8" value = "4" name = "choice"></button>
-		
+	</form>
 	</svg>
+	<form action = "Product__woody.jsp" method ="post">
 	<button type="submit" id="n__9" value = "1" name = "choice"></button>
+	</form>
 	</svg>
+	<form action = "Product___fresh.jsp" method ="post">
 	<button type="submit" id="n__7" value = "6" name = "choice"></button>
-		
+	</form>
 	</svg>
 	<div id="floral">
 		<span>floral</span>
@@ -3193,17 +3196,20 @@ window.application = new Application();
 	<div id="woody">
 		<span>woody</span>
 	</div>
+	<form action = "Product__spicy.jsp" method ="post">
 	<button type="submit" id="n__10" value = "5" name = "choice"></button>
-			
+	</form>	
 	</svg>
+	<form action = "Product_fruity.jsp" method ="post">
 	<button type="submit" id="n__11" value = "3" name = "choice"></button>
-	
+	</form>
 	</svg>
 	<div id="spicy">
 		<span>spicy</span>
 	</div>
+	<form action = "Product_floral.jsp" method ="post">
 	<button type="submit" id="n__6" value = "2" name = "choice"></button>
-	
+	</form>
 	</svg>
 	<div id="METADATA">
 		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>

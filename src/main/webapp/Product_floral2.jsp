@@ -1,19 +1,24 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="Model.PerfumeDAO"%>
+<%@page import="Model.PerfumeDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product _woody</title>
+<title>Product_floral</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Product _woody;
-		--web-view-id: Product__woody;
+		--web-view-name: Product_floral;
+		--web-view-id: Product_floral;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Product__woody;
+		--web-view-ids: Product_floral;
 	}
 	* {
 		margin: 0;
@@ -21,14 +26,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Product__woody {
+	#Product_floral {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Product _woody;
-		--web-view-id: Product__woody;
+		--web-view-name: Product_floral;
+		--web-view-id: Product_floral;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -59,12 +64,12 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Woody {
-		left: 353px;
-		top: 637px;
+	#floral {
+		left: 374px;
+		top: 619px;
 		position: absolute;
 		overflow: visible;
-		width: 185px;
+		width: 141px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: IM_Hyemin;
@@ -74,12 +79,12 @@
 		color: rgba(40,32,70,1);
 		letter-spacing: 0.24px;
 	}
-	#n________________ {
-		left: 282px;
-		top: 744px;
+	#n___________________________ {
+		left: 255px;
+		top: 694px;
 		position: absolute;
 		overflow: visible;
-		width: 414px;
+		width: 440px;
 		white-space: nowrap;
 		line-height: 45px;
 		margin-top: -10px;
@@ -141,16 +146,16 @@
 		color: rgba(61,61,61,1);
 		letter-spacing: -0.04px;
 	}
-	#n__13 {
-		opacity: 0.84;
+	#n_kdahnworld {
+		opacity: 0.86;
 		position: absolute;
 		width: 428px;
-		height: 400px;
-		left: 232px;
-		top: 222px;
+		height: 401px;
+		left: 230px;
+		top: 224px;
 		overflow: visible;
 	}
-	#p20 {
+	#p7 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -158,7 +163,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p30 {
+	#p8 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -166,7 +171,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p32 {
+	#p10 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -174,7 +179,7 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p1 {
+	#p2 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -182,7 +187,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p3 {
+	#p4 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -190,7 +195,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p16 {
+	#p6 {
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -198,7 +203,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#Brand___Fragnance___ {
+	#Brand___Fragnance___0 {
 		left: 908px;
 		top: 459px;
 		position: absolute;
@@ -212,7 +217,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____ba {
+	#Brand___Fragnance____1 {
 		left: 908px;
 		top: 816px;
 		position: absolute;
@@ -226,7 +231,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bb {
+	#Brand___Fragnance____2 {
 		left: 1194.518px;
 		top: 816px;
 		position: absolute;
@@ -240,7 +245,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bc {
+	#Brand___Fragnance____3 {
 		left: 1481px;
 		top: 459px;
 		position: absolute;
@@ -254,7 +259,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bd {
+	#Brand___Fragnance____4 {
 		left: 1194.518px;
 		top: 459px;
 		position: absolute;
@@ -268,7 +273,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____be {
+	#Brand___Fragnance____5 {
 		left: 1481px;
 		top: 816px;
 		position: absolute;
@@ -286,7 +291,7 @@
 		position: absolute;
 		width: 24px;
 		height: 25px;
-		left: 1587px;
+		left: 1461px;
 		top: 962px;
 		overflow: visible;
 	}
@@ -335,12 +340,12 @@
 		position: absolute;
 		width: 24px;
 		height: 25px;
-		left: 1650px;
+		left: 1524px;
 		top: 962px;
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product__woody___1.html;
+		--web-action-target: Product_floral___1.jsp;
 		cursor: pointer;
 	}
 	#METADATA_bk {
@@ -369,6 +374,112 @@
 		top: 0px;
 	}
 	#label_bm {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
+	}
+	#Badge_bn {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1587px;
+		top: 962px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product_floral___2.jsp;
+		cursor: pointer;
+	}
+	#METADATA_bo {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_bp {
+		fill: rgba(213,201,201,1);
+	}
+	.Area_bp {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label_bq {
+		left: 8px;
+		top: 4px;
+		position: absolute;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 14px;
+		margin-top: -0.5px;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(81,76,76,1);
+	}
+	#Badge_br {
+		position: absolute;
+		width: 24px;
+		height: 25px;
+		left: 1650px;
+		top: 962px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product_floral___3.jsp;
+		cursor: pointer;
+	}
+	#METADATA_bs {
+		display: none;
+		left: 0px;
+		top: -4px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_bt {
+		fill: rgba(213,201,201,1);
+	}
+	.Area_bt {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#label_bu {
 		left: 8px;
 		top: 4px;
 		position: absolute;
@@ -3297,16 +3408,21 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product__woody">
+<%
+	PerfumeDAO dao = new PerfumeDAO();
+	ArrayList<PerfumeDTO> list = new ArrayList<PerfumeDTO>();
+	list = dao.filter(2);
+%>
+<div id="Product_floral">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
-	<div id="Woody">
-		<span>Woody</span>
+	<div id="floral">
+		<span>floral</span>
 	</div>
-	<div id="n________________">
-		<span>나무껍질, 목재 향기의 향조<br/>자연스럽고 건조한 느낌의 특징<br/>나무의 고상하고 안정된 느낌을 주고<br/>따뜻하고 분위기가 있는 향조</span>
+	<div id="n___________________________">
+		<span>하나의 꽃 향기를 표현한 향으로 <br/>각 꽃의 이미지를 살려서 만든 향기.<br/>단순한 느낌이 있지만, 여성스럽고 <br/>부드러운 분위기로 대부분의 여성들이 <br/>부담 없이 사용할 수 있는 향.</span>
 	</div>
 	<div id="METADATA">
 		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
@@ -3320,39 +3436,24 @@ window.application = new Application();
 			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
 	</div>
-	<img id="n__13" src="n__13.png" srcset="n__13.png 1x, n__13@2x.png 2x">
+	<img id="n_kdahnworld" src="n_kdahnworld.png" srcset="n_kdahnworld.png 1x, n_kdahnworld@2x.png 2x">
 		
-	</svg>
-	<img id="p20" src="p20.png" srcset="p20.png 1x, p20@2x.png 2x">
+	<img id="p7" src="p7.png" srcset="p7.png 1x, p7@2x.png 2x">
 		
-	<img id="p30" src="p30.png" srcset="p30.png 1x, p30@2x.png 2x">
+	<img id="p8" src="p8.png" srcset="p8.png 1x, p8@2x.png 2x">
 		
-	<img id="p32" src="p32.png" srcset="p32.png 1x, p32@2x.png 2x">
+	<img id="p10" src="p10.png" srcset="p10.png 1x, p10@2x.png 2x">
 		
-	<img id="p1" src="p1.png" srcset="p1.png 1x, p1@2x.png 2x">
+	<img id="p2" src="p2.png" srcset="p2.png 1x, p2@2x.png 2x">
 		
-	<img id="p3" src="p3.png" srcset="p3.png 1x, p3@2x.png 2x">
+	<img id="p4" src="p4.png" srcset="p4.png 1x, p4@2x.png 2x">
 		
-	<img id="p16" src="p16.png" srcset="p16.png 1x, p16@2x.png 2x">
-		
-	<div id="Brand___Fragnance___">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	<img id="p6" src="p6.png" srcset="p6.png 1x, p6@2x.png 2x">
+		<%for(int i =0; i<6;i++){ %>
+	<div id="Brand___Fragnance___<%=i%>">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: <%=list.get(i).getFrag_brand() %></span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : <%=list.get(i).getFrag_name() %></span><br/>
 	</div>
-	<div id="Brand___Fragnance____ba">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____bb">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____bc">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____bd">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____be">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
+	<%} %>
 	<div id="Badge">
 		<div id="METADATA_bg">
 			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
@@ -3377,6 +3478,31 @@ window.application = new Application();
 			<span>2</span>
 		</div>
 	</div>
+	<div onclick="application.goToTargetView(event)" id="Badge_bn">
+		<div id="METADATA_bo">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area_bp">
+			<rect id="Area_bp" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label_bq">
+			<span>3</span>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Badge_br">
+		<div id="METADATA_bs">
+			<span>{"config":{},"type":"Badge","nodeName":"Badge","children":["3970c502-0e3e-4e58-9ab2-80fa1ad4a4ec","0df0a4f1-cad5-42dd-9a90-b004da2f88dc","ecaac86e-470d-441f-b7cc-0c4fe734786b"],"theme":"Base","__plugin":"Mockup","__version":"1.5.0","__lastUpdate":"2022-02-07T06:07:47.079Z"}</span>
+		</div>
+		<svg class="Area_bt">
+			<rect id="Area_bt" rx="12" ry="12" x="0" y="0" width="24" height="25">
+			</rect>
+		</svg>
+		<div id="label_bu">
+			<span>4</span>
+		</div>
+	</div>
 </div>
+
 </body>
 </html>
