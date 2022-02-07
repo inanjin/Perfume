@@ -6,17 +6,17 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join</title>
+<title>Login</title>
 <style id="applicationStylesheet" type="text/css">
 .mediaViewInfo { -
-	-web-view-name: Join; -
-	-web-view-id: Join; -
+	-web-view-name: Login; -
+	-web-view-id: Login; -
 	-web-scale-on-resize: true; -
 	-web-enable-deep-linking: true;
 }
 
 :root { -
-	-web-view-ids: Join;
+	-web-view-ids: Login;
 }
 
 * {
@@ -26,28 +26,16 @@
 	border: none;
 }
 
-#Join {
+#Login {
 	position: absolute;
 	width: 1920px;
 	height: 1080px;
 	background-color: rgba(251, 251, 251, 1);
 	overflow: hidden; -
-	-web-view-name: Join; -
-	-web-view-id: Join; -
+	-web-view-name: Login; -
+	-web-view-id: Login; -
 	-web-scale-on-resize: true; -
 	-web-enable-deep-linking: true;
-}
-
-#join {
-	width: 249;
-	height: 69;
-	background-color: rgba(60, 60, 60, 1);
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 30px;
-	color: rgba(252, 252, 252, 1);
 }
 
 @
@@ -58,32 +46,28 @@ keyframes fadein { 0% {
 100%
 {
 opacity
-
-
 :
-
  
-
 1;
 }
 }
-#n_3 {
+#n_2 {
 	opacity: 0.58;
 	position: absolute;
 	width: 1920px;
 	height: 1731px;
 	left: 0px;
-	top: -360px;
+	top: -319px;
 	overflow: visible;
 }
 
-#n_45 {
+#n_39 {
 	opacity: 0.81;
 	position: absolute;
 	width: 1190px;
 	height: 917px;
 	left: 365px;
-	top: 61px;
+	top: 65px;
 	overflow: visible;
 }
 
@@ -150,6 +134,12 @@ opacity
 
 #Area {
 	fill: rgba(114, 132, 158, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
 }
 
 .Area {
@@ -211,12 +201,12 @@ opacity
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-#Join_Us {
-	left: 853px;
-	top: 263px;
+#Sign_In {
+	left: 863px;
+	top: 267px;
 	position: absolute;
 	overflow: visible;
-	width: 215px;
+	width: 195px;
 	white-space: nowrap;
 	text-align: center;
 	font-family: tway_sky M;
@@ -232,14 +222,8 @@ opacity
 	width: 403px;
 	height: 84px;
 	left: 759px;
-	top: 346px;
+	top: 385px;
 	overflow: visible;
-}
-
-.info {
-	border: 3px solid black;
-	font-size: 24px;
-	font-family: Noto Sans
 }
 
 #METADATA_ {
@@ -277,34 +261,19 @@ opacity
 }
 
 #Value {
-	background-color: transparent;
-	left: 20;
+	left: 0px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 127px;
+	width: 82px;
 	white-space: nowrap;
 	text-align: left;
 	font-family: Noto Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 16px;
 	color: rgba(62, 62, 62, 1);
-}
-
-input::placeholder {
-	color: black;
-	font-size: 25px;
-	font-style: Noto_Sans;
-}
-
-#date {
-	position: absolute;
-	overflow: visible;
-	width: 144px;
-	height: 48px;
-	left: -16px;
-	top: -13px;
+	background-color: transparent;
 }
 
 #Icon_bb {
@@ -418,7 +387,7 @@ input::placeholder {
 	width: 403px;
 	height: 84px;
 	left: 759px;
-	top: 453px;
+	top: 527px;
 	overflow: visible;
 }
 
@@ -461,14 +430,15 @@ input::placeholder {
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 118px;
+	width: 76px;
 	white-space: nowrap;
 	text-align: left;
 	font-family: Noto Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 16px;
 	color: rgba(62, 62, 62, 1);
+	background-color: transparent;
 }
 
 #Icon_bm {
@@ -577,19 +547,24 @@ input::placeholder {
 	letter-spacing: 0.4px;
 }
 
-#Input_bt {
+#Button {
 	position: absolute;
-	width: 403px;
-	height: 84px;
-	left: 759px;
-	top: 560px;
+	width: 249px;
+	height: 69px;
+	left: 836px;
+	top: 704px;
 	overflow: visible;
+	transition: all 0.699999988079071s ease-out; -
+	-web-animation: fadein 0.699999988079071s ease-out; -
+	-web-action-type: page; -
+	-web-action-target: Main2.html;
+	cursor: pointer;
 }
 
 #METADATA_bu {
 	display: none;
 	left: 0px;
-	top: 0px;
+	top: -7px;
 	position: absolute;
 	overflow: hidden;
 	width: 11px;
@@ -602,45 +577,39 @@ input::placeholder {
 }
 
 #Area_bv {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 2px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+	fill: rgba(60, 60, 60, 1);
 }
 
 .Area_bv {
 	position: absolute;
 	overflow: visible;
-	width: 403px;
-	height: 84px;
+	width: 249px;
+	height: 69px;
 	left: 0px;
 	top: 0px;
 }
 
-#Value_bw {
-	left: 0px;
-	top: 0px;
+#Label_bw {
+	left: 83px;
+	top: 12px;
 	position: absolute;
 	overflow: visible;
-	width: 125px;
+	width: 83px;
 	white-space: nowrap;
-	text-align: left;
+	text-align: center;
 	font-family: Noto Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 25px;
-	color: rgba(62, 62, 62, 1);
+	font-size: 30px;
+	color: rgba(252, 252, 252, 1);
 }
 
 #Icon_bx {
 	position: absolute;
-	width: 18px;
-	height: 18px;
-	left: 369px;
-	top: 33px;
+	width: 20px;
+	height: 20px;
+	left: 213px;
+	top: 28px;
 	display: none;
 	overflow: visible;
 }
@@ -662,31 +631,31 @@ input::placeholder {
 
 #Area_bz {
 	opacity: 0;
-	fill: rgba(253, 73, 198, 0.349);
+	fill: rgba(252, 252, 252, 1);
 }
 
 .Area_bz {
 	position: absolute;
 	overflow: visible;
-	width: 18px;
-	height: 18px;
+	width: 20px;
+	height: 20px;
 	left: 0px;
 	top: 0px;
 }
 
 #Icon_b {
 	position: absolute;
-	width: 13.5px;
-	height: 13.5px;
-	left: 2.336px;
-	top: 1.924px;
+	width: 17.42px;
+	height: 15.193px;
+	left: 1.104px;
+	top: 2.472px;
 	overflow: visible;
 }
 
 #Path_b {
 	fill: rgba(0, 0, 0, 0);
-	stroke: rgba(60, 60, 60, 1);
-	stroke-width: 1.5px;
+	stroke: rgba(255, 255, 255, 1);
+	stroke-width: 1.6666666269302368px;
 	stroke-linejoin: round;
 	stroke-linecap: round;
 	stroke-miterlimit: 4;
@@ -694,71 +663,28 @@ input::placeholder {
 }
 
 .Path_b {
-	position: absolute;
 	overflow: visible;
-	width: 13.5px;
-	height: 13.5px;
+	position: absolute;
+	width: 19.086px;
+	height: 16.86px;
 	left: 0px;
 	top: 0px;
-}
-
-#Line_b {
-	fill: transparent;
-	stroke: rgba(60, 60, 60, 1);
-	stroke-width: 1.5px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Line_b {
-	overflow: visible;
-	position: absolute;
-	width: 5.383px;
-	height: 5.384px;
-	left: 10.238px;
-	top: 10.237px;
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-#Label_b {
-	display: none;
-	left: 0px;
-	top: 0px;
+#Circle_Button {
 	position: absolute;
+	width: 48px;
+	height: 48px;
+	left: 700px;
+	top: 545px;
 	overflow: visible;
-	width: 38px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Button {
-	position: absolute;
-	width: 249px;
-	height: 69px;
-	left: 836px;
-	top: 811px;
-	overflow: visible;
-	transition: all 0.699999988079071s ease-out; -
-	-web-animation: fadein 0.699999988079071s ease-out; -
-	-web-action-type: page; -
-	-web-action-target: Main.html;
-	cursor: pointer;
 }
 
 #METADATA_b {
 	display: none;
 	left: 0px;
-	top: -7px;
+	top: 0px;
 	position: absolute;
 	overflow: hidden;
 	width: 11px;
@@ -777,34 +703,18 @@ input::placeholder {
 .Area_b {
 	position: absolute;
 	overflow: visible;
-	width: 249px;
-	height: 69px;
+	width: 48px;
+	height: 48px;
 	left: 0px;
 	top: 0px;
-}
-
-#Label_ca {
-	left: 94px;
-	top: 12px;
-	position: absolute;
-	overflow: visible;
-	width: 59px;
-	white-space: nowrap;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 30px;
-	color: rgba(252, 252, 252, 1);
 }
 
 #Icon_ca {
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	left: 213px;
-	top: 28px;
-	display: none;
+	left: 14px;
+	top: 14px;
 	overflow: visible;
 }
 
@@ -839,114 +749,10 @@ input::placeholder {
 
 #Icon_cb {
 	position: absolute;
-	width: 17.42px;
-	height: 15.193px;
-	left: 1.104px;
-	top: 2.472px;
-	overflow: visible;
-}
-
-#Path_cc {
-	fill: rgba(0, 0, 0, 0);
-	stroke: rgba(255, 255, 255, 1);
-	stroke-width: 1.6666666269302368px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Path_cc {
-	overflow: visible;
-	position: absolute;
-	width: 19.086px;
-	height: 16.86px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-#Circle_Button {
-	position: absolute;
-	width: 55px;
-	height: 53px;
-	left: 696px;
-	top: 468px;
-	overflow: visible;
-}
-
-#METADATA_ce {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_cf {
-	fill: rgba(60, 60, 60, 1);
-}
-
-.Area_cf {
-	position: absolute;
-	overflow: visible;
-	width: 55px;
-	height: 53px;
-	left: 0px;
-	top: 0px;
-}
-
-#Icon_cg {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 18.002px;
-	top: 16px;
-	overflow: visible;
-}
-
-#METADATA_ch {
-	display: none;
-	left: -0.002px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ci {
-	opacity: 0;
-	fill: rgba(252, 252, 252, 1);
-}
-
-.Area_ci {
-	position: absolute;
-	overflow: visible;
-	width: 20px;
-	height: 20px;
-	left: -0.002px;
-	top: 0px;
-}
-
-#Icon_cj {
-	position: absolute;
 	width: 15px;
 	height: 16.671px;
-	left: 2.139px;
-	top: 1.991px;
+	left: 2.5px;
+	top: 1.663px;
 	overflow: visible;
 }
 
@@ -969,7 +775,7 @@ input::placeholder {
 	top: 7.504px;
 }
 
-#Path_cl {
+#Path_ca {
 	fill: rgba(0, 0, 0, 0);
 	stroke: rgba(252, 252, 252, 1);
 	stroke-width: 1.6666666269302368px;
@@ -979,7 +785,7 @@ input::placeholder {
 	shape-rendering: auto;
 }
 
-.Path_cl {
+.Path_ca {
 	overflow: visible;
 	position: absolute;
 	width: 10.066px;
@@ -989,18 +795,18 @@ input::placeholder {
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-#Circle_Button_cm {
+#Circle_Button_cb {
 	position: absolute;
-	width: 55px;
-	height: 53px;
-	left: 696px;
-	top: 362px;
+	width: 48px;
+	height: 48px;
+	left: 700px;
+	top: 403px;
 	overflow: visible;
 }
 
-#METADATA_cn {
+#METADATA_cc {
 	display: none;
-	left: 0.279px;
+	left: 0px;
 	top: 0px;
 	position: absolute;
 	overflow: hidden;
@@ -1013,32 +819,32 @@ input::placeholder {
 	font-size: 3px;
 }
 
-#Area_co {
+#Area_cd {
 	fill: rgba(60, 60, 60, 1);
 }
 
-.Area_co {
+.Area_cd {
 	position: absolute;
 	overflow: visible;
-	width: 55px;
-	height: 53px;
+	width: 48px;
+	height: 48px;
 	left: 0px;
 	top: 0px;
 }
 
-#Icon_cp {
+#Icon_ce {
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	left: 18.002px;
-	top: 16px;
+	left: 14px;
+	top: 14px;
 	overflow: visible;
 }
 
-#METADATA_cq {
+#METADATA_cf {
 	display: none;
-	left: -0.361px;
-	top: 0.329px;
+	left: 0px;
+	top: 0px;
 	position: absolute;
 	overflow: hidden;
 	width: 11px;
@@ -1050,12 +856,12 @@ input::placeholder {
 	font-size: 3px;
 }
 
-#Area_cr {
+#Area_cg {
 	opacity: 0;
 	fill: rgba(252, 252, 252, 1);
 }
 
-.Area_cr {
+.Area_cg {
 	position: absolute;
 	overflow: visible;
 	width: 20px;
@@ -1064,16 +870,16 @@ input::placeholder {
 	top: 0px;
 }
 
-#Icon_cs {
+#Icon_ch {
 	position: absolute;
 	width: 13.334px;
 	height: 15px;
-	left: 2.971px;
-	top: 2.829px;
+	left: 3.332px;
+	top: 2.5px;
 	overflow: visible;
 }
 
-#Path_ct {
+#Path_ci {
 	fill: rgba(0, 0, 0, 0);
 	stroke: rgba(252, 252, 252, 1);
 	stroke-width: 1.6666666269302368px;
@@ -1083,7 +889,7 @@ input::placeholder {
 	shape-rendering: auto;
 }
 
-.Path_ct {
+.Path_ci {
 	overflow: visible;
 	position: absolute;
 	width: 15px;
@@ -1093,7 +899,7 @@ input::placeholder {
 	transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-#Path_cu {
+#Path_cj {
 	fill: rgba(0, 0, 0, 0);
 	stroke: rgba(252, 252, 252, 1);
 	stroke-width: 1.6666666269302368px;
@@ -1103,7 +909,7 @@ input::placeholder {
 	shape-rendering: auto;
 }
 
-.Path_cu {
+.Path_cj {
 	position: absolute;
 	overflow: visible;
 	width: 8.334px;
@@ -1112,3054 +918,24 @@ input::placeholder {
 	top: 0px;
 }
 
-#Date_Picker {
-	position: absolute;
-	width: 144px;
-	height: 48px;
-	left: 759px;
-	top: 699px;
-	overflow: visible;
-}
-
-#METADATA_cw {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Calendar {
-	position: absolute;
-	width: 320px;
-	height: 320px;
-	left: 0px;
-	top: 56px;
-	display: none;
-	overflow: visible;
-}
-
-#METADATA_cy {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Card {
-	position: absolute;
-	width: 320px;
-	height: 320px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_c {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_c {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 2px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Area_c {
-	filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.102));
-	position: absolute;
-	overflow: visible;
-	width: 328px;
-	height: 328px;
-	left: 0px;
-	top: 0px;
-}
-
-#Days {
-	position: absolute;
-	width: 280px;
-	height: 200px;
-	left: 20px;
-	top: 100px;
-	overflow: visible;
-}
-
-#METADATA_da {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Day {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_db {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_da {
-	opacity: 0.001;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_da {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_c {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(207, 207, 207, 1);
-	letter-spacing: 0.4px;
-	text-transform: uppercase;
-}
-
-#Day_c {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 120px;
-	top: 160px;
-	overflow: visible;
-}
-
-#METADATA_dc {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_db {
-	opacity: 0.001;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_db {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_db {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(207, 207, 207, 1);
-	letter-spacing: 0.4px;
-	text-transform: uppercase;
-}
-
-#Day_dc {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 160px;
-	top: 160px;
-	overflow: visible;
-}
-
-#METADATA_dd {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_de {
-	opacity: 0.001;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_de {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_df {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(207, 207, 207, 1);
-	letter-spacing: 0.4px;
-	text-transform: uppercase;
-}
-
-#Day_dg {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 200px;
-	top: 160px;
-	overflow: visible;
-}
-
-#METADATA_dh {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_di {
-	opacity: 0.001;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_di {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_dj {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(207, 207, 207, 1);
-	letter-spacing: 0.4px;
-	text-transform: uppercase;
-}
-
-#Day_dk {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 240px;
-	top: 160px;
-	overflow: visible;
-}
-
-#METADATA_dl {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_dm {
-	opacity: 0.001;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_dm {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_dn {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(207, 207, 207, 1);
-	letter-spacing: 0.4px;
-	text-transform: uppercase;
-}
-
-#Day_do {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 40px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_dp {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_dq {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_dq {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_dr {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_ds {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 40px;
-	top: 40px;
-	overflow: visible;
-}
-
-#METADATA_dt {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_du {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_du {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_dv {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_dw {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 40px;
-	top: 80px;
-	overflow: visible;
-}
-
-#METADATA_dx {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_dy {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_dy {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_dz {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_d {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 40px;
-	top: 120px;
-	overflow: visible;
-}
-
-#METADATA_d {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_d {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_d {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_d {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_ea {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 40px;
-	top: 160px;
-	overflow: visible;
-}
-
-#METADATA_ea {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ea {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_ea {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_ea {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_eb {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 40px;
-	overflow: visible;
-}
-
-#METADATA_eb {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_eb {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_eb {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_eb {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_ec {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 80px;
-	overflow: visible;
-}
-
-#METADATA_ed {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ee {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_ee {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_ef {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_eg {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 120px;
-	overflow: visible;
-}
-
-#METADATA_eh {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ei {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_ei {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_ej {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_ek {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 160px;
-	overflow: visible;
-}
-
-#METADATA_el {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_em {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_em {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_en {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_eo {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 80px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_ep {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_eq {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_eq {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_er {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_es {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 80px;
-	top: 40px;
-	overflow: visible;
-}
-
-#METADATA_et {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_eu {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_eu {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_ev {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_ew {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 80px;
-	top: 80px;
-	overflow: visible;
-}
-
-#METADATA_ex {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ey {
-	fill: rgba(242, 242, 242, 1);
-	stroke: rgba(0, 0, 0, 1);
-	stroke-width: 2px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Area_ey {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_ez {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(0, 0, 0, 1);
-	letter-spacing: 0.4px;
-	text-transform: uppercase;
-}
-
-#Day_e {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 80px;
-	top: 120px;
-	overflow: visible;
-}
-
-#METADATA_e {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_e {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_e {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_e {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fa {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 80px;
-	top: 160px;
-	overflow: visible;
-}
-
-#METADATA_fa {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fa {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fa {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_fa {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fb {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 120px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_fb {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fb {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fb {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_fb {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fc {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 120px;
-	top: 40px;
-	overflow: visible;
-}
-
-#METADATA_fd {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fe {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fe {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_ff {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fg {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 120px;
-	top: 80px;
-	overflow: visible;
-}
-
-#METADATA_fh {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fi {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fi {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_fj {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fk {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 120px;
-	top: 120px;
-	overflow: visible;
-}
-
-#METADATA_fl {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fm {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fm {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_fn {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fo {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 160px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_fp {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fq {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fq {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_fr {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fs {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 160px;
-	top: 40px;
-	overflow: visible;
-}
-
-#METADATA_ft {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fu {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fu {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_fv {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_fw {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 160px;
-	top: 80px;
-	overflow: visible;
-}
-
-#METADATA_fx {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_fy {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_fy {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_fz {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_f {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 160px;
-	top: 120px;
-	overflow: visible;
-}
-
-#METADATA_f {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_f {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_f {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_f {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_ga {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 200px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_ga {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ga {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_ga {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_ga {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_gb {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 200px;
-	top: 40px;
-	overflow: visible;
-}
-
-#METADATA_gb {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_gb {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_gb {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_gb {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_gc {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 200px;
-	top: 80px;
-	overflow: visible;
-}
-
-#METADATA_gd {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ge {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_ge {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_gf {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_gg {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 200px;
-	top: 120px;
-	overflow: visible;
-}
-
-#METADATA_gh {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_gi {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_gi {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_gj {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_gk {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 240px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_gl {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_gm {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_gm {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_gn {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_go {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 240px;
-	top: 40px;
-	overflow: visible;
-}
-
-#METADATA_gp {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_gq {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_gq {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_gr {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_gs {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 240px;
-	top: 80px;
-	overflow: visible;
-}
-
-#METADATA_gt {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_gu {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_gu {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_gv {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Day_gw {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 240px;
-	top: 120px;
-	overflow: visible;
-}
-
-#METADATA_gx {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_gy {
-	opacity: 0;
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Area_gy {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#Value_gz {
-	left: 12px;
-	top: 11px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Week {
-	position: absolute;
-	width: 280px;
-	height: 40px;
-	left: 20px;
-	top: 60px;
-	overflow: visible;
-}
-
-#METADATA_g {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#weekday {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_ha {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#area {
-	opacity: 0;
-	fill: rgba(33, 36, 43, 1);
-}
-
-.area {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#label {
-	opacity: 0.495;
-	left: 9px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	white-space: nowrap;
-	line-height: 16px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(62, 62, 62, 1);
-	letter-spacing: 0.2px;
-}
-
-#weekday_g {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 40px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_hb {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#area_g {
-	opacity: 0;
-	fill: rgba(33, 36, 43, 1);
-}
-
-.area_g {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#label_g {
-	opacity: 0.495;
-	left: 7px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 27px;
-	white-space: nowrap;
-	line-height: 16px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(62, 62, 62, 1);
-	letter-spacing: 0.2px;
-}
-
-#weekday_ha {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 80px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_hc {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#area_hc {
-	opacity: 0;
-	fill: rgba(33, 36, 43, 1);
-}
-
-.area_hc {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#label_hd {
-	opacity: 0.495;
-	left: 10px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 21px;
-	white-space: nowrap;
-	line-height: 16px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(62, 62, 62, 1);
-	letter-spacing: 0.2px;
-}
-
-#weekday_he {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 120px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_hf {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#area_hg {
-	opacity: 0;
-	fill: rgba(33, 36, 43, 1);
-}
-
-.area_hg {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#label_hh {
-	opacity: 0.495;
-	left: 8px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 25px;
-	white-space: nowrap;
-	line-height: 16px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(62, 62, 62, 1);
-	letter-spacing: 0.2px;
-}
-
-#weekday_hi {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 160px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_hj {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#area_hk {
-	opacity: 0;
-	fill: rgba(33, 36, 43, 1);
-}
-
-.area_hk {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#label_hl {
-	opacity: 0.495;
-	left: 9px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 23px;
-	white-space: nowrap;
-	line-height: 16px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(62, 62, 62, 1);
-	letter-spacing: 0.2px;
-}
-
-#weekday_hm {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 200px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_hn {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#area_ho {
-	opacity: 0;
-	fill: rgba(33, 36, 43, 1);
-}
-
-.area_ho {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#label_hp {
-	opacity: 0.495;
-	left: 12px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 17px;
-	white-space: nowrap;
-	line-height: 16px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(62, 62, 62, 1);
-	letter-spacing: 0.2px;
-}
-
-#weekday_hq {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 240px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_hr {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#area_hs {
-	opacity: 0;
-	fill: rgba(33, 36, 43, 1);
-}
-
-.area_hs {
-	position: absolute;
-	overflow: visible;
-	width: 40px;
-	height: 40px;
-	left: 0px;
-	top: 0px;
-}
-
-#label_ht {
-	opacity: 0.495;
-	left: 11px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 19px;
-	white-space: nowrap;
-	line-height: 16px;
-	margin-top: -3px;
-	text-align: center;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(62, 62, 62, 1);
-	letter-spacing: 0.2px;
-}
-
-#Month {
-	left: 28px;
-	top: 20px;
-	position: absolute;
-	overflow: visible;
-	width: 118px;
-	white-space: nowrap;
-	line-height: 34px;
-	margin-top: -5px;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	color: rgba(61, 61, 61, 1);
-}
-
-#Button_hv {
-	position: absolute;
-	width: 144px;
-	height: 48px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-
-#METADATA_hw {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_hx {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 2px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Area_hx {
-	position: absolute;
-	overflow: visible;
-	width: 144px;
-	height: 48px;
-	left: 0px;
-	top: 0px;
-}
-
-#Label_hy {
-	left: 16px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 85px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	color: rgba(62, 62, 62, 1);
-}
-
-#Icon_hz {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 108px;
-	top: 14px;
-	overflow: visible;
-}
-
-#METADATA_h {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_h {
-	opacity: 0;
-	fill: rgba(253, 73, 198, 0.349);
-}
-
-.Area_h {
-	position: absolute;
-	overflow: visible;
-	width: 20px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-}
-
-#Icon_h {
-	position: absolute;
-	width: 15px;
-	height: 16.667px;
-	left: 2.5px;
-	top: 1.667px;
-	overflow: visible;
-}
-
-#Rect_h {
-	fill: rgba(0, 0, 0, 0);
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 1.6666666269302368px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Rect_h {
-	position: absolute;
-	overflow: visible;
-	width: 16.668px;
-	height: 16.667px;
-	left: 0px;
-	top: 1.667px;
-}
-
-#Line_h {
-	fill: transparent;
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 1.6666666269302368px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Line_h {
-	overflow: visible;
-	position: absolute;
-	width: 1.668px;
-	height: 5px;
-	left: 10.834px;
-	top: 0px;
-	transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-#Line_ia {
-	fill: transparent;
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 1.6666666269302368px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Line_ia {
-	overflow: visible;
-	position: absolute;
-	width: 1.668px;
-	height: 5px;
-	left: 4.166px;
-	top: 0px;
-	transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-#Line_ib {
-	fill: transparent;
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 1.6666666269302368px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Line_ib {
-	overflow: visible;
-	position: absolute;
-	width: 16.668px;
-	height: 1.667px;
-	left: 0px;
-	top: 6.667px;
-	transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-#Label_h {
-	display: none;
-	left: 0px;
-	top: -26px;
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	white-space: nowrap;
-	line-height: 19px;
-	margin-top: -3px;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: 0.4px;
-}
-
-#Birth {
-	left: 794px;
-	top: 660px;
-	position: absolute;
-	overflow: visible;
-	width: 62px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
+input {
+	color: black;
 	font-size: 25px;
-	color: rgba(62, 62, 62, 1);
+	font-style: Noto_Sans;
 }
 
-#Gender {
-	left: 1028px;
-	top: 660px;
-	position: absolute;
-	overflow: visible;
-	width: 91px;
-	white-space: nowrap;
-	text-align: left;
+#Login_btn {
+	width: 249;
+	height: 69;
+	background-color: rgba(60, 60, 60, 1);
+	text-align: center;
 	font-family: Noto Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 25px;
-	color: rgba(62, 62, 62, 1);
-}
-
-#Radio {
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	left: 1017px;
-	top: 707px;
-	overflow: visible;
-}
-
-#METADATA_ib {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ic {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 2px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Area_ic {
-	position: absolute;
-	overflow: visible;
-	width: 32px;
-	height: 32px;
-	left: 0px;
-	top: 0px;
-}
-
-#Dot {
-	opacity: 0;
-	fill: rgba(0, 0, 0, 1);
-}
-
-.Dot {
-	position: absolute;
-	overflow: visible;
-	width: 12px;
-	height: 12px;
-	left: 10px;
-	top: 10px;
-}
-
-#Label_ie {
-	display: none;
-	left: 48px;
-	top: 5px;
-	position: absolute;
-	overflow: visible;
-	width: 43px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	color: rgba(61, 61, 61, 1);
-}
-
-#Radio_if {
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	left: 1118px;
-	top: 707px;
-	overflow: visible;
-}
-
-#METADATA_ig {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ih {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(62, 62, 62, 1);
-	stroke-width: 2px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Area_ih {
-	position: absolute;
-	overflow: visible;
-	width: 32px;
-	height: 32px;
-	left: 0px;
-	top: 0px;
-}
-
-#Dot_ii {
-	opacity: 0;
-	fill: rgba(0, 0, 0, 1);
-}
-
-.Dot_ii {
-	position: absolute;
-	overflow: visible;
-	width: 12px;
-	height: 12px;
-	left: 10px;
-	top: 10px;
-}
-
-#Label_ij {
-	display: none;
-	left: 48px;
-	top: 5px;
-	position: absolute;
-	overflow: visible;
-	width: 43px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	color: rgba(61, 61, 61, 1);
-}
-
-#Gender_rd {
-	left: 971px;
-	top: 705px;
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 25px;
-	color: rgba(62, 62, 62, 1);
-}
-
-#Gender_rd2 {
-	left: 1073px;
-	top: 705px;
-	position: absolute;
-	overflow: visible;
-	width: 38px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 25px;
-	color: rgba(62, 62, 62, 1);
-}
-
-#Circle_Button_im {
-	position: absolute;
-	width: 51px;
-	height: 56px;
-	left: 698px;
-	top: 574px;
-	overflow: visible;
-}
-
-#METADATA_in {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_io {
-	fill: rgba(60, 60, 60, 1);
-}
-
-.Area_io {
-	position: absolute;
-	overflow: visible;
-	width: 51px;
-	height: 56px;
-	left: 0px;
-	top: 0px;
-}
-
-#Icon_ip {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 16px;
-	top: 18px;
-	overflow: visible;
-}
-
-#METADATA_iq {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 11px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#Area_ir {
-	opacity: 0;
-	fill: rgba(252, 252, 252, 1);
-}
-
-.Area_ir {
-	position: absolute;
-	overflow: visible;
-	width: 20px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-}
-
-#Icon_is {
-	position: absolute;
-	width: 17.42px;
-	height: 15.193px;
-	left: 0.791px;
-	top: 2.479px;
-	overflow: visible;
-}
-
-#Path_it {
-	fill: rgba(0, 0, 0, 0);
-	stroke: rgba(252, 252, 252, 1);
-	stroke-width: 1.6666666269302368px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.Path_it {
-	overflow: visible;
-	position: absolute;
-	width: 19.086px;
-	height: 16.86px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-.input_id{
-	border: 3px solid black;
-	font-size: 24px;
-	font-family: Noto Sans
+	font-size: 30px;
+	color: rgba(252, 252, 252, 1);
 }
 </style>
-<script src = "jquery-3.6.0.min.js"></script>
 <script id="applicationScript">
 ///////////////////////////////////////
 // INITIALIZATION
@@ -7072,11 +3848,11 @@ window.application = new Application();
 </script>
 </head>
 <body>
-	<form action="joinService" method="post">
-		<div id="Join">
-			<img id="n_3" src="n_3.png" srcset="n_3.png 1x, n_3@2x.png 2x">
+	<form action="LoginService" method="post">
+		<div id="Login">
+			<img id="n_2" src="n_2.png" srcset="n_2.png 1x, n_2@2x.png 2x">
 
-			<div id="n_45">
+			<div id="n_39">
 				<svg class="n_52">
 			<rect id="n_52" rx="200" ry="200" x="0" y="0" width="1190"
 						height="854">
@@ -7111,8 +3887,8 @@ window.application = new Application();
 					</div>
 				</div>
 			</div>
-			<div id="Join_Us">
-				<span>Join Us</span>
+			<div id="Sign_In">
+				<span>Sign In</span>
 			</div>
 			<div id="Input">
 				<div id="METADATA_">
@@ -7123,9 +3899,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 				<div id="Value">
-					<input type="text" name="id" placeholder="ID" class = "input_id"
-						style="width: 403px; height: 84px; border-radius: 18px" required>
-					<font id = "checkId" size = "4"></font>
+					<input type="text" name="id" placeholder="ID"
+						style="width: 403px; height: 84px;">
 				</div>
 				<div id="Icon_bb">
 					<div id="METADATA_bc">
@@ -7160,9 +3935,8 @@ window.application = new Application();
 			</rect>
 		</svg>
 				<div id="Value_bl">
-					<input type="password" placeholder="Password" name="pw"
-						class="info"
-						style="width: 403px; height: 84px; border-radius: 18px" required>
+					<input type="text" name="pw" placeholder="Password"
+						style="width: 403px; height: 84px;">
 				</div>
 				<div id="Icon_bm">
 					<div id="METADATA_bn">
@@ -7187,64 +3961,31 @@ window.application = new Application();
 					<span>Label</span>
 				</div>
 			</div>
-			<div id="Input_bt">
+			<div id="Button">
 				<div id="METADATA_bu">
-					<span>{"config":{},"type":"Input","theme":"Base","nodeName":"Input","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:37:12.367Z"}</span>
+					<span>{"config":{},"type":"Button","theme":"Base","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:38:08.131Z"}</span>
 				</div>
 				<svg class="Area_bv">
-			<rect id="Area_bv" rx="14" ry="14" x="0" y="0" width="403"
-						height="84">
+			<rect id="Area_bv" rx="18" ry="18" x="0" y="0" width="249"
+						height="69">
 			</rect>
 		</svg>
-				<div id="Value_bw">
-					<input type="text" placeholder="Name" name="name" class="info"
-						style="width: 403px; height: 84px; border-radius: 18px" required>
-				</div>
+				<form action="LoginService">
+					<div id="Label_bw">
+						<input type="submit" id="Login_btn" value="Login">
+					</div>
+				</form>
 				<div id="Icon_bx">
 					<div id="METADATA_by">
-						<span>{"config":{"ICON":"Feather/Search"},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:37:12.362Z"}</span>
+						<span>{"config":{},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:38:08.125Z"}</span>
 					</div>
 					<svg class="Area_bz">
-				<rect id="Area_bz" rx="0" ry="0" x="0" y="0" width="18" height="18">
+				<rect id="Area_bz" rx="0" ry="0" x="0" y="0" width="20" height="20">
 				</rect>
 			</svg>
 					<div id="Icon_b">
-						<svg class="Path_b">
-					<ellipse id="Path_b" rx="6" ry="6" cx="6" cy="6">
-					</ellipse>
-				</svg>
-						<svg class="Line_b" viewBox="0 0 3.262 3.262">
-					<path id="Line_b" d="M 3.262499809265137 3.262499809265137 L 0 0">
-					</path>
-				</svg>
-					</div>
-				</div>
-				<div id="Label_b">
-					<span>Label</span>
-				</div>
-			</div>
-			<div id="Button">
-				<div id="METADATA_b">
-					<span>{"config":{},"type":"Button","theme":"Base","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:38:08.131Z"}</span>
-				</div>
-				<svg class="Area_b">
-			<rect id="Area_b" rx="18" ry="18" x="0" y="0" width="249" height="69">
-			</rect>
-		</svg>
-				<div id="Label_ca">
-					<input type="submit" value="Join" id="join" name="join">
-				</div>
-				<div id="Icon_ca">
-					<div id="METADATA_ca">
-						<span>{"config":{},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:38:08.125Z"}</span>
-					</div>
-					<svg class="Area_ca">
-				<rect id="Area_ca" rx="0" ry="0" x="0" y="0" width="20" height="20">
-				</rect>
-			</svg>
-					<div id="Icon_cb">
-						<svg class="Path_cc" viewBox="1.29 2.499 17.42 15.193">
-					<path id="Path_cc"
+						<svg class="Path_b" viewBox="1.29 2.499 17.42 15.193">
+					<path id="Path_b"
 								d="M 17.36700057983398 3.842000007629395 C 15.57699966430664 2.051000118255615 12.67300033569336 2.051000118255615 10.88300037384033 3.842000007629395 L 10 4.724999904632568 L 9.116999626159668 3.842000007629395 C 7.326000213623047 2.051000118255615 4.423999786376953 2.051000118255615 2.632999897003174 3.842000007629395 C 0.8429999947547913 5.631999969482422 0.8429999947547913 8.534999847412109 2.632999897003174 10.32499980926514 L 3.516999959945679 11.20800018310547 L 10 17.6919994354248 L 16.48299980163574 11.20800018310547 L 17.36700057983398 10.32499980926514 C 19.15800094604492 8.534999847412109 19.15800094604492 5.631999969482422 17.36700057983398 3.842000007629395 Z">
 					</path>
 				</svg>
@@ -7252,62 +3993,60 @@ window.application = new Application();
 				</div>
 			</div>
 			<div id="Circle_Button">
-				<div id="METADATA_ce">
+				<div id="METADATA_b">
 					<span>{"config":{},"type":"CircleButton","theme":"Base","nodeName":"Circle
 						Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:40:47.930Z"}</span>
 				</div>
-				<svg class="Area_cf">
-			<rect id="Area_cf" rx="26.5" ry="26.5" x="0" y="0" width="55"
-						height="53">
+				<svg class="Area_b">
+			<rect id="Area_b" rx="24" ry="24" x="0" y="0" width="48" height="48">
 			</rect>
 		</svg>
-				<div id="Icon_cg">
-					<div id="METADATA_ch">
+				<div id="Icon_ca">
+					<div id="METADATA_ca">
 						<span>{"config":{"ICON":"feather/unlock"},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:40:47.859Z"}</span>
 					</div>
-					<svg class="Area_ci">
-				<rect id="Area_ci" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					<svg class="Area_ca">
+				<rect id="Area_ca" rx="0" ry="0" x="0" y="0" width="20" height="20">
 				</rect>
 			</svg>
-					<div id="Icon_cj">
+					<div id="Icon_cb">
 						<svg class="Rect">
 					<rect id="Rect" rx="2" ry="2" x="0" y="0" width="15" height="9.167">
 					</rect>
 				</svg>
-						<svg class="Path_cl" viewBox="5.833 1.663 8.25 7.504">
-					<path id="Path_cl"
+						<svg class="Path_ca" viewBox="5.833 1.663 8.25 7.504">
+					<path id="Path_ca"
 								d="M 5.833000183105469 9.166999816894531 L 5.833000183105469 5.833000183105469 C 5.830999851226807 3.693000078201294 7.451000213623047 1.89900004863739 9.581000328063965 1.684000015258789 C 11.71100044250488 1.468000054359436 13.6569995880127 2.901999950408936 14.08300018310547 5">
 					</path>
 				</svg>
 					</div>
 				</div>
 			</div>
-			<div id="Circle_Button_cm">
-				<div id="METADATA_cn">
+			<div id="Circle_Button_cb">
+				<div id="METADATA_cc">
 					<span>{"config":{},"type":"CircleButton","theme":"Base","nodeName":"Circle
-						Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:57:58.287Z"}</span>
+						Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T03:17:09.147Z"}</span>
 				</div>
-				<svg class="Area_co">
-			<rect id="Area_co" rx="26.5" ry="26.5" x="0" y="0" width="55"
-						height="53">
+				<svg class="Area_cd">
+			<rect id="Area_cd" rx="24" ry="24" x="0" y="0" width="48" height="48">
 			</rect>
 		</svg>
-				<div id="Icon_cp">
-					<div id="METADATA_cq">
-						<span>{"config":{"ICON":"feather/user"},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:57:58.208Z"}</span>
+				<div id="Icon_ce">
+					<div id="METADATA_cf">
+						<span>{"config":{"ICON":"feather/user"},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T03:17:09.072Z"}</span>
 					</div>
-					<svg class="Area_cr">
-				<rect id="Area_cr" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					<svg class="Area_cg">
+				<rect id="Area_cg" rx="0" ry="0" x="0" y="0" width="20" height="20">
 				</rect>
 			</svg>
-					<div id="Icon_cs">
-						<svg class="Path_ct" viewBox="3.333 12.5 13.334 5">
-					<path id="Path_ct"
+					<div id="Icon_ch">
+						<svg class="Path_ci" viewBox="3.333 12.5 13.334 5">
+					<path id="Path_ci"
 								d="M 16.66699981689453 17.5 L 16.66699981689453 15.83300018310547 C 16.66699981689453 13.99199962615967 15.17399978637695 12.5 13.33300018310547 12.5 L 6.666999816894531 12.5 C 4.826000213623047 12.5 3.33299994468689 13.99199962615967 3.33299994468689 15.83300018310547 L 3.33299994468689 17.5">
 					</path>
 				</svg>
-						<svg class="Path_cu">
-					<ellipse id="Path_cu" rx="3.3333332538604736"
+						<svg class="Path_cj">
+					<ellipse id="Path_cj" rx="3.3333332538604736"
 								ry="3.3333332538604736" cx="3.3333332538604736"
 								cy="3.3333332538604736">
 					</ellipse>
@@ -7315,665 +4054,7 @@ window.application = new Application();
 					</div>
 				</div>
 			</div>
-			<div id="Date_Picker">
-				<div id="METADATA_cw">
-					<span>{"config":{},"type":"DatePicker","theme":"Base","nodeName":"Date
-						Picker","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:55.002Z"}</span>
-				</div>
-				<div id="Calendar">
-					<div id="METADATA_cy">
-						<span>{"config":{},"type":"Calendar","theme":"Base","nodeName":"Calendar","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.836Z"}</span>
-					</div>
-					<div id="Card">
-						<div id="METADATA_c">
-							<span>{"config":{},"type":"Card","theme":"Base","nodeName":"Card","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.688Z"}</span>
-						</div>
-						<svg class="Area_c">
-					<rect id="Area_c" rx="0" ry="0" x="0" y="0" width="320"
-								height="320">
-					</rect>
-				</svg>
-					</div>
-					<div id="Days">
-						<div id="METADATA_da">
-							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Days","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.736Z"}</span>
-						</div>
-						<div id="Day">
-							<div id="METADATA_db">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.690Z"}</span>
-							</div>
-							<svg class="Area_da">
-						<rect id="Area_da" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_c">
-								<span>28</span>
-							</div>
-						</div>
-						<div id="Day_c">
-							<div id="METADATA_dc">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.694Z"}</span>
-							</div>
-							<svg class="Area_db">
-						<rect id="Area_db" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_db">
-								<span>01</span>
-							</div>
-						</div>
-						<div id="Day_dc">
-							<div id="METADATA_dd">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.695Z"}</span>
-							</div>
-							<svg class="Area_de">
-						<rect id="Area_de" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_df">
-								<span>02</span>
-							</div>
-						</div>
-						<div id="Day_dg">
-							<div id="METADATA_dh">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.696Z"}</span>
-							</div>
-							<svg class="Area_di">
-						<rect id="Area_di" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_dj">
-								<span>03</span>
-							</div>
-						</div>
-						<div id="Day_dk">
-							<div id="METADATA_dl">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.697Z"}</span>
-							</div>
-							<svg class="Area_dm">
-						<rect id="Area_dm" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_dn">
-								<span>04</span>
-							</div>
-						</div>
-						<div id="Day_do">
-							<div id="METADATA_dp">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.699Z"}</span>
-							</div>
-							<svg class="Area_dq">
-						<rect id="Area_dq" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_dr">
-								<span>01</span>
-							</div>
-						</div>
-						<div id="Day_ds">
-							<div id="METADATA_dt">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.700Z"}</span>
-							</div>
-							<svg class="Area_du">
-						<rect id="Area_du" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_dv">
-								<span>08</span>
-							</div>
-						</div>
-						<div id="Day_dw">
-							<div id="METADATA_dx">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.701Z"}</span>
-							</div>
-							<svg class="Area_dy">
-						<rect id="Area_dy" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_dz">
-								<span>15</span>
-							</div>
-						</div>
-						<div id="Day_d">
-							<div id="METADATA_d">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.702Z"}</span>
-							</div>
-							<svg class="Area_d">
-						<rect id="Area_d" rx="0" ry="0" x="0" y="0" width="40" height="40">
-						</rect>
-					</svg>
-							<div id="Value_d">
-								<span>22</span>
-							</div>
-						</div>
-						<div id="Day_ea">
-							<div id="METADATA_ea">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.704Z"}</span>
-							</div>
-							<svg class="Area_ea">
-						<rect id="Area_ea" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_ea">
-								<span>29</span>
-							</div>
-						</div>
-						<div id="Day_eb">
-							<div id="METADATA_eb">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.705Z"}</span>
-							</div>
-							<svg class="Area_eb">
-						<rect id="Area_eb" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_eb">
-								<span>07</span>
-							</div>
-						</div>
-						<div id="Day_ec">
-							<div id="METADATA_ed">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.706Z"}</span>
-							</div>
-							<svg class="Area_ee">
-						<rect id="Area_ee" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_ef">
-								<span>14</span>
-							</div>
-						</div>
-						<div id="Day_eg">
-							<div id="METADATA_eh">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.707Z"}</span>
-							</div>
-							<svg class="Area_ei">
-						<rect id="Area_ei" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_ej">
-								<span>21</span>
-							</div>
-						</div>
-						<div id="Day_ek">
-							<div id="METADATA_el">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.709Z"}</span>
-							</div>
-							<svg class="Area_em">
-						<rect id="Area_em" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_en">
-								<span>28</span>
-							</div>
-						</div>
-						<div id="Day_eo">
-							<div id="METADATA_ep">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.710Z"}</span>
-							</div>
-							<svg class="Area_eq">
-						<rect id="Area_eq" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_er">
-								<span>02</span>
-							</div>
-						</div>
-						<div id="Day_es">
-							<div id="METADATA_et">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.711Z"}</span>
-							</div>
-							<svg class="Area_eu">
-						<rect id="Area_eu" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_ev">
-								<span>09</span>
-							</div>
-						</div>
-						<div id="Day_ew">
-							<div id="METADATA_ex">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.712Z"}</span>
-							</div>
-							<svg class="Area_ey">
-						<rect id="Area_ey" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_ez">
-								<span>16</span>
-							</div>
-						</div>
-						<div id="Day_e">
-							<div id="METADATA_e">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.714Z"}</span>
-							</div>
-							<svg class="Area_e">
-						<rect id="Area_e" rx="0" ry="0" x="0" y="0" width="40" height="40">
-						</rect>
-					</svg>
-							<div id="Value_e">
-								<span>23</span>
-							</div>
-						</div>
-						<div id="Day_fa">
-							<div id="METADATA_fa">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.715Z"}</span>
-							</div>
-							<svg class="Area_fa">
-						<rect id="Area_fa" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_fa">
-								<span>30</span>
-							</div>
-						</div>
-						<div id="Day_fb">
-							<div id="METADATA_fb">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.716Z"}</span>
-							</div>
-							<svg class="Area_fb">
-						<rect id="Area_fb" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_fb">
-								<span>03</span>
-							</div>
-						</div>
-						<div id="Day_fc">
-							<div id="METADATA_fd">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.717Z"}</span>
-							</div>
-							<svg class="Area_fe">
-						<rect id="Area_fe" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_ff">
-								<span>10</span>
-							</div>
-						</div>
-						<div id="Day_fg">
-							<div id="METADATA_fh">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.718Z"}</span>
-							</div>
-							<svg class="Area_fi">
-						<rect id="Area_fi" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_fj">
-								<span>17</span>
-							</div>
-						</div>
-						<div id="Day_fk">
-							<div id="METADATA_fl">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.719Z"}</span>
-							</div>
-							<svg class="Area_fm">
-						<rect id="Area_fm" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_fn">
-								<span>24</span>
-							</div>
-						</div>
-						<div id="Day_fo">
-							<div id="METADATA_fp">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.721Z"}</span>
-							</div>
-							<svg class="Area_fq">
-						<rect id="Area_fq" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_fr">
-								<span>04</span>
-							</div>
-						</div>
-						<div id="Day_fs">
-							<div id="METADATA_ft">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.722Z"}</span>
-							</div>
-							<svg class="Area_fu">
-						<rect id="Area_fu" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_fv">
-								<span>11</span>
-							</div>
-						</div>
-						<div id="Day_fw">
-							<div id="METADATA_fx">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.723Z"}</span>
-							</div>
-							<svg class="Area_fy">
-						<rect id="Area_fy" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_fz">
-								<span>18</span>
-							</div>
-						</div>
-						<div id="Day_f">
-							<div id="METADATA_f">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.724Z"}</span>
-							</div>
-							<svg class="Area_f">
-						<rect id="Area_f" rx="0" ry="0" x="0" y="0" width="40" height="40">
-						</rect>
-					</svg>
-							<div id="Value_f">
-								<span>25</span>
-							</div>
-						</div>
-						<div id="Day_ga">
-							<div id="METADATA_ga">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.726Z"}</span>
-							</div>
-							<svg class="Area_ga">
-						<rect id="Area_ga" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_ga">
-								<span>05</span>
-							</div>
-						</div>
-						<div id="Day_gb">
-							<div id="METADATA_gb">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.727Z"}</span>
-							</div>
-							<svg class="Area_gb">
-						<rect id="Area_gb" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_gb">
-								<span>12</span>
-							</div>
-						</div>
-						<div id="Day_gc">
-							<div id="METADATA_gd">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.728Z"}</span>
-							</div>
-							<svg class="Area_ge">
-						<rect id="Area_ge" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_gf">
-								<span>19</span>
-							</div>
-						</div>
-						<div id="Day_gg">
-							<div id="METADATA_gh">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.729Z"}</span>
-							</div>
-							<svg class="Area_gi">
-						<rect id="Area_gi" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_gj">
-								<span>26</span>
-							</div>
-						</div>
-						<div id="Day_gk">
-							<div id="METADATA_gl">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.730Z"}</span>
-							</div>
-							<svg class="Area_gm">
-						<rect id="Area_gm" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_gn">
-								<span>06</span>
-							</div>
-						</div>
-						<div id="Day_go">
-							<div id="METADATA_gp">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.731Z"}</span>
-							</div>
-							<svg class="Area_gq">
-						<rect id="Area_gq" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_gr">
-								<span>13</span>
-							</div>
-						</div>
-						<div id="Day_gs">
-							<div id="METADATA_gt">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.732Z"}</span>
-							</div>
-							<svg class="Area_gu">
-						<rect id="Area_gu" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_gv">
-								<span>20</span>
-							</div>
-						</div>
-						<div id="Day_gw">
-							<div id="METADATA_gx">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Day","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.734Z"}</span>
-							</div>
-							<svg class="Area_gy">
-						<rect id="Area_gy" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="Value_gz">
-								<span>27</span>
-							</div>
-						</div>
-					</div>
-					<div id="Week">
-						<div id="METADATA_g">
-							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Week","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.746Z"}</span>
-						</div>
-						<div id="weekday">
-							<div id="METADATA_ha">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"weekday","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.738Z"}</span>
-							</div>
-							<svg class="area">
-						<rect id="area" rx="0" ry="0" x="0" y="0" width="40" height="40">
-						</rect>
-					</svg>
-							<div id="label">
-								<span>SUN</span>
-							</div>
-						</div>
-						<div id="weekday_g">
-							<div id="METADATA_hb">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"weekday","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.739Z"}</span>
-							</div>
-							<svg class="area_g">
-						<rect id="area_g" rx="0" ry="0" x="0" y="0" width="40" height="40">
-						</rect>
-					</svg>
-							<div id="label_g">
-								<span>MON</span>
-							</div>
-						</div>
-						<div id="weekday_ha">
-							<div id="METADATA_hc">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"weekday","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.740Z"}</span>
-							</div>
-							<svg class="area_hc">
-						<rect id="area_hc" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="label_hd">
-								<span>TUE</span>
-							</div>
-						</div>
-						<div id="weekday_he">
-							<div id="METADATA_hf">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"weekday","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.741Z"}</span>
-							</div>
-							<svg class="area_hg">
-						<rect id="area_hg" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="label_hh">
-								<span>WED</span>
-							</div>
-						</div>
-						<div id="weekday_hi">
-							<div id="METADATA_hj">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"weekday","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.742Z"}</span>
-							</div>
-							<svg class="area_hk">
-						<rect id="area_hk" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="label_hl">
-								<span>THU</span>
-							</div>
-						</div>
-						<div id="weekday_hm">
-							<div id="METADATA_hn">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"weekday","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.743Z"}</span>
-							</div>
-							<svg class="area_ho">
-						<rect id="area_ho" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="label_hp">
-								<span>FRI</span>
-							</div>
-						</div>
-						<div id="weekday_hq">
-							<div id="METADATA_hr">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"weekday","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.745Z"}</span>
-							</div>
-							<svg class="area_hs">
-						<rect id="area_hs" rx="0" ry="0" x="0" y="0" width="40"
-									height="40">
-						</rect>
-					</svg>
-							<div id="label_ht">
-								<span>SAT</span>
-							</div>
-						</div>
-					</div>
-					<div id="Month">
-						<span>June 2020</span>
-					</div>
-				</div>
-				<div id="Button_hv">
-					<div id="METADATA_hw">
-						<span>{"config":{},"type":"Button","theme":"Base","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:51:54.988Z"}</span>
-					</div>
-					<svg class="Area_hx">
-				<rect id="Area_hx" rx="11" ry="11" x="0" y="0" width="144"
-							height="48">
-				</rect>
-			</svg>
-					<div id="Label_hy">
-						<input type="date" id="date" name="birthdate"
-							style="width: 144px; height: 48px;" required>
-					</div>
-				</div>
-				<div id="Label_h">
-					<span>Label</span>
-				</div>
-			</div>
-			<div id="Birth">
-				<span>Birth</span>
-			</div>
-			<div id="Gender">
-				<span>Gender</span>
-			</div>
-			<div id="Gender_rd">
-				M : <input type="radio" name="gender" value="M"
-					style="width: 32px; height: 32px;" required>
-			</div>
-			<div id="Gender_rd2">
-				W : <input type="radio" name="gender" value="W"
-					style="width: 32px; height: 32px;">
-			</div>
-			<div id="Circle_Button_im">
-				<div id="METADATA_in">
-					<span>{"config":{},"type":"CircleButton","theme":"Base","nodeName":"Circle
-						Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:56:45.005Z"}</span>
-				</div>
-				<svg class="Area_io">
-			<rect id="Area_io" rx="25.5" ry="25.5" x="0" y="0" width="51"
-						height="56">
-			</rect>
-		</svg>
-				<div id="Icon_ip">
-					<div id="METADATA_iq">
-						<span>{"config":{},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T02:56:45.002Z"}</span>
-					</div>
-					<svg class="Area_ir">
-				<rect id="Area_ir" rx="0" ry="0" x="0" y="0" width="20" height="20">
-				</rect>
-			</svg>
-					<div id="Icon_is">
-						<svg class="Path_it" viewBox="1.29 2.499 17.42 15.193">
-					<path id="Path_it"
-								d="M 17.36700057983398 3.842000007629395 C 15.57699966430664 2.051000118255615 12.67300033569336 2.051000118255615 10.88300037384033 3.842000007629395 L 10 4.724999904632568 L 9.116999626159668 3.842000007629395 C 7.326000213623047 2.051000118255615 4.423999786376953 2.051000118255615 2.632999897003174 3.842000007629395 C 0.8429999947547913 5.631999969482422 0.8429999947547913 8.534999847412109 2.632999897003174 10.32499980926514 L 3.516999959945679 11.20800018310547 L 10 17.6919994354248 L 16.48299980163574 11.20800018310547 L 17.36700057983398 10.32499980926514 C 19.15800094604492 8.534999847412109 19.15800094604492 5.631999969482422 17.36700057983398 3.842000007629395 Z">
-					</path>
-				</svg>
-					</div>
-				</div>
-			</div>
 		</div>
 	</form>
-	<script>
-		$('.input_id').focusout(function(){
-			let userId = $('.input_id').val(); // input_id에 입력되는 값
-			
-			$.ajax({
-				url : "IdCheckService",
-				type : "post",
-				data : {userId: userId},
-				dataType : 'json',
-				success : function(result){
-					if(result == 0){
-						$("#checkId").html('사용할 수 없는 아이디입니다.');
-						$("#checkId").attr('color','red');
-					} else{
-						$("#checkId").html('사용할 수 있는 아이디입니다.');
-						$("#checkId").attr('color','green');
-					} 
-				},
-				error : function(){
-					alert("서버요청실패");
-				}
-			})
-			 
-		})
-	 </script>
 </body>
 </html>

@@ -1,298 +1,469 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product</title>
+<title>Main – 1</title>
 <style id="applicationStylesheet" type="text/css">
-	.mediaViewInfo {
-		--web-view-name: Product;
-		--web-view-id: Product;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-	}
-	:root {
-		--web-view-ids: Product;
-	}
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		border: none;
-	}
-	#Product {
-		position: absolute;
-		width: 1920px;
-		height: 1080px;
-		background-color: rgba(255,255,255,1);
-		overflow: hidden;
-		--web-view-name: Product;
-		--web-view-id: Product;
-		--web-scale-on-resize: true;
-		--web-enable-deep-linking: true;
-	}
-	#n_68 {
-		fill: rgba(248,248,248,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_68 {
-		position: absolute;
-		overflow: visible;
-		width: 1920px;
-		height: 1080px;
-		left: 0px;
-		top: 0px;
-	}
-	#n_70 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_70 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 206px;
-		left: 859px;
-		top: 225px;
-	}
-	#n_78 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_78 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 205px;
-		left: 859px;
-		top: 452px;
-	}
-	#n_81 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_81 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 206px;
-		left: 859px;
-		top: 677px;
-	}
-	#n_71 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_71 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 206px;
-		left: 1148px;
-		top: 224px;
-	}
-	#n_76 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_76 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 205px;
-		left: 1148px;
-		top: 451px;
-	}
-	#n_79 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_79 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 206px;
-		left: 1148px;
-		top: 676px;
-	}
-	#n_75 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_75 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 206px;
-		left: 1437px;
-		top: 226px;
-	}
-	#n_77 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_77 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 205px;
-		left: 1437px;
-		top: 453px;
-	}
-	#n_80 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_80 {
-		position: absolute;
-		overflow: visible;
-		width: 202px;
-		height: 206px;
-		left: 1437px;
-		top: 678px;
-	}
-	#floral {
-		left: 376px;
-		top: 626px;
-		position: absolute;
-		overflow: visible;
-		width: 137px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: IM_Hyemin;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 53px;
-		color: rgba(40,32,70,1);
-		letter-spacing: 0.24px;
-	}
-	#n___________________________ {
-		left: 255px;
-		top: 698px;
-		position: absolute;
-		overflow: visible;
-		width: 379px;
-		white-space: nowrap;
-		line-height: 45px;
-		margin-top: -10px;
-		text-align: left;
-		font-family: IM_Hyemin;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 25px;
-		color: rgba(40,32,70,1);
-		letter-spacing: 0.24px;
-	}
-	#METADATA {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 15px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#n_47 {
-		position: absolute;
-		width: 1920px;
-		height: 120px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Background {
-		fill: rgba(255,255,255,1);
-	}
-	.Background {
-		position: absolute;
-		overflow: visible;
-		width: 1920px;
-		height: 120px;
-		left: 0px;
-		top: 0px;
-	}
-	#Typography_TAGH6 {
-		left: 889px;
-		top: 33px;
-		position: absolute;
-		overflow: visible;
-		width: 143px;
-		white-space: nowrap;
-		line-height: 26px;
-		margin-top: -5.5px;
-		text-align: center;
-		font-family: Lato;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 15px;
-		color: rgba(61,61,61,1);
-		letter-spacing: -0.04px;
-	}
-	#n_kdahnworld {
-		opacity: 0.86;
-		position: absolute;
-		width: 428px;
-		height: 401px;
-		left: 230px;
-		top: 224px;
-		overflow: visible;
-	}
+.mediaViewInfo { -
+	-web-view-name: Main – 1; -
+	-web-view-id: Main__1; -
+	-web-scale-on-resize: true; -
+	-web-enable-deep-linking: true;
+}
+
+:root { -
+	-web-view-ids: Main__1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+#Main__1 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(251, 251, 251, 1);
+	overflow: hidden; -
+	-web-view-name: Main – 1; -
+	-web-view-id: Main__1; -
+	-web-scale-on-resize: true; -
+	-web-enable-deep-linking: true;
+}
+
+@
+keyframes fadein { 0% {
+	opacity: 0;
+}
+
+100%
+{
+opacity
+:
+ 
+1;
+}
+}
+#n_53 {
+	opacity: 0.25;
+	fill: rgba(248, 248, 248, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_53 {
+	position: absolute;
+	overflow: visible;
+	width: 1840px;
+	height: 1014px;
+	left: 40px;
+	top: 33px;
+}
+
+#KakaoTalk_20220205_114206980 {
+	opacity: 0.72;
+	position: absolute;
+	width: 523px;
+	height: 600px;
+	left: 703px;
+	top: 220px;
+	overflow: visible;
+}
+
+#shot_on_your_Scent {
+	left: 703px;
+	top: 466px;
+	position: absolute;
+	overflow: visible;
+	width: 491px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: tway_sky M;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 45px;
+	color: rgba(190, 142, 142, 1);
+	letter-spacing: 0.24px;
+}
+
+#n_43 {
+	position: absolute;
+	width: 690px;
+	height: 105px;
+	left: 612px;
+	top: 659px;
+	overflow: visible;
+}
+
+#n_____ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 691px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: HCR Batang ExtB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(28, 27, 23, 1);
+	letter-spacing: 0.24px;
+}
+
+#n_____________________________ {
+	left: 13px;
+	top: 54px;
+	position: absolute;
+	overflow: visible;
+	width: 665px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: HCR Batang Ext;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(30, 29, 33, 1);
+	letter-spacing: 0.24px;
+}
+
+#n__4__4 {
+	position: absolute;
+	width: 144px;
+	height: 48px;
+	left: 762px;
+	top: 890px;
+	overflow: visible;
+}
+
+#Button {
+	position: absolute;
+	width: 144px;
+	height: 48px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	transition: all 0.699999988079071s ease-out; -
+	-web-animation: fadein 0.699999988079071s ease-out; -
+	-web-action-type: page; -
+	-web-action-target: Scent.html;
+	cursor: pointer;
+}
+
+#METADATA {
+	display: none;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 11px;
+	height: 10px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3px;
+}
+
+#Area {
+	opacity: 0.23;
+	fill: rgba(255, 255, 255, 1);
+}
+
+.Area {
+	position: absolute;
+	overflow: visible;
+	width: 144px;
+	height: 48px;
+	left: 0px;
+	top: 0px;
+}
+
+#Label {
+	left: 31px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Icon {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 108px;
+	top: 14px;
+	display: none;
+	overflow: visible;
+}
+
+#METADATA_ {
+	display: none;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 11px;
+	height: 10px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3px;
+}
+
+#Area_ {
+	opacity: 0;
+	fill: rgba(252, 252, 252, 1);
+}
+
+.Area_ {
+	position: absolute;
+	overflow: visible;
+	width: 20px;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+}
+
+#Icon_ {
+	position: absolute;
+	width: 17.42px;
+	height: 15.193px;
+	left: 1.289px;
+	top: 2.499px;
+	overflow: visible;
+}
+
+#Path {
+	fill: rgba(0, 0, 0, 0);
+	stroke: rgba(255, 255, 255, 1);
+	stroke-width: 1.6666666269302368px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Path {
+	overflow: visible;
+	position: absolute;
+	width: 19.086px;
+	height: 16.86px;
+	left: 0.002px;
+	top: 0px;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#n_44 {
+	position: absolute;
+	width: 144px;
+	height: 48px;
+	left: 997px;
+	top: 890px;
+	overflow: visible;
+	transition: all 0.699999988079071s ease-out; -
+	-web-animation: fadein 0.699999988079071s ease-out; -
+	-web-action-type: page; -
+	-web-action-target: Main.html;
+	cursor: pointer;
+}
+
+#Button_bc {
+	position: absolute;
+	width: 144px;
+	height: 48px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+
+#METADATA_bd {
+	display: none;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 11px;
+	height: 10px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3px;
+}
+
+#Area_be {
+	opacity: 0.23;
+	fill: rgba(255, 255, 255, 1);
+}
+
+.Area_be {
+	position: absolute;
+	overflow: visible;
+	width: 144px;
+	height: 48px;
+	left: 0px;
+	top: 0px;
+}
+
+#Label_bf {
+	left: 29px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 87px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Icon_bg {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 108px;
+	top: 14px;
+	display: none;
+	overflow: visible;
+}
+
+#METADATA_bh {
+	display: none;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 11px;
+	height: 10px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3px;
+}
+
+#Area_bi {
+	opacity: 0;
+	fill: rgba(252, 252, 252, 1);
+}
+
+.Area_bi {
+	position: absolute;
+	overflow: visible;
+	width: 20px;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+}
+
+#Icon_bj {
+	position: absolute;
+	width: 17.42px;
+	height: 15.193px;
+	left: 1.289px;
+	top: 2.499px;
+	overflow: visible;
+}
+
+#Path_bk {
+	fill: rgba(0, 0, 0, 0);
+	stroke: rgba(255, 255, 255, 1);
+	stroke-width: 1.6666666269302368px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Path_bk {
+	overflow: visible;
+	position: absolute;
+	width: 19.086px;
+	height: 16.86px;
+	left: 0.002px;
+	top: 0px;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#METADATA_bl {
+	display: none;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 15px;
+	height: 10px;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3px;
+}
+
+#n_50 {
+	position: absolute;
+	width: 1920px;
+	height: 120px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+
+#Background {
+	fill: rgba(255, 255, 255, 1);
+}
+
+.Background {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 120px;
+	left: 0px;
+	top: 0px;
+}
+
+#Typography_TAGH6 {
+	left: 889px;
+	top: 33px;
+	position: absolute;
+	overflow: visible;
+	width: 143px;
+	white-space: nowrap;
+	line-height: 26px;
+	margin-top: -5.5px;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(61, 61, 61, 1);
+	letter-spacing: -0.04px;
+}
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3206,67 +3377,101 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Product">
-	<svg class="n_68">
-		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
+	<div id="Main__1">
+		<svg class="n_53">
+		<rect id="n_53" rx="0" ry="0" x="0" y="0" width="1840" height="1014">
 		</rect>
 	</svg>
-	<svg class="n_70">
-		<rect id="n_70" rx="0" ry="0" x="0" y="0" width="202" height="206">
-		</rect>
-	</svg>
-	<svg class="n_78">
-		<rect id="n_78" rx="0" ry="0" x="0" y="0" width="202" height="205">
-		</rect>
-	</svg>
-	<svg class="n_81">
-		<rect id="n_81" rx="0" ry="0" x="0" y="0" width="202" height="206">
-		</rect>
-	</svg>
-	<svg class="n_71">
-		<rect id="n_71" rx="0" ry="0" x="0" y="0" width="202" height="206">
-		</rect>
-	</svg>
-	<svg class="n_76">
-		<rect id="n_76" rx="0" ry="0" x="0" y="0" width="202" height="205">
-		</rect>
-	</svg>
-	<svg class="n_79">
-		<rect id="n_79" rx="0" ry="0" x="0" y="0" width="202" height="206">
-		</rect>
-	</svg>
-	<svg class="n_75">
-		<rect id="n_75" rx="0" ry="0" x="0" y="0" width="202" height="206">
-		</rect>
-	</svg>
-	<svg class="n_77">
-		<rect id="n_77" rx="0" ry="0" x="0" y="0" width="202" height="205">
-		</rect>
-	</svg>
-	<svg class="n_80">
-		<rect id="n_80" rx="0" ry="0" x="0" y="0" width="202" height="206">
-		</rect>
-	</svg>
-	<div id="floral">
-		<span>floral</span>
-	</div>
-	<div id="n___________________________">
-		<span>하나의 꽃 향기를 표현한 향으로 <br/>각 꽃의 이미지를 살려서 만든 향기.<br/>단순한 느낌이 있지만, 여성스럽고 <br/>부드러운 분위기로 대부분의 여성들이 <br/>부담 없이 사용할 수 있는 향입니다.</span>
-	</div>
-	<div id="METADATA">
-		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
-	</div>
-	<div id="n_47">
-		<svg class="Background">
-			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920" height="120">
+		<img id="KakaoTalk_20220205_114206980"
+			src="KakaoTalk_20220205_114206980.png"
+			srcset="KakaoTalk_20220205_114206980.png 1x, KakaoTalk_20220205_114206980@2x.png 2x">
+
+		<div id="shot_on_your_Scent">
+			<span>shot on your Scent</span>
+		</div>
+		<div id="n_43">
+			<div id="n_____">
+				<span>당신은 스스로에게 만족스러운 향수를 사용하고 계신가요?</span>
+			</div>
+			<div id="n_____________________________">
+				<span>전 세계 수많은 향수 중 당신과 맞는 향수를 찾는 것은 운명과도 같습니다.<br />
+				</span>
+			</div>
+		</div>
+		<div id="n__4__4" class="______4___4">
+			<div onclick="application.goToTargetView(event)" id="Button">
+				<div id="METADATA">
+					<span>{"config":{},"type":"Button","theme":"Base","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T01:57:11.761Z"}</span>
+				</div>
+				<svg class="Area">
+				<rect id="Area" rx="0" ry="0" x="0" y="0" width="144" height="48">
+				</rect>
+			</svg>
+				<div id="Label">
+					<span>Search</span>
+				</div>
+				<div id="Icon">
+					<div id="METADATA_">
+						<span>{"config":{},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T01:57:11.757Z"}</span>
+					</div>
+					<svg class="Area_">
+					<rect id="Area_" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+					<div id="Icon_">
+						<svg class="Path" viewBox="1.29 2.499 17.42 15.193">
+						<path id="Path"
+								d="M 17.36700057983398 3.842000007629395 C 15.57699966430664 2.051000118255615 12.67300033569336 2.051000118255615 10.88300037384033 3.842000007629395 L 10 4.724999904632568 L 9.116999626159668 3.842000007629395 C 7.326000213623047 2.051000118255615 4.423999786376953 2.051000118255615 2.632999897003174 3.842000007629395 C 0.8429999947547913 5.631999969482422 0.8429999947547913 8.534999847412109 2.632999897003174 10.32499980926514 L 3.516999959945679 11.20800018310547 L 10 17.6919994354248 L 16.48299980163574 11.20800018310547 L 17.36700057983398 10.32499980926514 C 19.15800094604492 8.534999847412109 19.15800094604492 5.631999969482422 17.36700057983398 3.842000007629395 Z">
+						</path>
+					</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div onclick="application.goToTargetView(event)" id="n_44">
+			<div id="Button_bc">
+				<div id="METADATA_bd">
+					<span>{"config":{},"type":"Button","theme":"Base","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T01:57:11.761Z"}</span>
+				</div>
+				<svg class="Area_be">
+				<rect id="Area_be" rx="0" ry="0" x="0" y="0" width="144" height="48">
+				</rect>
+			</svg>
+				<div id="Label_bf">
+					<span>Logout</span>
+				</div>
+				<div id="Icon_bg">
+					<div id="METADATA_bh">
+						<span>{"config":{},"type":"Icon","theme":"Base","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-02-05T01:57:11.757Z"}</span>
+					</div>
+					<svg class="Area_bi">
+					<rect id="Area_bi" rx="0" ry="0" x="0" y="0" width="20" height="20">
+					</rect>
+				</svg>
+					<div id="Icon_bj">
+						<svg class="Path_bk" viewBox="1.29 2.499 17.42 15.193">
+						<path id="Path_bk"
+								d="M 17.36700057983398 3.842000007629395 C 15.57699966430664 2.051000118255615 12.67300033569336 2.051000118255615 10.88300037384033 3.842000007629395 L 10 4.724999904632568 L 9.116999626159668 3.842000007629395 C 7.326000213623047 2.051000118255615 4.423999786376953 2.051000118255615 2.632999897003174 3.842000007629395 C 0.8429999947547913 5.631999969482422 0.8429999947547913 8.534999847412109 2.632999897003174 10.32499980926514 L 3.516999959945679 11.20800018310547 L 10 17.6919994354248 L 16.48299980163574 11.20800018310547 L 17.36700057983398 10.32499980926514 C 19.15800094604492 8.534999847412109 19.15800094604492 5.631999969482422 17.36700057983398 3.842000007629395 Z">
+						</path>
+					</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="METADATA_bl">
+			<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
+		</div>
+		<div id="n_50">
+			<svg class="Background">
+			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920"
+					height="120">
 			</rect>
 		</svg>
-		<div id="Typography_TAGH6">
-			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
+			<div id="Typography_TAGH6">
+				<span></span><span style="font-size: 30px;">취 향 저 격</span><br />
+				<span>당신의 향을 저격하다</span>
+			</div>
 		</div>
 	</div>
-	<img id="n_kdahnworld" src="n_kdahnworld.png" srcset="n_kdahnworld.png 1x, n_kdahnworld@2x.png 2x">
-		
-</div>
 </body>
 </html>

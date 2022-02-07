@@ -1,19 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Show</title>
+<title>Scent</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Show;
-		--web-view-id: Show;
+		--web-view-name: Scent;
+		--web-view-id: Scent;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Show;
+		--web-view-ids: Scent;
 	}
 	* {
 		margin: 0;
@@ -21,33 +23,206 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Show {
+	#Scent {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: Show;
-		--web-view-id: Show;
+		--web-view-name: Scent;
+		--web-view-id: Scent;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	#n_68 {
-		fill: rgba(248,248,248,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
 	}
-	.n_68 {
+	#n_66 {
+		opacity: 0.15;
+		fill: rgba(223,200,200,1);
+	}
+	.n_66 {
 		position: absolute;
 		overflow: visible;
 		width: 1920px;
 		height: 1080px;
 		left: 0px;
 		top: 0px;
+	}
+	#n_60 {
+		opacity: 0.37;
+		fill: rgba(227,227,227,1);
+	}
+	.n_60 {
+		position: absolute;
+		overflow: visible;
+		width: 1488px;
+		height: 804px;
+		left: 216px;
+		top: 175px;
+	}
+	#n__8 {
+		position: absolute;
+		width: 248px;
+		height: 662px;
+		left: 463.998px;
+		top: 317px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product.jsp;
+		cursor: pointer;
+	}
+	#n__9 {
+		position: absolute;
+		width: 248px;
+		height: 662px;
+		left: 1456px;
+		top: 317px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product.jsp;
+		cursor: pointer;
+	}
+	#n__7 {
+		position: absolute;
+		width: 248px;
+		height: 662px;
+		left: 963px;
+		top: 307px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product.jsp;
+		cursor: pointer;
+	}
+	#floral {
+		left: 245px;
+		top: 843px;
+		position: absolute;
+		overflow: visible;
+		width: 189px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Blacksword;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 74px;
+		color: rgba(232,95,117,1);
+	}
+	#citrus {
+		left: 484px;
+		top: 175px;
+		position: absolute;
+		overflow: visible;
+		width: 208px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Blacksword;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 95px;
+		color: rgba(252,184,0,1);
+	}
+	#fresh {
+		left: 997px;
+		top: 175px;
+		position: absolute;
+		overflow: visible;
+		width: 173px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Blacksword;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 82px;
+		color: rgba(101,151,27,1);
+	}
+	#fruity {
+		left: 727px;
+		top: 833px;
+		position: absolute;
+		overflow: visible;
+		width: 218px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Blacksword;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 85px;
+		color: rgba(159,51,45,1);
+	}
+	#woody {
+		left: 1475px;
+		top: 168px;
+		position: absolute;
+		overflow: visible;
+		width: 200px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Blacksword;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 86px;
+		color: rgba(40,40,3,1);
+	}
+	#n__10 {
+		position: absolute;
+		width: 248px;
+		height: 729px;
+		left: 1207.998px;
+		top: 175px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product.jsp;
+		cursor: pointer;
+	}
+	#n__11 {
+		position: absolute;
+		width: 248px;
+		height: 662px;
+		left: 713px;
+		top: 175px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product.jsp;
+		cursor: pointer;
+	}
+	#spicy {
+		left: 1243px;
+		top: 815px;
+		position: absolute;
+		overflow: visible;
+		width: 182px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Blacksword;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 96px;
+		color: rgba(185,82,38,1);
+	}
+	#n__6 {
+		position: absolute;
+		width: 248px;
+		height: 662px;
+		left: 216px;
+		top: 175px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Product.jsp;
+		cursor: pointer;
 	}
 	#METADATA {
 		display: none;
@@ -63,7 +238,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#n_46 {
+	#n_48 {
 		position: absolute;
 		width: 1920px;
 		height: 120px;
@@ -98,136 +273,6 @@
 		font-size: 15px;
 		color: rgba(61,61,61,1);
 		letter-spacing: -0.04px;
-	}
-	#n_85 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_85 {
-		position: absolute;
-		overflow: visible;
-		width: 186px;
-		height: 244px;
-		left: 247px;
-		top: 774px;
-	}
-	#n_86 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_86 {
-		position: absolute;
-		overflow: visible;
-		width: 186px;
-		height: 244px;
-		left: 495px;
-		top: 774px;
-	}
-	#n_87 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_87 {
-		position: absolute;
-		overflow: visible;
-		width: 186px;
-		height: 244px;
-		left: 743px;
-		top: 774px;
-	}
-	#n_88 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_88 {
-		position: absolute;
-		overflow: visible;
-		width: 186px;
-		height: 244px;
-		left: 991px;
-		top: 774px;
-	}
-	#n_89 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_89 {
-		position: absolute;
-		overflow: visible;
-		width: 186px;
-		height: 244px;
-		left: 1239px;
-		top: 774px;
-	}
-	#n_90 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.n_90 {
-		position: absolute;
-		overflow: visible;
-		width: 186px;
-		height: 244px;
-		left: 1487px;
-		top: 774px;
-	}
-	#Text {
-		left: 614px;
-		top: 240px;
-		position: absolute;
-		overflow: visible;
-		width: 251px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 50px;
-		color: rgba(0,0,0,1);
-	}
-	#n_ {
-		left: 1022px;
-		top: 240px;
-		position: absolute;
-		overflow: visible;
-		width: 301px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 50px;
-		color: rgba(0,0,0,1);
 	}
 </style>
 <script id="applicationScript">
@@ -2609,7 +2654,7 @@ var Application = function() {
 	self.goToTargetView = function(event) {
 		var button = event.currentTarget;
 		var buttonComputedStyles = getComputedStyle(button);
-		var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim();
+		var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim() + "?id=" + button.id;
 		var animation = buttonComputedStyles.getPropertyValue(self.prefix+"animation").trim();
 		var targetType = buttonComputedStyles.getPropertyValue(self.prefix+"action-type").trim();
 		var targetView = self.application ? null : self.getElement(actionTargetValue);
@@ -3142,15 +3187,55 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Show">
-	<svg class="n_68">
-		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
+<div id="Scent">
+	<svg class="n_66">
+		<rect id="n_66" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
+	</svg>
+	<svg class="n_60">
+		<rect id="n_60" rx="0" ry="0" x="0" y="0" width="1488" height="804">
+		</rect>
+	</svg>
+	<img onclick="application.goToTargetView(event)" id="n__8" src="n__8.png" srcset="n__8.png 1x, n__8@2x.png 2x">
+		
+	</svg>
+	<img onclick="application.goToTargetView(event)" id="n__9" src="n__9.png" srcset="n__9.png 1x, n__9@2x.png 2x">
+		
+	</svg>
+	<img onclick="application.goToTargetView(event)" id="n__7" src="n__7.png" srcset="n__7.png 1x, n__7@2x.png 2x">
+		
+	</svg>
+	<div id="floral">
+		<span>floral</span>
+	</div>
+	<div id="citrus">
+		<span>citrus</span>
+	</div>
+	<div id="fresh">
+		<span>fresh</span>
+	</div>
+	<div id="fruity">
+		<span>fruity</span>
+	</div>
+	<div id="woody">
+		<span>woody</span>
+	</div>
+	<img onclick="application.goToTargetView(event)" id="n__10" src="n__10.png" srcset="n__10.png 1x, n__10@2x.png 2x">
+		
+	</svg>
+	<img onclick="application.goToTargetView(event)" id="n__11" src="n__11.png" srcset="n__11.png 1x, n__11@2x.png 2x">
+		
+	</svg>
+	<div id="spicy">
+		<span>spicy</span>
+	</div>
+	<img onclick="application.goToTargetView(event)" id="n__6" src="n__6.png" srcset="n__6.png 1x, n__6@2x.png 2x">
+		
 	</svg>
 	<div id="METADATA">
 		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
 	</div>
-	<div id="n_46">
+	<div id="n_48">
 		<svg class="Background">
 			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920" height="120">
 			</rect>
@@ -3158,36 +3243,6 @@ window.application = new Application();
 		<div id="Typography_TAGH6">
 			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
-	</div>
-	<svg class="n_85">
-		<rect id="n_85" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-	<svg class="n_86">
-		<rect id="n_86" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-	<svg class="n_87">
-		<rect id="n_87" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-	<svg class="n_88">
-		<rect id="n_88" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-	<svg class="n_89">
-		<rect id="n_89" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-	<svg class="n_90">
-		<rect id="n_90" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-	<div id="Text">
-		<span>상품이미지</span>
-	</div>
-	<div id="n_">
-		<span>상세설명<br/>들어가는자리</span>
 	</div>
 </div>
 </body>

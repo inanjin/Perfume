@@ -44,13 +44,13 @@ public class joinService extends HttpServlet {
 		int cnt = dao.join(dto);
 		if (cnt >= 1) {
 			System.out.println("회원가입 성공");
-			response.sendRedirect("");
+			response.sendRedirect("Main.jsp");
 			// 세션 값으로 넘겨주기 (email값 유지시키기)
 			// HttpSession session = request.getSession();
 			// session.setAttribute("aaa", dto.getM_id());
 		} else {
 			System.out.println("회원가입 실패");
-			response.sendRedirect("");
+			response.sendRedirect("Main.jsp");
 		}
 	}
 
