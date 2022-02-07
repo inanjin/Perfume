@@ -1,3 +1,6 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="Model.PerfumeDTO"%>
+<%@page import="Model.PerfumeDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -327,6 +330,7 @@
 	overflow: visible;
 }
 </style>
+<script src = "jquery-3.6.0.min.js"></script>
 <script id="applicationScript">
 ///////////////////////////////////////
 // INITIALIZATION
@@ -3306,9 +3310,18 @@ window.application = new Application();
 			srcset="n_kdahnworld.png 1x, n_kdahnworld@2x.png 2x">
 
 	</div>
+	
+	<form name = "sendForm" action="getidService">
+	<input type = "hidden" id = "target" name = "id" value = "" >
+	</form>
 	<script type="text/javascript">
 		const urlParams = new URLSearchParams(window.location.search);
-		console.log(urlParams.has('id'));
+		let id = urlParams.get('id');
+		console.log(id);
+		let getid = document.getElementById("target");
+		getid.value = id;
+		console.log(getid.value);
+		document.sendForm.submit();
 	</script>
 </body>
 </html>

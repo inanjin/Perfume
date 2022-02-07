@@ -1,5 +1,5 @@
-<%@page import="Model.PerfumeDTO"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="Model.PerfumeDTO"%>
 <%@page import="Model.PerfumeDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -9,17 +9,17 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Show</title>
+<title>Product</title>
 <style id="applicationStylesheet" type="text/css">
 .mediaViewInfo { -
-	-web-view-name: Show; -
-	-web-view-id: Show; -
+	-web-view-name: Product; -
+	-web-view-id: Product; -
 	-web-scale-on-resize: true; -
 	-web-enable-deep-linking: true;
 }
 
 :root { -
-	-web-view-ids: Show;
+	-web-view-ids: Product;
 }
 
 * {
@@ -29,14 +29,14 @@
 	border: none;
 }
 
-#Show {
+#Product {
 	position: absolute;
 	width: 1920px;
 	height: 1080px;
 	background-color: rgba(255, 255, 255, 1);
 	overflow: hidden; -
-	-web-view-name: Show; -
-	-web-view-id: Show; -
+	-web-view-name: Product; -
+	-web-view-id: Product; -
 	-web-scale-on-resize: true; -
 	-web-enable-deep-linking: true;
 }
@@ -60,6 +60,211 @@
 	top: 0px;
 }
 
+#n_70 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_70 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 206px;
+	left: 859px;
+	top: 225px;
+}
+
+#n_78 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_78 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 205px;
+	left: 859px;
+	top: 452px;
+}
+
+#n_81 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_81 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 206px;
+	left: 859px;
+	top: 677px;
+}
+
+#n_71 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_71 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 206px;
+	left: 1148px;
+	top: 224px;
+}
+
+#n_76 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_76 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 205px;
+	left: 1148px;
+	top: 451px;
+}
+
+#n_79 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_79 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 206px;
+	left: 1148px;
+	top: 676px;
+}
+
+#n_75 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_75 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 206px;
+	left: 1437px;
+	top: 226px;
+}
+
+#n_77 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_77 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 205px;
+	left: 1437px;
+	top: 453px;
+}
+
+#n_80 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(112, 112, 112, 1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.n_80 {
+	position: absolute;
+	overflow: visible;
+	width: 202px;
+	height: 206px;
+	left: 1437px;
+	top: 678px;
+}
+
+#floral {
+	left: 376px;
+	top: 626px;
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: IM_Hyemin;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 53px;
+	color: rgba(40, 32, 70, 1);
+	letter-spacing: 0.24px;
+}
+
+#n___________________________ {
+	left: 255px;
+	top: 698px;
+	position: absolute;
+	overflow: visible;
+	width: 379px;
+	white-space: nowrap;
+	line-height: 45px;
+	margin-top: -10px;
+	text-align: left;
+	font-family: IM_Hyemin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(40, 32, 70, 1);
+	letter-spacing: 0.24px;
+}
+
 #METADATA {
 	display: none;
 	left: 0px;
@@ -75,7 +280,7 @@
 	font-size: 3px;
 }
 
-#n_46 {
+#n_47 {
 	position: absolute;
 	width: 1920px;
 	height: 120px;
@@ -115,150 +320,17 @@
 	letter-spacing: -0.04px;
 }
 
-#n_85 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_85 {
+#n_kdahnworld {
+	opacity: 0.86;
 	position: absolute;
+	width: 428px;
+	height: 401px;
+	left: 230px;
+	top: 224px;
 	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 247px;
-	top: 774px;
-}
-
-#n_86 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_86 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 495px;
-	top: 774px;
-}
-
-#n_87 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_87 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 743px;
-	top: 774px;
-}
-
-#n_88 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_88 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 991px;
-	top: 774px;
-}
-
-#n_89 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_89 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 1239px;
-	top: 774px;
-}
-
-#n_90 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_90 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 1487px;
-	top: 774px;
-}
-
-#Text {
-	left: 614px;
-	top: 240px;
-	position: absolute;
-	overflow: visible;
-	width: 251px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 50px;
-	color: rgba(0, 0, 0, 1);
-}
-
-#n_ {
-	left: 1022px;
-	top: 240px;
-	position: absolute;
-	overflow: visible;
-	width: 301px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 50px;
-	color: rgba(0, 0, 0, 1);
 }
 </style>
+<script src = "jquery-3.6.0.min.js"></script>
 <script id="applicationScript">
 ///////////////////////////////////////
 // INITIALIZATION
@@ -3171,66 +3243,82 @@ window.application = new Application();
 </script>
 </head>
 <body>
-	<div id="Show">
+	<%
+		System.out.println("choice:" + request.getParameter("choice"));
+	%>
+	<div id="Product">
 		<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
+		<svg class="n_70">
+		<rect id="n_70" rx="0" ry="0" x="0" y="0" width="202" height="206">
+		</rect>
+	</svg>
+		<svg class="n_78">
+		<rect id="n_78" rx="0" ry="0" x="0" y="0" width="202" height="205">
+		</rect>
+	</svg>
+		<svg class="n_81">
+		<rect id="n_81" rx="0" ry="0" x="0" y="0" width="202" height="206">
+		</rect>
+	</svg>
+		<svg class="n_71">
+		<rect id="n_71" rx="0" ry="0" x="0" y="0" width="202" height="206">
+		</rect>
+	</svg>
+		<svg class="n_76">
+		<rect id="n_76" rx="0" ry="0" x="0" y="0" width="202" height="205">
+		</rect>
+	</svg>
+		<svg class="n_79">
+		<rect id="n_79" rx="0" ry="0" x="0" y="0" width="202" height="206">
+		</rect>
+	</svg>
+		<svg class="n_75">
+		<rect id="n_75" rx="0" ry="0" x="0" y="0" width="202" height="206">
+		</rect>
+	</svg>
+		<svg class="n_77">
+		<rect id="n_77" rx="0" ry="0" x="0" y="0" width="202" height="205">
+		</rect>
+	</svg>
+		<svg class="n_80">
+		<rect id="n_80" rx="0" ry="0" x="0" y="0" width="202" height="206">
+		</rect>
+	</svg>
+		<div id="floral">
+			<span>floral</span>
+		</div>
+		<div id="n___________________________">
+			<span>하나의 꽃 향기를 표현한 향으로 <br />각 꽃의 이미지를 살려서 만든 향기.<br />단순한
+				느낌이 있지만, 여성스럽고 <br />부드러운 분위기로 대부분의 여성들이 <br />부담 없이 사용할 수 있는 향입니다.
+			</span>
+		</div>
 		<div id="METADATA">
 			<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
 		</div>
-		<div id="n_46">
+		<div id="n_47">
 			<svg class="Background">
 			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920"
 					height="120">
 			</rect>
 		</svg>
 			<div id="Typography_TAGH6">
-				<span></span><span style="font-size: 30px;">취 향 저 격</span><br />
+				<span style="font-size: 30px;">취 향 저 격</span><br />
 				<span>당신의 향을 저격하다</span>
 			</div>
 		</div>
-		<svg class="n_85">
-		<rect id="n_85" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_86">
-		<rect id="n_86" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_87">
-		<rect id="n_87" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_88">
-		<rect id="n_88" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_89">
-		<rect id="n_89" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_90">
-		<rect id="n_90" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<div id="Text">
-			<span>상품이미지</span>
-		</div>
-		<div id="n_">
-			<span>상세설명<br />들어가는자리
-			</span>
-		</div>
+		<img id="n_kdahnworld" src="n_kdahnworld.png"
+			srcset="n_kdahnworld.png 1x, n_kdahnworld@2x.png 2x">
+
 	</div>
-	<%
+	<% 
+		int id = Integer.parseInt(request.getParameter("choice"));
 		PerfumeDAO dao = new PerfumeDAO();
 		ArrayList <PerfumeDTO> list = new ArrayList<PerfumeDTO>();
-		list = dao.similar(3);
-		
-		for(int i = 0; i < list.size(); i++){
-			System.out.println(list.get(i).getS_frag_name());
-		}
-		
+		list = dao.filter(id);
+		System.out.println(list.get(0).getFrag_name());
 	%>
 </body>
 </html>

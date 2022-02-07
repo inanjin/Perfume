@@ -1,263 +1,277 @@
-<%@page import="Model.PerfumeDTO"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="Model.PerfumeDAO"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Show</title>
+<title>Product _citrus</title>
 <style id="applicationStylesheet" type="text/css">
-.mediaViewInfo { -
-	-web-view-name: Show; -
-	-web-view-id: Show; -
-	-web-scale-on-resize: true; -
-	-web-enable-deep-linking: true;
-}
-
-:root { -
-	-web-view-ids: Show;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
-}
-
-#Show {
-	position: absolute;
-	width: 1920px;
-	height: 1080px;
-	background-color: rgba(255, 255, 255, 1);
-	overflow: hidden; -
-	-web-view-name: Show; -
-	-web-view-id: Show; -
-	-web-scale-on-resize: true; -
-	-web-enable-deep-linking: true;
-}
-
-#n_68 {
-	fill: rgba(248, 248, 248, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_68 {
-	position: absolute;
-	overflow: visible;
-	width: 1920px;
-	height: 1080px;
-	left: 0px;
-	top: 0px;
-}
-
-#METADATA {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 15px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#n_46 {
-	position: absolute;
-	width: 1920px;
-	height: 120px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-
-#Background {
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Background {
-	position: absolute;
-	overflow: visible;
-	width: 1920px;
-	height: 120px;
-	left: 0px;
-	top: 0px;
-}
-
-#Typography_TAGH6 {
-	left: 889px;
-	top: 33px;
-	position: absolute;
-	overflow: visible;
-	width: 143px;
-	white-space: nowrap;
-	line-height: 26px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 15px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: -0.04px;
-}
-
-#n_85 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_85 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 247px;
-	top: 774px;
-}
-
-#n_86 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_86 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 495px;
-	top: 774px;
-}
-
-#n_87 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_87 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 743px;
-	top: 774px;
-}
-
-#n_88 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_88 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 991px;
-	top: 774px;
-}
-
-#n_89 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_89 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 1239px;
-	top: 774px;
-}
-
-#n_90 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_90 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 1487px;
-	top: 774px;
-}
-
-#Text {
-	left: 614px;
-	top: 240px;
-	position: absolute;
-	overflow: visible;
-	width: 251px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 50px;
-	color: rgba(0, 0, 0, 1);
-}
-
-#n_ {
-	left: 1022px;
-	top: 240px;
-	position: absolute;
-	overflow: visible;
-	width: 301px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 50px;
-	color: rgba(0, 0, 0, 1);
-}
+	.mediaViewInfo {
+		--web-view-name: Product _citrus;
+		--web-view-id: Product__citrus;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Product__citrus;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Product__citrus {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Product _citrus;
+		--web-view-id: Product__citrus;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#n_68 {
+		fill: rgba(248,248,248,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_68 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+	}
+	#Citrus {
+		left: 368px;
+		top: 649px;
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 53px;
+		color: rgba(40,32,70,1);
+		letter-spacing: 0.24px;
+	}
+	#n___________________ {
+		left: 214px;
+		top: 742px;
+		position: absolute;
+		overflow: visible;
+		width: 480px;
+		white-space: nowrap;
+		line-height: 45px;
+		margin-top: -10px;
+		text-align: left;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(40,32,70,1);
+		letter-spacing: 0.24px;
+	}
+	#METADATA {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 15px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#n_47 {
+		position: absolute;
+		width: 1920px;
+		height: 120px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background {
+		fill: rgba(255,255,255,1);
+	}
+	.Background {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 120px;
+		left: 0px;
+		top: 0px;
+	}
+	#Typography_TAGH6 {
+		left: 889px;
+		top: 33px;
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -5.5px;
+		text-align: center;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(61,61,61,1);
+		letter-spacing: -0.04px;
+	}
+	#note4 {
+		opacity: 0.85;
+		position: absolute;
+		width: 428px;
+		height: 402px;
+		left: 230px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p9 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 903px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p12 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1192px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p19 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1481px;
+		top: 224px;
+		overflow: visible;
+	}
+	#p37 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 903px;
+		top: 581px;
+		overflow: visible;
+	}
+	#p48 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1192px;
+		top: 581px;
+		overflow: visible;
+	}
+	#p51 {
+		position: absolute;
+		width: 202px;
+		height: 206px;
+		left: 1481px;
+		top: 581px;
+		overflow: visible;
+	}
+	#Brand___Fragnance___ {
+		left: 908px;
+		top: 459px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____ba {
+		left: 908px;
+		top: 816px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____bb {
+		left: 1197px;
+		top: 816px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____bc {
+		left: 1486px;
+		top: 459px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____bd {
+		left: 1197px;
+		top: 459px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
+	#Brand___Fragnance____be {
+		left: 1486px;
+		top: 816px;
+		position: absolute;
+		overflow: visible;
+		width: 194px;
+		height: 81px;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(112,112,112,1);
+	}
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3171,66 +3185,61 @@ window.application = new Application();
 </script>
 </head>
 <body>
-	<div id="Show">
-		<svg class="n_68">
+<div id="Product__citrus">
+	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
-		<div id="METADATA">
-			<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
-		</div>
-		<div id="n_46">
-			<svg class="Background">
-			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920"
-					height="120">
+	<div id="Citrus">
+		<span>Citrus</span>
+	</div>
+	<div id="n___________________">
+		<span>감귤 계열의 향  가볍고 휘발성이 높아<br/>지속시간이 짧지만  신선하고 상쾌한 느낌 <br/>누구에게나 폭넓게 어울려 인기가 있는 향</span>
+	</div>
+	<div id="METADATA">
+		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
+	</div>
+	<div id="n_47">
+		<svg class="Background">
+			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920" height="120">
 			</rect>
 		</svg>
-			<div id="Typography_TAGH6">
-				<span></span><span style="font-size: 30px;">취 향 저 격</span><br />
-				<span>당신의 향을 저격하다</span>
-			</div>
-		</div>
-		<svg class="n_85">
-		<rect id="n_85" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_86">
-		<rect id="n_86" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_87">
-		<rect id="n_87" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_88">
-		<rect id="n_88" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_89">
-		<rect id="n_89" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_90">
-		<rect id="n_90" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<div id="Text">
-			<span>상품이미지</span>
-		</div>
-		<div id="n_">
-			<span>상세설명<br />들어가는자리
-			</span>
+		<div id="Typography_TAGH6">
+			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
 	</div>
-	<%
-		PerfumeDAO dao = new PerfumeDAO();
-		ArrayList <PerfumeDTO> list = new ArrayList<PerfumeDTO>();
-		list = dao.similar(3);
+	<img id="note4" src="note4.png" srcset="note4.png 1x, note4@2x.png 2x">
 		
-		for(int i = 0; i < list.size(); i++){
-			System.out.println(list.get(i).getS_frag_name());
-		}
+	<img id="p9" src="p9.png" srcset="p9.png 1x, p9@2x.png 2x">
 		
-	%>
+	<img id="p12" src="p12.png" srcset="p12.png 1x, p12@2x.png 2x">
+		
+	<img id="p19" src="p19.png" srcset="p19.png 1x, p19@2x.png 2x">
+		
+	<img id="p37" src="p37.png" srcset="p37.png 1x, p37@2x.png 2x">
+		
+	<img id="p48" src="p48.png" srcset="p48.png 1x, p48@2x.png 2x">
+		
+	<img id="p51" src="p51.png" srcset="p51.png 1x, p51@2x.png 2x">
+		
+	<div id="Brand___Fragnance___">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____ba">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____bb">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____bc">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____bd">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+	<div id="Brand___Fragnance____be">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	</div>
+</div>
 </body>
 </html>

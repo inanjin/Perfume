@@ -275,6 +275,7 @@
 		letter-spacing: -0.04px;
 	}
 </style>
+<script src = "jquery-3.6.0.min.js"></script>
 <script id="applicationScript">
 ///////////////////////////////////////
 // INITIALIZATION

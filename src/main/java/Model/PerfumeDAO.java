@@ -73,7 +73,31 @@ public class PerfumeDAO {
 			close();
 		}return list;
 	}
-
-
-
+	
+	public ArrayList<PerfumeDTO> similar(int Frag_num) {
+		ArrayList<PerfumeDTO> list = new ArrayList<PerfumeDTO>();
+		try {
+			conn();
+			String sql = "select * from s_t_fragnance where frag_num = ?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, Frag_num);
+			
+			rs = psmt.executeQuery();
+			
+			while(rs.next()) {
+				int frag_num = rs.getInt(1);
+				int s_frag_num = rs.getInt(2);
+				String s_frag_name = rs.getString(3);
+				String s_frag_url = rs.getString(4);
+			
+				PerfumeDTO dto = new PerfumeDTO(frag_num, s_frag_num, s_frag_name, s_frag_url);
+				list.add(dto);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}return list;
+	}
 }
