@@ -557,7 +557,7 @@ opacity
 	transition: all 0.699999988079071s ease-out; -
 	-web-animation: fadein 0.699999988079071s ease-out; -
 	-web-action-type: page; -
-	-web-action-target: Main2.html;
+	-web-action-target: Main___1.jsp;
 	cursor: pointer;
 }
 
@@ -3935,7 +3935,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 				<div id="Value_bl">
-					<input type="text" name="pw" placeholder="Password"
+					<input type="password" name="pw" placeholder="Password"
 						style="width: 403px; height: 84px;">
 				</div>
 				<div id="Icon_bm">

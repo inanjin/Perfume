@@ -77,7 +77,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product.jsp;
+		--web-action-target: Product_citrus.jsp;
 		cursor: pointer;
 	}
 	#n__9 {
@@ -89,7 +89,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product.jsp;
+		--web-action-target: Product_woody.jsp;
 		cursor: pointer;
 	}
 	#n__7 {
@@ -101,7 +101,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product.jsp;
+		--web-action-target: Product_fresh.jsp;
 		cursor: pointer;
 	}
 	#floral {
@@ -183,7 +183,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product.jsp;
+		--web-action-target: Product_spicy.jsp;
 		cursor: pointer;
 	}
 	#n__11 {
@@ -195,7 +195,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product.jsp;
+		--web-action-target: Product_fruity.jsp;
 		cursor: pointer;
 	}
 	#spicy {
@@ -221,7 +221,7 @@
 		overflow: visible;
 		--web-animation: fadein 0.30000001192092896s ease-out;
 		--web-action-type: page;
-		--web-action-target: Product.jsp;
+		--web-action-target: Product_floral.jsp;
 		cursor: pointer;
 	}
 	#METADATA {

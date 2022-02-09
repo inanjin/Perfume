@@ -1,3 +1,6 @@
+<%@page import="Model.PerfumeDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="Model.PerfumeDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -142,7 +145,8 @@
 		top: 223px;
 		overflow: visible;
 	}
-	#p41 {
+	#p14 {
+	background:url("p14.png") no-repeat;
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -150,7 +154,8 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p45 {
+	#p24 {
+	background:url("p24.png") no-repeat;
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -158,7 +163,8 @@
 		top: 581px;
 		overflow: visible;
 	}
-	#p56jpg {
+	#p56 {
+	background:url("p56.png") no-repeat;
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -167,6 +173,7 @@
 		overflow: visible;
 	}
 	#p5 {
+	background:url("p5.png") no-repeat;
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -174,7 +181,8 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p14 {
+	#p45 {
+	background:url("p45.png") no-repeat;
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -182,7 +190,8 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#p24 {
+	#p41 {
+	background:url("p41.png") no-repeat;
 		position: absolute;
 		width: 202px;
 		height: 206px;
@@ -190,7 +199,7 @@
 		top: 224px;
 		overflow: visible;
 	}
-	#Brand___Fragnance___ {
+	#Brand___Fragnance0 {
 		left: 908px;
 		top: 459px;
 		position: absolute;
@@ -204,7 +213,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____ba {
+	#Brand___Fragnance1 {
 		left: 908px;
 		top: 816px;
 		position: absolute;
@@ -218,7 +227,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bb {
+	#Brand___Fragnance2 {
 		left: 1194.518px;
 		top: 816px;
 		position: absolute;
@@ -232,7 +241,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bc {
+	#Brand___Fragnance3 {
 		left: 1481px;
 		top: 459px;
 		position: absolute;
@@ -246,7 +255,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____bd {
+	#Brand___Fragnance4 {
 		left: 1194.518px;
 		top: 459px;
 		position: absolute;
@@ -260,7 +269,7 @@
 		font-size: 20px;
 		color: rgba(112,112,112,1);
 	}
-	#Brand___Fragnance____be {
+	#Brand___Fragnance5 {
 		left: 1481px;
 		top: 816px;
 		position: absolute;
@@ -3187,6 +3196,12 @@ window.application = new Application();
 </script>
 </head>
 <body>
+<%
+	PerfumeDAO dao = new PerfumeDAO();
+	ArrayList <PerfumeDTO> list = new ArrayList<PerfumeDTO>();
+	list = dao.filter(3);
+%>
+<form action="Show.jsp" method="post">
 <div id="Product_fruity">
 	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
@@ -3213,36 +3228,30 @@ window.application = new Application();
 	<img id="n__12" src="n__12.png" srcset="n__12.png 1x, n__12@2x.png 2x">
 		
 	</svg>
+	<img id="p14" src="p14.png" srcset="p14.png 1x, p14@2x.png 2x">
+		<button type="submit" id="p14" value = "<%=list.get(1).getFrag_num() %>" name = "frag"></button>
+		
 	<img id="p41" src="p41.png" srcset="p41.png 1x, p41@2x.png 2x">
+		<button type="submit" id="p41" value = "<%=list.get(3).getFrag_num() %>" name = "frag"></button>
 		
-	<img id="p45" src="p45.png" srcset="p45.png 1x, p45@2x.png 2x">
-		
-	<img id="p56jpg" src="p56jpg.png" srcset="p56jpg.png 1x, p56jpg@2x.png 2x">
+	<img id="p56" src="p56.png" srcset="p56.png 1x, p56@2x.png 2x">
+		<button type="submit" id="p56" value = "<%=list.get(5).getFrag_num() %>" name = "frag"></button>
 		
 	<img id="p5" src="p5.png" srcset="p5.png 1x, p5@2x.png 2x">
-		
-	<img id="p14" src="p14.png" srcset="p14.png 1x, p14@2x.png 2x">
+		<button type="submit" id="p5" value = "<%=list.get(0).getFrag_num() %>" name = "frag"></button>
 		
 	<img id="p24" src="p24.png" srcset="p24.png 1x, p24@2x.png 2x">
+		<button type="submit" id="p24" value = "<%=list.get(2).getFrag_num() %>" name = "frag"></button>
 		
-	<div id="Brand___Fragnance___">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
+	<img id="p45" src="p45.png" srcset="p45.png 1x, p45@2x.png 2x">
+		<button type="submit" id="p45" value = "<%=list.get(4).getFrag_num() %>" name = "frag"></button>
+		
+	<%for(int i=0; i<6;i++){ %>
+	<div id="Brand___Fragnance<%=i%>">
+		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: <%=list.get(i).getFrag_brand() %></span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : <%=list.get(i).getFrag_name() %></span><br/>
 	</div>
-	<div id="Brand___Fragnance____ba">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____bb">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____bc">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____bd">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
-	<div id="Brand___Fragnance____be">
-		<span>Brand </span><span style="font-style:normal;font-weight:normal;">: 베르사체</span><br/><span>Fragnance</span><span style="font-style:normal;font-weight:normal;"> : 딜런블루</span><br/>
-	</div>
+	<%} %>
 </div>
+</form>
 </body>
 </html>

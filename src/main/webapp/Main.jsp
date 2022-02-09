@@ -159,7 +159,7 @@ opacity
 	transition: all 0.699999988079071s ease-out; -
 	-web-animation: fadein 0.699999988079071s ease-out; -
 	-web-action-type: page; -
-	-web-action-target: Login.html;
+	-web-action-target: Login.jsp;
 	cursor: pointer;
 }
 
@@ -285,7 +285,7 @@ opacity
 	transition: all 0.699999988079071s ease-out; -
 	-web-animation: fadein 0.699999988079071s ease-out; -
 	-web-action-type: page; -
-	-web-action-target: Join.html;
+	-web-action-target: Join.jsp;
 	cursor: pointer;
 }
 
@@ -463,6 +463,12 @@ opacity
 	font-size: 15px;
 	color: rgba(61, 61, 61, 1);
 	letter-spacing: -0.04px;
+}
+
+input {
+	color: black;
+	font-size: 25px;
+	font-style: Noto_Sans;
 }
 </style>
 <script id="applicationScript">
@@ -3387,7 +3393,7 @@ window.application = new Application();
 			srcset="KakaoTalk_20220205_114206980.png 1x, KakaoTalk_20220205_114206980@2x.png 2x">
 
 		<div id="shot_on_your_Scent">
-			<span>shot on your Scent</span>
+			<span>Shoot On Your Scent</span>
 		</div>
 		<div id="n_43">
 			<div id="n_____">
@@ -3408,7 +3414,9 @@ window.application = new Application();
 				</rect>
 			</svg>
 				<div id="Label">
-					<span>Login</span>
+				<form action="Login.jsp">
+					<input type="submit" value="Login">
+					</form>
 				</div>
 				<div id="Icon">
 					<div id="METADATA_">
@@ -3438,7 +3446,9 @@ window.application = new Application();
 				</rect>
 			</svg>
 				<div id="Label_bf">
-					<span>Join us</span>
+					<form action="Join.jsp">
+					<input type="submit" value = "Join us">
+					</form>
 				</div>
 				<div id="Icon_bg">
 					<div id="METADATA_bh">

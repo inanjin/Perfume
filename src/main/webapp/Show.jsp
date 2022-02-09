@@ -2,262 +2,240 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="Model.PerfumeDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Show</title>
 <style id="applicationStylesheet" type="text/css">
-.mediaViewInfo { -
-	-web-view-name: Show; -
-	-web-view-id: Show; -
-	-web-scale-on-resize: true; -
-	-web-enable-deep-linking: true;
-}
+	.mediaViewInfo {
+		--web-view-name: Show;
+		--web-view-id: Show;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Show;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Show {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Show;
+		--web-view-id: Show;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#n_68 {
+		fill: rgba(248,248,248,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_68 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 50px;
+	}
+	#METADATA {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 15px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#n_46 {
+		position: absolute;
+		width: 1920px;
+		height: 120px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background {
+		fill: rgba(255,255,255,1);
+	}
+	.Background {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 120px;
+		left: 0px;
+		top: 0px;
+	}
+	#Typography_TAGH6 {
+		left: 889px;
+		top: 33px;
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -5.5px;
+		text-align: center;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(61,61,61,1);
+		letter-spacing: -0.04px;
+	}
 
-:root { -
-	-web-view-ids: Show;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
-}
-
-#Show {
-	position: absolute;
-	width: 1920px;
-	height: 1080px;
-	background-color: rgba(255, 255, 255, 1);
-	overflow: hidden; -
-	-web-view-name: Show; -
-	-web-view-id: Show; -
-	-web-scale-on-resize: true; -
-	-web-enable-deep-linking: true;
-}
-
-#n_68 {
-	fill: rgba(248, 248, 248, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_68 {
-	position: absolute;
-	overflow: visible;
-	width: 1920px;
-	height: 1080px;
-	left: 0px;
-	top: 0px;
-}
-
-#METADATA {
-	display: none;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 15px;
-	height: 10px;
-	text-align: left;
-	font-family: Arial;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3px;
-}
-
-#n_46 {
-	position: absolute;
-	width: 1920px;
-	height: 120px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-
-#Background {
-	fill: rgba(255, 255, 255, 1);
-}
-
-.Background {
-	position: absolute;
-	overflow: visible;
-	width: 1920px;
-	height: 120px;
-	left: 0px;
-	top: 0px;
-}
-
-#Typography_TAGH6 {
-	left: 889px;
-	top: 33px;
-	position: absolute;
-	overflow: visible;
-	width: 143px;
-	white-space: nowrap;
-	line-height: 26px;
-	margin-top: -5.5px;
-	text-align: center;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 15px;
-	color: rgba(61, 61, 61, 1);
-	letter-spacing: -0.04px;
-}
-
-#n_85 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_85 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 247px;
-	top: 774px;
-}
-
-#n_86 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_86 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 495px;
-	top: 774px;
-}
-
-#n_87 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_87 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 743px;
-	top: 774px;
-}
-
-#n_88 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_88 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 991px;
-	top: 774px;
-}
-
-#n_89 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_89 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 1239px;
-	top: 774px;
-}
-
-#n_90 {
-	fill: rgba(255, 255, 255, 1);
-	stroke: rgba(112, 112, 112, 1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-
-.n_90 {
-	position: absolute;
-	overflow: visible;
-	width: 186px;
-	height: 244px;
-	left: 1487px;
-	top: 774px;
-}
-
-#Text {
-	left: 614px;
-	top: 240px;
-	position: absolute;
-	overflow: visible;
-	width: 251px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 50px;
-	color: rgba(0, 0, 0, 1);
-}
-
-#n_ {
-	left: 1022px;
-	top: 240px;
-	position: absolute;
-	overflow: visible;
-	width: 301px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Segoe UI;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 50px;
-	color: rgba(0, 0, 0, 1);
-}
+	#n_85 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	
+	.n_85 {
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		height: 244px;
+		left: 371px;
+		top: 774px;
+	}
+	#n_86 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_86 {
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		height: 244px;
+		left: 613px;
+		top: 774px;
+	}
+	#n_87 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_87 {
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		height: 244px;
+		left: 867px;
+		top: 774px;
+	}
+	#n_88 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_88 {
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		height: 244px;
+		left: 1115px;
+		top: 774px;
+	}
+	#n_89 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_89 {
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		height: 244px;
+		left: 1363px;
+		top: 774px;
+	}
+	#n_90 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_90 {
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		height: 244px;
+		left: 1487px;
+		top: 774px;
+	}
+	#Text {
+		left: 614px;
+		top: 360px;
+		position: absolute;
+		overflow: visible;
+		width: 251px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
+	#n_ {
+		left: 1022px;
+		top: 240px;
+		position: absolute;
+		overflow: visible;
+		width: 301px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3171,66 +3149,59 @@ window.application = new Application();
 </script>
 </head>
 <body>
-	<div id="Show">
-		<svg class="n_68">
+<%
+	System.out.println("frag = " + request.getParameter("frag"));
+	int frag = Integer.parseInt(request.getParameter("frag"));
+	PerfumeDAO dao = new PerfumeDAO();
+	ArrayList<PerfumeDTO> list = new ArrayList<PerfumeDTO>();
+	ArrayList<PerfumeDTO> list2 = new ArrayList<PerfumeDTO>();
+	list = dao.filter2(frag);
+
+	list2 = dao.similar(frag);
+	for(int i=0; i < list2.size(); i++){
+		System.out.println(list2.get(i).getS_frag_num());
+	}
+%>
+<div id="Show">
+	<svg class="n_68">
 		<rect id="n_68" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
 	</svg>
-		<div id="METADATA">
-			<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
-		</div>
-		<div id="n_46">
-			<svg class="Background">
-			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920"
-					height="120">
+	<div id="METADATA">
+		<span>{"config":{},"type":"Group","nodeName":"Header","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:37:16.790Z"}</span>
+	</div>
+	<div id="n_46">
+		<svg class="Background">
+			<rect id="Background" rx="0" ry="0" x="0" y="0" width="1920" height="120">
 			</rect>
 		</svg>
-			<div id="Typography_TAGH6">
-				<span></span><span style="font-size: 30px;">취 향 저 격</span><br />
-				<span>당신의 향을 저격하다</span>
-			</div>
-		</div>
-		<svg class="n_85">
-		<rect id="n_85" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_86">
-		<rect id="n_86" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_87">
-		<rect id="n_87" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_88">
-		<rect id="n_88" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_89">
-		<rect id="n_89" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<svg class="n_90">
-		<rect id="n_90" rx="0" ry="0" x="0" y="0" width="186" height="244">
-		</rect>
-	</svg>
-		<div id="Text">
-			<span>상품이미지</span>
-		</div>
-		<div id="n_">
-			<span>상세설명<br />들어가는자리
-			</span>
+		<div id="Typography_TAGH6">
+			<span></span><span style="font-size:30px;">취 향 저 격</span><br/><span>당신의 향을 저격하다</span>
 		</div>
 	</div>
+	<div align="center">
 	<%
-		PerfumeDAO dao = new PerfumeDAO();
-		ArrayList <PerfumeDTO> list = new ArrayList<PerfumeDTO>();
-		list = dao.similar(3);
-		
-		for(int i = 0; i < list.size(); i++){
-			System.out.println(list.get(i).getS_frag_name());
-		}
-		
+		for(int i=0; i <list2.size(); i++){%>
+			<div class="n_8<%=i+5%>" onclick="location.href='Show.jsp?frag=<%=list2.get(i).getS_frag_num()%>';">
+			<img id="n_85" src = "<%=list2.get(i).getS_frag_url()%>" width="186" height="244">
+			<div align="center">
+				<b class="n_b" style="font-style:Segoe UI; font-size:20px; color:#707070; 
+				font-weight:20px; "><%=list2.get(i).getS_frag_name()%>
+				</b>
+			</div>
+			
+	</div>
+		<%}
 	%>
+	</div>
+
+
+	<div id="Text">
+		<img src = "<%=list.get(0).getFrag_url() %>" style = "width:300px; height:auto;">
+	</div>
+	<div id="n_">
+		<img src = "<%=list.get(0).getFrag_ex() %>" style = "width:300px; height:450px;">
+	</div>
+</div>
 </body>
 </html>

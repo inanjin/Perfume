@@ -751,7 +751,7 @@ input::placeholder {
 	transition: all 0.699999988079071s ease-out; -
 	-web-animation: fadein 0.699999988079071s ease-out; -
 	-web-action-type: page; -
-	-web-action-target: Main.html;
+	-web-action-target: Main.jsp;
 	cursor: pointer;
 }
 

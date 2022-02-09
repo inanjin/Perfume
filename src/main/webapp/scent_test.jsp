@@ -3169,15 +3169,15 @@ window.application = new Application();
 		</rect>
 	</svg>
 	
-	<form action = "Product__citrus.jsp" method ="post">
+	<form action = "Product_citrus.jsp" method ="post">
 	<button type="submit" id="n__8" value = "4" name = "choice"></button>
 	</form>
 	</svg>
-	<form action = "Product__woody.jsp" method ="post">
+	<form action = "Product_woody.jsp" method ="post">
 	<button type="submit" id="n__9" value = "1" name = "choice"></button>
 	</form>
 	</svg>
-	<form action = "Product___fresh.jsp" method ="post">
+	<form action = "Product_fresh.jsp" method ="post">
 	<button type="submit" id="n__7" value = "6" name = "choice"></button>
 	</form>
 	</svg>
@@ -3196,7 +3196,7 @@ window.application = new Application();
 	<div id="woody">
 		<span>woody</span>
 	</div>
-	<form action = "Product__spicy.jsp" method ="post">
+	<form action = "Product_spicy.jsp" method ="post">
 	<button type="submit" id="n__10" value = "5" name = "choice"></button>
 	</form>	
 	</svg>

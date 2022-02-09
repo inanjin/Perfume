@@ -159,7 +159,7 @@ opacity
 	transition: all 0.699999988079071s ease-out; -
 	-web-animation: fadein 0.699999988079071s ease-out; -
 	-web-action-type: page; -
-	-web-action-target: Scent.html;
+	-web-action-target: Scent.jsp;
 	cursor: pointer;
 }
 
@@ -193,11 +193,28 @@ opacity
 }
 
 #Label {
-	left: 31px;
+	display:inline;
+	left: -52px;
 	top: 3px;
 	position: absolute;
 	overflow: visible;
-	width: 83px;
+	width: 166px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Label2 {
+	display:inline;
+	left: 95px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 166px;
 	white-space: nowrap;
 	text-align: center;
 	font-family: Noto Sans;
@@ -285,7 +302,7 @@ opacity
 	transition: all 0.699999988079071s ease-out; -
 	-web-animation: fadein 0.699999988079071s ease-out; -
 	-web-action-type: page; -
-	-web-action-target: Main.html;
+	-web-action-target: Main.jsp;
 	cursor: pointer;
 }
 
@@ -463,6 +480,11 @@ opacity
 	font-size: 15px;
 	color: rgba(61, 61, 61, 1);
 	letter-spacing: -0.04px;
+}
+input {
+	color: black;
+	font-size: 25px;
+	font-style: Noto_Sans;
 }
 </style>
 <script id="applicationScript">
@@ -3408,7 +3430,14 @@ window.application = new Application();
 				</rect>
 			</svg>
 				<div id="Label">
-					<span>Search</span>
+					<form action="Scent.jsp">
+						<input type="submit" value="Search"  >
+					</form> 
+				</div>
+				<div id = "Label2">
+				<form action="survey_start.html">
+						<input type="submit" value="Survey" style = "display:inline;">
+					</form>
 				</div>
 				<div id="Icon">
 					<div id="METADATA_">
@@ -3438,7 +3467,9 @@ window.application = new Application();
 				</rect>
 			</svg>
 				<div id="Label_bf">
-					<span>Logout</span>
+				<form action="LogoutService" method="post">
+					<input type="submit" value="Logout">
+					</form>
 				</div>
 				<div id="Icon_bg">
 					<div id="METADATA_bh">

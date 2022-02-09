@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,9 +20,9 @@ public class LoginService extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("[LoginService]");
 		request.setCharacterEncoding("UTF-8");
-		
 		String m_id = request.getParameter("id");
 		String m_pw = request.getParameter("pw");
+		PrintWriter writer = response.getWriter();
 		
 		System.out.println("id : " + m_id);
 		System.out.println("pw : " + m_pw);
@@ -34,12 +36,16 @@ public class LoginService extends HttpServlet {
 			System.out.println("로그인 성공");
 			HttpSession session = request.getSession();
 			session.setAttribute("info", info);
+			response.sendRedirect("Main___1.jsp");
 			
 		}else {
 			System.out.println("로그인 실패");
-			
+			String pageURL = "Main.jsp";
+			response.setContentType("text/html; charset=UTF-8");
+			writer.println("<script>alert('Check your ID or PASSWORD'); location.href='"+pageURL+"';</script>"); writer.close();
+
 		}
-		response.sendRedirect("Main.html");
+		
 	}
 
 }
