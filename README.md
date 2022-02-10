@@ -16,4 +16,4 @@
 ## 대표 이미지
 ![image](https://user-images.githubusercontent.com/97660530/153344283-fe801ac4-dfe3-4c14-9a82-acc8d3949ad9.png)
 ## 서비스 URL
-http://localhost:8081/Perfume/Main.jsp
+http://project-student-e.ddns.net:9002/Perfume/Main.jsp
