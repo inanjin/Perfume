@@ -14,5 +14,5 @@
 - 빌드도구 : maven
 - 디자인도구 : AdobeXD
 ## 대표 이미지
-![image01]
+![image](https://user-images.githubusercontent.com/97660530/153344283-fe801ac4-dfe3-4c14-9a82-acc8d3949ad9.png)
 ## 서비스 URL
